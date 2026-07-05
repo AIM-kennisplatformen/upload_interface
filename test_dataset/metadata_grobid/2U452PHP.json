@@ -1,0 +1,1065 @@
+{
+  "title": "Energy poverty in pandemic times: Fine-tuning emergency measures for better future responses to extreme events in Spain",
+  "abstract": "Energy poverty has been exacerbated by the COVID-19 pandemic and the economic crisis it triggered. Spain, one of the first countries affected by the outbreak, introduced several measures to protect energy consumers during the initial lockdown and to provide them with economic relief (including a disconnection ban and the introduction of new categories of beneficiaries for its energy assistance programmes). This article presents a critical assessment of these interventions, based on the regulatory theory and a review of international experiences. It shows how emergency measures should rely on a robust but flexible targeting strategy and be supported by appropriate financing; it also sheds light on the importance of information campaigns that allow the aid to reach more households, improving the effectiveness of the intervention. The reflections and recommendations presented in this article may help improve the design of emergency measures during future health crises or extreme weather events.",
+  "authors": [
+    "Paolo Mastropietro"
+  ],
+  "doi": "10.1016/j.erss.2021.102364",
+  "issn": "2214-6296",
+  "isbn": null,
+  "keywords": [
+    "COVID-19",
+    "Energy poverty",
+    "Energy insecurity",
+    "Emergency measures",
+    "Consumer protection",
+    "Disconnection ban"
+  ],
+  "affiliations": [
+    "Instituto de Investigación Tecnológica, Universidad Pontificia Comillas, Sta. Cruz de Marcenado 26, Madrid, Spain"
+  ],
+  "acknowledgements": "This article has been elaborated in the framework of the research project \"The  Impact of COVID-19 in the Spanish Electricity Sector: Implications for Energy Poverty and Decarbonisation Targets \", financed by the research grants on energy and environmental issues of  Fundación Iberdrola España , institution to which the author would like to express his gratitude. Nonetheless, the opinions presented in this article only represent the point of view of the author and do not affect in any way the funding entity nor the  University  where the author carries out his research activity.",
+  "funding_statements": [
+    "This article has been elaborated in the framework of the research project \"The  Impact of COVID-19 in the Spanish Electricity Sector: Implications for Energy Poverty and Decarbonisation Targets \", financed by the research grants on energy and environmental issues of  Fundación Iberdrola España , institution to which the author would like to express his gratitude. Nonetheless, the opinions presented in this article only represent the point of view of the author and do not affect in any way the funding entity nor the  University  where the author carries out his research activity."
+  ],
+  "document_type_hints": [],
+  "literature_type": null,
+  "emails": [
+    "paolo.mastropeitro@comillas.edu"
+  ],
+  "urls": [],
+  "publisher": "Elsevier BV",
+  "journal": "Energy Research & Social Science",
+  "volume": "84",
+  "issue": "5",
+  "pages": "102364",
+  "year": "2022",
+  "references": [
+    {
+      "title": "Analysis of the Electricity Demand Trends amidst the COVID-19 Coronavirus Pandemic",
+      "authors": [
+        "A Abu-Rayash",
+        "I Dincer"
+      ],
+      "doi": "10.1016/j.erss.2020.101682",
+      "venue": "Energy Res. Soc. Sci",
+      "year": "2020",
+      "volume": "68",
+      "page": "101682",
+      "url": "https://doi.org/10.1016/j.erss.2020.101682"
+    },
+    {
+      "title": "The Impact of Different COVID-19 containment measures on electricity consumption in Europe",
+      "authors": [
+        "A Bahmanyar",
+        "A Estebsari",
+        "D Ernst"
+      ],
+      "venue": "Energy Res. Soc. Sci",
+      "year": "2020",
+      "volume": "68",
+      "page": "101683"
+    },
+    {
+      "title": "A Crude Future? COVID-19s challenges for oil demand, supply and prices",
+      "authors": [
+        "M Jefferson"
+      ],
+      "doi": "10.1016/j.erss.2020.101669",
+      "venue": "Energy Res. Soc. Sci",
+      "year": "2020",
+      "volume": "68",
+      "page": "101669",
+      "url": "https://doi.org/10.1016/j.erss.2020.101669"
+    },
+    {
+      "title": "Contextualizing the Covid-19 pandemic for a carbon-constrained world: insights for sustainability transitions, energy justice, and research methodology",
+      "authors": [
+        "B K Sovacool",
+        "D Furszyfer Del Rio",
+        "S Griffiths"
+      ],
+      "venue": "Energy Res. Soc. Sci",
+      "year": "2020",
+      "volume": "68",
+      "page": "101701"
+    },
+    {
+      "title": "COVID-19 assistance needs to target energy insecurity",
+      "authors": [
+        "M Graff",
+        "S Carley"
+      ],
+      "venue": "Nature Energy",
+      "year": "2020",
+      "volume": "5",
+      "issue": "5"
+    },
+    {
+      "title": "Sociodemographic disparities in energy insecurity among low-income households before and during the COVID-19 pandemic",
+      "authors": [
+        "T Memmott",
+        "S Carley",
+        "M Graff",
+        "D M Konisky"
+      ],
+      "venue": "Nat. Energy",
+      "year": "2021",
+      "volume": "6",
+      "issue": "2"
+    },
+    {
+      "title": "Emergency measures to protect energy consumers during the covid-19 pandemic: a global review and critical analysis",
+      "authors": [
+        "P Mastropietro",
+        "P Rodilla",
+        "C Batlle"
+      ],
+      "venue": "Energy Res. Soc. Sci",
+      "year": "2020",
+      "volume": "68",
+      "page": "101678"
+    },
+    {
+      "title": "Energy, poverty, and health in climate change: a comprehensive review of an emerging literature",
+      "authors": [
+        "S Jessel",
+        "S Sawyer",
+        "D Hernández"
+      ],
+      "venue": "Front. Public Health",
+      "year": "2019",
+      "volume": "7",
+      "page": "357"
+    },
+    {
+      "title": "Cascading risks: understanding the 2021 winter blackout in Texas",
+      "authors": [
+        "J W Busby",
+        "K Baker",
+        "M D Bazilian",
+        "A Q Gilbert",
+        "E Grubert",
+        "V Rai",
+        "J D Rhodes",
+        "S Shidore",
+        "C A Smith",
+        "M E Webber"
+      ],
+      "venue": "Energy Res. Soc. Sci",
+      "year": "2021",
+      "volume": "77",
+      "page": "102106"
+    },
+    {
+      "authors": [],
+      "title": "Policy Responses to Covid-19",
+      "year": "2020",
+      "publisher": "International Monetery Fund",
+      "url": "https://www.imf.org/en/Topics/imf-and-covid19/Policy-Responses-to-COVID-19"
+    },
+    {
+      "authors": [
+        "Eurelectric"
+      ],
+      "title": "Impact of Covid-19 on Customers and Society: Recommendations from the European Power Sector",
+      "year": "2020"
+    },
+    {
+      "authors": [
+        "Arera"
+      ],
+      "title": "Autorità di Regolazione per Energia Reti e Ambiente",
+      "year": "2020",
+      "url": "https://www.arera.it/it/elenchi.htm?type=stampa-20"
+    },
+    {
+      "title": "Decreto Legislativo",
+      "authors": [
+        "Mme"
+      ],
+      "year": "2020",
+      "page": "517",
+      "publisher": "Ministerio de Energía y Minas (Colombia)"
+    },
+    {
+      "authors": [
+        "Gnz"
+      ],
+      "title": "COVID-19: Economic Response Package",
+      "year": "2020"
+    },
+    {
+      "authors": [],
+      "title": "Minnesota's Energy Assistance Program Helping Thousands, Program Adjustments Will Help Even More Households during COVID-19 Pandemic",
+      "year": "2020"
+    },
+    {
+      "authors": [],
+      "title": "Florida Public Service Commission Unanimously Approves FPL's Plan to Lower Bills for the Second Time This Year Amid COVID-19 Pandemic",
+      "year": "2020",
+      "publisher": "Florida Power & Light Company"
+    },
+    {
+      "authors": [
+        "Puct"
+      ],
+      "title": "",
+      "year": "2020"
+    },
+    {
+      "title": "Social engagement and socio-genesis of energy poverty as a problem in Spain",
+      "authors": [
+        "Alexia Sanz-Hernández"
+      ],
+      "venue": "Energy Policy",
+      "year": "2019",
+      "volume": "124"
+    },
+    {
+      "title": "Energy Poverty Goes South? Understanding the costs of energy poverty with the index of vulnerable homes in Spain",
+      "authors": [
+        "Raúl Castaño-Rosa",
+        "Jaime Solís-Guzmán",
+        "Madelyn Marrero"
+      ],
+      "venue": "Energy Res. Soc. Sci",
+      "year": "2020",
+      "volume": "60",
+      "page": "101325"
+    },
+    {
+      "authors": [
+        "Miteco"
+      ],
+      "title": "Ministerio para la Transición Ecológica y el Reto Demográfico",
+      "year": "2019"
+    },
+    {
+      "authors": [],
+      "title": "Member State Reports on Energy Poverty",
+      "year": "2019"
+    },
+    {
+      "title": "Energy poverty indicators: a critical review of methods",
+      "authors": [
+        "Sergio Tirado",
+        "Herrero"
+      ],
+      "venue": "Indoor Built Environ",
+      "year": "2017",
+      "volume": "26",
+      "issue": "7"
+    },
+    {
+      "title": "Rethinking the measurement of energy poverty in Europe: a critical analysis of indicators and data",
+      "authors": [
+        "Harriet Thomson",
+        "Stefan Bouzarovski",
+        "Carolyn Snell"
+      ],
+      "venue": "Indoor Built Environ",
+      "year": "2017",
+      "volume": "26",
+      "issue": "7"
+    },
+    {
+      "title": "The Policy Implications of Energy Poverty Indicators",
+      "authors": [
+        "J C Romero",
+        "P Linares",
+        "X López"
+      ],
+      "venue": "Energy Policy",
+      "volume": "115"
+    },
+    {
+      "authors": [
+        "Miteco"
+      ],
+      "title": "Actualización de indicadores de la Estrategia Nacional contra la Pobreza Energética",
+      "year": "2020"
+    },
+    {
+      "authors": [
+        "Cnmc"
+      ],
+      "title": "Informe de supervisión del mercado minorista de electricidad para el año",
+      "year": "2019",
+      "publisher": "Comisión Nacional de los Mercados y la Competencia"
+    },
+    {
+      "authors": [],
+      "title": "El Gobierno abre la puerta a excluir a las familias numerosas del bono social",
+      "year": "2021"
+    },
+    {
+      "authors": [
+        "E M Arenas",
+        "R Barrella",
+        "M Burzaco",
+        "P J Cabrera",
+        "E Centeno",
+        "M E Escribano",
+        "J Ibáñez",
+        "J I Jiménez",
+        "P Linares",
+        "J C Linares",
+        "P Romero",
+        "Sanz"
+      ],
+      "title": "La pobreza energética en España. Chapter of \"Informe España 2019"
+    },
+    {
+      "title": "Does cash money solve energy poverty? Assessing the impact of household heating allowances in Spain",
+      "authors": [
+        "Roberto Barrella",
+        "Ignacio José",
+        "José Linares",
+        "Carlos Romero",
+        "Eva Arenas",
+        "Efraim Centeno"
+      ],
+      "venue": "Energy Res. Soc. Sci",
+      "year": "2021",
+      "volume": "80"
+    },
+    {
+      "title": "Actualización n • 381",
+      "authors": [
+        "Ministerio Ms",
+        "De Sanidad"
+      ],
+      "venue": "Enfermedad por el coronavirus",
+      "year": "2021",
+      "volume": "19",
+      "page": "5"
+    },
+    {
+      "authors": [],
+      "title": "Contabilidad nacional",
+      "year": "2021",
+      "url": "https://www.ine.es/prensa/pib_tabla_cntr.htm"
+    },
+    {
+      "authors": [],
+      "title": "Impacto del Covid-19 sobre las estadísticas del ministerio de trabajo y economía social",
+      "year": "2021"
+    },
+    {
+      "title": "Encuesta de Población Activa (EPA)cuarto trimestre de 2020",
+      "authors": [],
+      "venue": "Publicada el",
+      "year": "2021"
+    },
+    {
+      "title": "Electricity demand during pandemic times: the case of the COVID-19 in Spain",
+      "authors": [
+        "I Santiago",
+        "A Moreno-Munoz",
+        "P Quintero-Jiménez",
+        "F Garcia-Torres",
+        "M J Gonzalez-Redondo"
+      ],
+      "venue": "Energy Policy",
+      "year": "2021",
+      "volume": "148",
+      "page": "111964"
+    },
+    {
+      "authors": [
+        "Red Ree",
+        "Eléctrica De España"
+      ],
+      "title": "Esios -Sistema de información del operador del sistema",
+      "year": "2021"
+    },
+    {
+      "title": "Do unemployment benefits and economic aids to pay electricity bills remove the energy poverty risk of Spanish Family Units during Lockdown? A study of COVID-19-induced lockdown",
+      "authors": [
+        "David Bienvenido-Huertas"
+      ],
+      "venue": "Energy Policy",
+      "year": "2021",
+      "volume": "150",
+      "page": "112117"
+    },
+    {
+      "authors": [
+        "Miteco"
+      ],
+      "title": "Ministerio para la Transición Ecológica y el Reto Demográfico",
+      "year": "2020",
+      "url": "https://www.miteco.gob.es/es/ministerio/medidas-covid19/"
+    },
+    {
+      "authors": [
+        "Cnmc"
+      ],
+      "title": "Comisión Nacional de los Mercados y la Competencia",
+      "year": "2021"
+    },
+    {
+      "authors": [
+        "K Komives",
+        "V Foster",
+        "J Halpern",
+        "Q Wodon"
+      ],
+      "title": "Water, Electricity, and the Poor: Who Benefits from Utility Subsidies? Book edited by the World Bank",
+      "year": "2005"
+    },
+    {
+      "title": "Features of good utility-initiated energy assistance",
+      "authors": [
+        "Kenneth W Costello"
+      ],
+      "venue": "Energy Policy",
+      "year": "2020",
+      "volume": "139",
+      "page": "111345"
+    },
+    {
+      "authors": [
+        "Cincodías"
+      ],
+      "title": "Las pequeñas eléctricas sufren ya impagos de clientes",
+      "year": "2020"
+    }
+  ],
+  "figures": [
+    {
+      "type": "figure",
+      "label": "1",
+      "head": "Fig. 1 .",
+      "description": "Fig. 1. Payments of the Spanish social thermal bonus and climatological zones.",
+      "bbox": {
+        "page": 4,
+        "x": 75.8,
+        "y": 55.4,
+        "w": 443.7,
+        "h": 262.96
+      },
+      "rows": null
+    },
+    {
+      "type": "figure",
+      "label": "2",
+      "head": "Fig. 2 .",
+      "description": "Fig.2. Variation in the employment rate in Spain",
+      "bbox": {
+        "page": 4,
+        "x": 41.27,
+        "y": 588.86,
+        "w": 243.79,
+        "h": 155.66
+      },
+      "rows": null
+    },
+    {
+      "type": "figure",
+      "label": "3",
+      "head": "Fig. 3 .",
+      "description": "Fig.3. Load profiles for households enrolled in the PVPC and comparison between 2019 and 2020; data from esios",
+      "bbox": {
+        "page": 4,
+        "x": 306.6,
+        "y": 476.34,
+        "w": 251.04,
+        "h": 17.54
+      },
+      "rows": null
+    },
+    {
+      "type": "figure",
+      "label": "4",
+      "head": "Fig. 4 .",
+      "description": "Fig.4. Evolution of the beneficiaries of the Spanish social tariff for electricity",
+      "bbox": {
+        "page": 5,
+        "x": 306.6,
+        "y": 238.23,
+        "w": 251.09,
+        "h": 17.48
+      },
+      "rows": null
+    },
+    {
+      "type": "figure",
+      "label": null,
+      "head": null,
+      "description": "Fig.4. Evolution of the beneficiaries of the Spanish social tariff for electricity",
+      "bbox": {
+        "page": 5,
+        "x": 306.6,
+        "y": 55.41,
+        "w": 251.09,
+        "h": 200.3
+      },
+      "rows": null
+    },
+    {
+      "type": "table",
+      "label": "1",
+      "head": "Table 1",
+      "description": "Recent evolution of energy poverty indicators in Spain",
+      "bbox": {
+        "page": 3,
+        "x": 37.59,
+        "y": 56.3,
+        "w": 245.1,
+        "h": 69.18
+      },
+      "rows": [
+        [
+          "Indicator [%]",
+          "2016",
+          "2017",
+          "2018",
+          "2019"
+        ],
+        [
+          "High share of energy expenditure in income",
+          "16.7",
+          "17.3",
+          "16.9",
+          "16.7"
+        ],
+        [
+          "Low absolute energy expenditure",
+          "11.3",
+          "10.7",
+          "11.0",
+          "10.6"
+        ],
+        [
+          "Inability to keep dwelling warm",
+          "10.1",
+          "8.0",
+          "9.1",
+          "7.6"
+        ],
+        [
+          "Arrears on utility bills",
+          "7.8",
+          "7.4",
+          "7.2",
+          "6.6"
+        ]
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "section": "Introduction",
+      "section_num": "1.",
+      "text": "The COVID-19 pandemic, the confinement measures implemented to control it and the consequent economic crisis had a dramatic impact on the energy sector. Energy demand, energy market prices, new investments in the energy sector, CO 2 prices; all these parameters registered very large fluctuations during the different waves of the outbreak (  [1] [2] [3] [4] ). The pandemic also had a very direct impact on energy poverty. First, lockdowns forced people to stay home, increasing the energy consumption of the households and, consequently, energy bills, while several families were facing a reduction in their income, due to the unprecedented loss of jobs registered during the first phase of the outbreak (  [5, 6] ). Second, the global economic crisis produced by the pandemic (the world gross domestic product registered a contraction of 3.5% in 2020  [7] ) exacerbated poverty as such, thus increasing the risk of energy poverty for households. The governments of all the countries affected by COVID-19 acknowledged the aggravation of energy poverty and most of them promptly introduced emergency measures to protect energy consumers, particularly during the initial lockdowns, but also at later stages of the pandemic.  Mastropietro et al. (2020)    [8]  reviewed and classified these emergency measures at a global level.",
+      "word_count": 206,
+      "char_count": 1327
+    },
+    {
+      "chunk_index": 1,
+      "section": "Introduction",
+      "section_num": "1.",
+      "text": "The goal of this article is to focus on the impact of COVID-19 on energy poverty in Spain and to provide a critical assessment of the measures introduced by the Spanish Government to mitigate it. Spain was one of the first countries affected by the epidemic in Europe and, together with Italy, was one of the pioneers in the design of emergency measures for energy customers. Furthermore, Spain has a national strategy to tackle energy poverty and social tariffs for electricity and thermal needs; this allows to carry out a preliminary analysis of the evolution of the problem and the effectiveness of the measures. The article also compares the Spanish measures with those implemented worldwide during the pandemic and the best practices they provide. As discussed in the critical assessment, the Spanish approach presents both strengths, as the swift introduction of a disconnection ban and the enhancement of social tariffs and assistance programmes, and flaws, mainly related to the lack of appropriate financing for some of these measures. This analysis provides several insights, which may be relevant for regulators during future emergencies, not only related to pandemics, but also to extreme weather events, whose frequency and intensity is increasing due to climate change (  [9] ). As the 2021 energy crisis in Texas demonstrated  [10] , these extreme events may produce conditions similar to those experienced by many households worldwide during pandemic lockdowns 1 (need to spend more time home, increased vulnerability in case of disconnection, potentially larger energy bills), and also their occurrence may force governments to introduce protection measures.",
+      "word_count": 261,
+      "char_count": 1676
+    },
+    {
+      "chunk_index": 2,
+      "section": "Introduction",
+      "section_num": "1.",
+      "text": "The article is structured as follows. Section 2 presents a review of the emergency measures implemented internationally, which will allow to frame the Spanish interventions in a broader context. Section 3 centres the attention on Spain, introducing its national strategy to tackle energy poverty and the energy assistance programmes in place in the country. Section 4 analyses the impact of COVID-19 in Spain, presents the emergency measures introduced by the Government throughout the pandemic and provides a critical assessment. Section 5 concludes.",
+      "word_count": 82,
+      "char_count": 551
+    },
+    {
+      "chunk_index": 3,
+      "section": "Global review of emergency measures",
+      "section_num": "2.",
+      "text": "The emergency measures implemented worldwide to face the exacerbation of energy poverty during the pandemic can be classified in five broad categories: disconnection bans, payment extension plans, enhancement of energy assistance programmes, energy bill reduction or cancellation, and creation of specific funds foot_0  .",
+      "word_count": 44,
+      "char_count": 321
+    },
+    {
+      "chunk_index": 4,
+      "section": "Disconnection bans",
+      "section_num": "2.1.",
+      "text": "A disconnection ban on energy contracts, even in case of nonpayment, was definitely the most widespread protection measure  [11]  and it was introduced in almost all the jurisdictions affected by the pandemic (with few exceptions, such as the Netherlands  [12] ). The clear goal of this measure was to guarantee a proper access to energy to all households during confinement. This intervention was commonly related to other measures, since governments implicitly had to define a protocol for unpaid bills.",
+      "word_count": 79,
+      "char_count": 505
+    },
+    {
+      "chunk_index": 5,
+      "section": "Payment extension plans",
+      "section_num": "2.2.",
+      "text": "Many countries introduced the possibility for residential consumers in financial hardship to defer the payment of energy bills during confinement. In some cases, governments also defined the financial details of this deferral, e.g., impeding the application of any interest rate on unpaid bills  [12] . Very different durations for these extension plans can be found in international experiences, ranging from three months after the lifting of confinement in Germany, to six months in Italy  [13] , up to 24 months in Peru [14] or 36 months in Colombia  [15] .",
+      "word_count": 90,
+      "char_count": 560
+    },
+    {
+      "chunk_index": 6,
+      "section": "Payment extension plans",
+      "section_num": "2.2.",
+      "text": "Another difference in the design of this kind of measures was the targeting strategy. Although most of the jurisdictions that implemented extension plans specified that the latter were available only to those households who were facing financial hardship due to the pandemic, almost no government introduced specific requirements to be eligible for the deferral. Only few Latin American countries defined a proper targeting strategy. In Peru, the extension plan was available only for residential consumers with a demand lower than 100 kWh per month. In Colombia, where residential end-users are classified in several layers in the framework of a generalised cross-subsidy scheme for utility services, only consumers in layers 1 and 2 (low-income) could benefit from the 36-month deferral with no interest.",
+      "word_count": 122,
+      "char_count": 806
+    },
+    {
+      "chunk_index": 7,
+      "section": "Enhancement of energy assistance programmes",
+      "section_num": "2.3.",
+      "text": "Several jurisdictions around the world rely on energy assistance programmes, as social tariffs or energy cheques, to mitigate energy poverty. Some governments opted for strengthening these programmes during the pandemic. Some regulators decided to increase the economic aid that the households enrolled in the programme receive (e.g., New Zealand, where the winter energy payment was doubled  [16] ). Other regulators preferred to enlarge the pool of beneficiaries, including new categories or relaxing some of the requisites for enrolment in the existing ones (as the income eligibility criterion in the energy assistance programme of Minnesota, which temporarily focused on the previous one month  [17] ).",
+      "word_count": 104,
+      "char_count": 707
+    },
+    {
+      "chunk_index": 8,
+      "section": "Energy bill reduction or cancellation",
+      "section_num": "2.4.",
+      "text": "Some governments decided to reduce or even to cancel the energy bills of residential customers for the duration of the lockdown, without any kind of targeting. For instance, electricity bills were administratively reduced in Cyprus  [12]  or Florida  [18] , while they were entirely covered through public funding in Bolivia  [11] .",
+      "word_count": 52,
+      "char_count": 332
+    },
+    {
+      "chunk_index": 9,
+      "section": "Creation of specific funds",
+      "section_num": "2.5.",
+      "text": "All the protection measures presented so far could have an impact on the financial stability of retailing companies  [19] , whose accounts were already being challenged by the pandemic, due to the decrease in energy demand and prices. This prompted some governments to establish specific funds or dedicated budget lines to finance emergency measures. In the United States  [5] , the Government provided additional 900 M$ for the Low-Income Home Energy Assistance Program (LIHEAP). Italy created a 1500-M€ COVID account to guarantee the financial stability of retailing companies whose consumers were enrolling in the payment extension plan  [13] . Texas introduced a 0.33-USD/MWh surcharge in electricity tariffs to fund its COVID-19 Electricity Relief Program  [20] .",
+      "word_count": 116,
+      "char_count": 768
+    },
+    {
+      "chunk_index": 10,
+      "section": "The Spanish context on energy poverty",
+      "section_num": "3.",
+      "text": "Energy poverty and vulnerability is a topic that is receiving increasing attention in Spain (  [21, 22] ). As mentioned in the introduction, Spain has recently launched a national strategy to tackle energy poverty and relies on two energy assistance programmes for energy consumers: a social tariff for electricity and an energy payment to cover part of the expenses related to the thermal needs of the household.",
+      "word_count": 67,
+      "char_count": 413
+    },
+    {
+      "chunk_index": 11,
+      "section": "The national strategy to tackle energy poverty",
+      "section_num": "3.1.",
+      "text": "In 2019, before the pandemic, the Spanish Government officially approved the national strategy to tackle energy poverty 2019-2024  [23] . This document set a very high-level plan, but it was very relevant for its formal recognition of the problem and for the framework it introduced to analyse and monitor it. For the first time, energy poverty was officially defined as \"the situation of a household where the basic energy needs foot_1  cannot be satisfied as a consequence of an insufficient level of incomes and which, in some case, could be exacerbated due to the low energy efficiency of the dwelling\".",
+      "word_count": 100,
+      "char_count": 607
+    },
+    {
+      "chunk_index": 12,
+      "section": "The national strategy to tackle energy poverty",
+      "section_num": "3.1.",
+      "text": "The national strategy also officially defines the indicators to be used to monitor energy poverty. Following the recommendations of the European Union Energy Poverty Observatory  [24] , the strategy identifies as indicators: i) the high share of energy expenditure in income, ii) the low absolute energy expenditure (also known as hidden energy poverty), iii) the inability to keep the dwelling adequately warm, and iv) the presence of arrears on utility bills 4 . These indicators were computed, based on the available statistical data, for recent years, as shown in Table  1 . Based on these indicators, the strategy also defines a minimum (25%) and a more ambitious (50%) reduction target for 2025.",
+      "word_count": 112,
+      "char_count": 701
+    },
+    {
+      "chunk_index": 13,
+      "section": "The national strategy to tackle energy poverty",
+      "section_num": "3.1.",
+      "text": "The strategy considers different lines of actions to achieve these targets. Among them, the most relevant is probably the introduction of a so-called \"energy social bonus\", an energy assistance programme that should incorporate all the existing schemes (see the following subsection) and overcome some of the design flaws and controversial elements that characterise them. The main features of the new social bonus are summarised hereunder.",
+      "word_count": 65,
+      "char_count": 440
+    },
+    {
+      "chunk_index": 14,
+      "section": "The national strategy to tackle energy poverty",
+      "section_num": "3.1.",
+      "text": "• It will cover all household energy consumption, regardless of the energy vector and the final use.",
+      "word_count": 17,
+      "char_count": 100
+    },
+    {
+      "chunk_index": 15,
+      "section": "The national strategy to tackle energy poverty",
+      "section_num": "3.1.",
+      "text": "• The enrolment will be automatic and it will bring together all the institutions involved, especially in terms of data collection.",
+      "word_count": 21,
+      "char_count": 131
+    },
+    {
+      "chunk_index": 16,
+      "section": "The national strategy to tackle energy poverty",
+      "section_num": "3.1.",
+      "text": "• The design and operation of the subsidy will be coordinated with regional and municipal administrations, in order to align all interventions on energy poverty.",
+      "word_count": 25,
+      "char_count": 161
+    },
+    {
+      "chunk_index": 17,
+      "section": "The national strategy to tackle energy poverty",
+      "section_num": "3.1.",
+      "text": "The national strategy also considers interventions on the energy efficiency of buildings (energy refurbishment), the introduction of a disconnection ban during extreme weather events, the definition of a baseline supply for vulnerable customers with unpaid bills, and the engagement of consumers through information campaigns.",
+      "word_count": 44,
+      "char_count": 326
+    },
+    {
+      "chunk_index": 18,
+      "section": "The national strategy to tackle energy poverty",
+      "section_num": "3.1.",
+      "text": "The national strategy 2019-2024 is being subject to significant delays in its implementation due to the pandemic, which forced the Government to focus the legislative effort on the introduction of the emergency measures that will be presented in Section 4.2.",
+      "word_count": 40,
+      "char_count": 258
+    },
+    {
+      "chunk_index": 19,
+      "section": "The Spanish energy assistance programmes",
+      "section_num": "3.2.",
+      "text": "The main assistance programme used in Spain to tackle energy poverty has historically been the social electricity bonus. This social tariff, which was introduced in 2009 and underwent several reforms in the last decade (the last one in 2018), provides customers with discounts on prices and charges considered in the Spanish default electricity tariff 5 . The economic aid is targeted through socio-economic indicators (mainly based on the gross household income), through which three different categories are identified: vulnerable customers, severely vulnerable customers, and customers at risk of social marginalisation. These categories receive different discounts, ranging from 25% to 100%, subject to consumption limits that depend on the number of family members, as presented in Table  2 .",
+      "word_count": 118,
+      "char_count": 797
+    },
+    {
+      "chunk_index": 20,
+      "section": "The Spanish energy assistance programmes",
+      "section_num": "3.2.",
+      "text": "The most controversial feature of the Spanish social tariff for electricity is that it is not funded through the state budget or cross-subsidies, but its financing is left to retailing companies 6 , who appealed against this approach in both Spanish and European courts. The budget for the funding of the electricity bonus varies year by year; in 2019, it was equal to 139 M€  [29] . Another design element of the social tariff that has been frequently criticised is the lack of any income limit for large families (defined, in Spain, as families with three children or more). The definition of this category of beneficiaries without any income limit seems to represent a policy to promote higher birth rates, a target which transcends energy poverty 7 .",
+      "word_count": 128,
+      "char_count": 754
+    },
+    {
+      "chunk_index": 21,
+      "section": "The Spanish energy assistance programmes",
+      "section_num": "3.2.",
+      "text": "The social tariff for electricity was complemented, in 2018, by the socalled thermal bonus. The latter is a yearly payment made available to all beneficiaries of the social tariff for electricity (as enrolled at the end of the previous year), with the objective to help households cover their energy expenses related to thermal needs (mainly for space heating, regardless of the energy vector). The payment depends on the climatological zone that the dwelling belongs to, and it is further increased by a fixed percentage for severely vulnerable customers and customers at risk of social marginalisation (Fig.  1 ).",
+      "word_count": 98,
+      "char_count": 615
+    },
+    {
+      "chunk_index": 22,
+      "section": "The Spanish energy assistance programmes",
+      "section_num": "3.2.",
+      "text": "These payments are financed through public funding, with a yearly budget of 75 M€ in 2019, which is expected to grow in the following years. Some experts criticised the values of the payments, underlying their insufficiency to cope with energy expenses for thermal needs, especially in colder climates (  [31, 32] ).",
+      "word_count": 52,
+      "char_count": 316
+    },
+    {
+      "chunk_index": 23,
+      "section": "Emergency measures in Spain and critical assessment",
+      "section_num": "4.",
+      "text": "In this section, the impact of the pandemic on the Spanish economy and residential energy demand will be studied first, to later focus on the emergency measures introduced by the Government to protect energy consumers. These interventions are then qualitatively assessed in the last subsection, also based on the review of international experiences presented in Section 2.",
+      "word_count": 57,
+      "char_count": 372
+    },
+    {
+      "chunk_index": 24,
+      "section": "The impact of Covid-19 and lockdowns",
+      "section_num": "4.1.",
+      "text": "Spain was one of the countries most affected by the COVID-19 pandemic, especially during the so-called first wave, in spring 2020, when it registered a daily death toll of more than 900 people  [33] . The lockdown imposed by the Government was one of the most severe in Europe and confined citizens in their dwellings, with different levels of restrictions, for more than two months.",
+      "word_count": 65,
+      "char_count": 383
+    },
+    {
+      "chunk_index": 25,
+      "section": "The impact of Covid-19 and lockdowns",
+      "section_num": "4.1.",
+      "text": "The economy was dramatically affected by the lockdown. The interannual variation of the Spanish GDP registered a 21.6% plunge in Table  2  Main features of the Spanish social electricity bonus. 4 These are well known indicators in energy-poverty literature. EU EPO (2020)  [24]  defines them as follows: i) high share of energy expenditure in income: the proportion of households whose share of energy expenditure in income is more than twice the national median share; ii) low absolute energy expenditure: share of households whose absolute energy expenditure is below half the national median.; iii) inability to keep dwelling warm: share of population not able to keep their home adequately warm; iv) arrears on utility bills: share of population having arrears on utility bills. These indicators are calculated based on the results of different surveys. For details, see  [25] [26] [27] . 5 In order to be eligible for the social bonus, vulnerable customers must first enroll in the default tariff, the so-called PVPC (the voluntary price for small consumers, or Precio voluntario para el Pequeño Consumidor, in Spanish) 6 Retailers are not allowed to pass these costs through to consumers. It must be remarked that this approach does not have any theoretical justification and is rarely found in international experiences to finance energy assistance programmes. 7 Recently, the Government stated that this feature was under scrutiny and that it was planning to define income thresholds also for large families  [30] .",
+      "word_count": 240,
+      "char_count": 1523
+    },
+    {
+      "chunk_index": 26,
+      "section": "The impact of Covid-19 and lockdowns",
+      "section_num": "4.1.",
+      "text": "the second trimester of 2020  [34] . The employment rate fell by 6.05% in the same period (Fig.  2 ), while several enterprises (especially small and medium) applied for employment contract suspensions or reductions, which affected more than 2.5 million people  [35] . All these factors resulted in a significant reduction in the income and the purchasing power of many families. At the same time, the confinement and the suspension of several activities provoked a strong reduction in the national electricity demand  [2] , mainly driven by the industrial and commercial sectors. However, in the same period, residential demand grew significantly, due to the higher occupancy rates of households. Fig.  3  shows the daily load profiles of residential customers enrolled in the Spanish default tariff, a group that can be considered representative of the entire residential demand, in two days with the same temperature range in 2019 and during the pandemic in 2020. The chart shows a change in the demand pattern (as also observed in  [37] ) and a net increase in electricity demand close to 10%.",
+      "word_count": 178,
+      "char_count": 1097
+    },
+    {
+      "chunk_index": 27,
+      "section": "The impact of Covid-19 and lockdowns",
+      "section_num": "4.1.",
+      "text": "The combined effect of lower incomes and larger energy demand increased the risk of suffering energy poverty for several households  [39]  claims that this risk could have been much higher if the lockdown had happened in winter or summer months, when the energy demand for space heating or air conditioning is higher than in spring.",
+      "word_count": 55,
+      "char_count": 332
+    },
+    {
+      "chunk_index": 28,
+      "section": "Emergency measures during the pandemic",
+      "section_num": "4.2.",
+      "text": "The Spanish Government took immediate action to protect energy consumers at the very beginning of the lockdown, in March 2020, and refined and continue applying these measures throughout the pandemic. All these interventions are presented in this subsection  [40] .",
+      "word_count": 40,
+      "char_count": 265
+    },
+    {
+      "chunk_index": 29,
+      "section": "Disconnection ban",
+      "section_num": "4.2.1.",
+      "text": "The first measure introduced by the Government, as in other countries, was a disconnection ban, which impeded energy retailers to cut supply even in case of prolonged non-payment. The ban applied on all main residences and encompassed also those disconnection processes for unpaid bills that had been initiated before the lockdown.",
+      "word_count": 51,
+      "char_count": 331
+    },
+    {
+      "chunk_index": 30,
+      "section": "Disconnection ban",
+      "section_num": "4.2.1.",
+      "text": "The measure was subject to several extensions, until September 2020, when the ban was eventually lifted. However, a new disconnection ban was introduced in December 2020, but this time it was applicable only to vulnerable customers. The ban could be enforced also for those vulnerable customers who did not have the supply contract in their name.",
+      "word_count": 56,
+      "char_count": 346
+    },
+    {
+      "chunk_index": 31,
+      "section": "Enhancement of the social tariff for electricity",
+      "section_num": "4.2.2.",
+      "text": "The design of the social tariff for electricity was temporarily   Load profiles for households enrolled in the PVPC and comparison between 2019 and 2020; data from esios  [38] .",
+      "word_count": 29,
+      "char_count": 177
+    },
+    {
+      "chunk_index": 32,
+      "section": "Enhancement of the social tariff for electricity",
+      "section_num": "4.2.2.",
+      "text": "modified to provide additional protection to customers. The first measure was to postpone the deadlines for the renewal of the enrolment in the social tariff. The latter must be renewed every two years, through a specific application and the delivery of documentation regarding the socio-economic status of the household. During the lockdown, it would have been complex, if not impossible, to collect this documentation and to deliver the application, due to the temporary suspension of in-person customer services by the public administration. Therefore, the Government opted for an automatic extension of all social tariff enrolment, which was lifted in September 2020. During the initial lockdown, the Government also introduced a new category of beneficiaries for the social tariff, in order to encompass also those self-employed who had to cease their activity due to the pandemic or had their invoicing reduced by more than 75% in comparison with the previous fiscal semester. The new category also considered a threshold on the income declared before the pandemic.",
+      "word_count": 165,
+      "char_count": 1071
+    },
+    {
+      "chunk_index": 33,
+      "section": "Enhancement of the social tariff for electricity",
+      "section_num": "4.2.2.",
+      "text": "Finally, in September 2020, the Government modified the eligibility criteria for vulnerable customers, focusing the assessment on the present economic conditions of each household. All unemployed people, employed people who suffered a suspension or reduction of their employment contract, and employed people who had to reduce their working hours in order to provide personal care to relatives could enrol in the social tariff. These relaxed eligibility criteria were in force until June 2021. In this case, the Government included sanctions for those users who applied and received the social tariff without fulfilling the requisites.",
+      "word_count": 94,
+      "char_count": 635
+    },
+    {
+      "chunk_index": 34,
+      "section": "Additional measures for self-employed and SMEs",
+      "section_num": "4.2.3.",
+      "text": "Beyond the new category of the social electricity tariff, self-employed and small and medium enterprises (SMEs) were the target of other emergency measures regarding energy consumption. Although these interventions were not specifically designed to tackle energy poverty, they could still provide protection to those households where one of the members was self-employed.",
+      "word_count": 52,
+      "char_count": 371
+    },
+    {
+      "chunk_index": 35,
+      "section": "Additional measures for self-employed and SMEs",
+      "section_num": "4.2.3.",
+      "text": "The first measure was the relaxation of energy supply contracts, with the possibility of suspending the contracts or adapting them to the new consumption behaviour, without being subject to any fee from the retailing company. The second measure was the possibility of suspending the payment of energy bills for all connection points with a contract signed by a self-employed (including the main residence). In this case, the supply was not affected and new bills were generated, but the contract owner could ask to pay these bills after the lockdown was lifted. When a self-employed requested such energy bills deferral, retailing companies were allowed not to pay network charges and taxes on that consumption.",
+      "word_count": 113,
+      "char_count": 711
+    },
+    {
+      "chunk_index": 36,
+      "section": "Bank guarantees for retailers",
+      "section_num": "4.2.4.",
+      "text": "The Government considered that the measures specifically targeting self-employed and SMEs could have a negative impact on the liquidity of retailing companies and decided to create a line of bank guarantees for them, which was financed through the State budget. On the other hand, the Government did not consider any specific funding for the rest of emergency measures presented in this subsection.",
+      "word_count": 62,
+      "char_count": 398
+    },
+    {
+      "chunk_index": 37,
+      "section": "Critical assessment",
+      "section_num": "4.3.",
+      "text": "The quantitative impact of the pandemic on energy poverty in Spain has not been studied yet by any institution. For the time being, the only useful information to understand the problem is the evolution of the number of beneficiaries of the social tariff for electricity, regularly published by the Spanish regulator. The categories showed in Fig.  4  are those presented in section 3.2, plus the new category introduced in March 2020 to protect self-employed workers as explained in Section 4.2.2 (COVID-19 in the chart).",
+      "word_count": 84,
+      "char_count": 522
+    },
+    {
+      "chunk_index": 38,
+      "section": "Critical assessment",
+      "section_num": "4.3.",
+      "text": "The chart shows some discontinuities in the number of beneficiaries as a result of reforms in the design of the assistance programme, especially in terms of eligibility criteria and enrolment process. Before the COVID-19 outbreak, the number of beneficiaries was slowly increasing. This growing tendency was not related with an increase of the underlying problem, but rather it reflected the complexity of the enrolment process, with consumers being slowly registered after the last modifications.",
+      "word_count": 74,
+      "char_count": 497
+    },
+    {
+      "chunk_index": 39,
+      "section": "Critical assessment",
+      "section_num": "4.3.",
+      "text": "Focusing on the data for the pandemic months, the first element that can be identified, regrettably, is the drastic decrease in the number of beneficiaries of a specific category, the one of pensioners, which was greatly affected by the pandemic. The number of deaths among the elderly was so high that it can be observed also in the chart, with a plunge in the number of pensioners enrolled in the social tariff from 174,061 in October 2019 to 157,822 in April 2020. Beyond this effect, a modest increase in the rest of categories can be observed in the chart in the initial phase of the outbreak. However, this could be related with the previous tendency of the enrolment process and it may be not related with the pandemic.",
+      "word_count": 128,
+      "char_count": 726
+    },
+    {
+      "chunk_index": 40,
+      "section": "Critical assessment",
+      "section_num": "4.3.",
+      "text": "The second datum of interest that can be extracted from the chart is the plunge in the number of beneficiaries registered in October 2020 (with more than 200,000 households losing the social tariff), when the Government lifted the automatic extension of the enrolment. This behaviour, although fully related with the pandemic and the emergency measures, reveals some of the main flaws in the current design of the social tariff, i.e., the complexity and the bureaucratic effort required for the enrolment or the renewal and the lack of information or customer service for vulnerable consumers.",
+      "word_count": 94,
+      "char_count": 593
+    },
+    {
+      "chunk_index": 41,
+      "section": "Critical assessment",
+      "section_num": "4.3.",
+      "text": "Finally, the last information that can be highlighted from Fig.  4  is the very low impact of the new categories of beneficiaries, mainly targeting self-employed people (dark blue in the chart). According to  [41] , only 4960 self-employed were enrolled in the social electricity tariff in July 2020, with their number rapidly decreasing since then. This figure is not very significant and it probably does not reflect the number of selfemployed who were actually affected by the economic crisis that the pandemic triggered.",
+      "word_count": 83,
+      "char_count": 524
+    },
+    {
+      "chunk_index": 42,
+      "section": "Critical assessment",
+      "section_num": "4.3.",
+      "text": "After this initial analysis on the evolution of beneficiaries, the rest of this subsection presents a qualitative critical assessment of the measures introduced by the Spanish Government, based on regulatory theory and the review of international experiences.",
+      "word_count": 37,
+      "char_count": 259
+    },
+    {
+      "chunk_index": 43,
+      "section": "Disconnection ban and payment extension plan",
+      "section_num": "4.3.1.",
+      "text": "The disconnection ban was an essential measure to guarantee energy supplies for households during the worst phase of the lockdown. This intervention, originally introduced by Italy and Spain at the very beginning of the pandemic, was later implemented in the vast majority of jurisdictions affected by COVID-19.  The main disadvantage of this measure is that it does not rely on any targeting strategy. Furthermore, it is associated with another measure: if non-payment is not sanctioned through disconnection, all consumers covered by the ban are implicitly entitled to a bill deferral. If this payment extension plan is not subject to any interest rate, it represents an economic aid, which is provided without the application of any socioeconomic targeting or any consumption limit and that could reach also customers who do not actually need it.",
+      "word_count": 133,
+      "char_count": 849
+    },
+    {
+      "chunk_index": 44,
+      "section": "Disconnection ban and payment extension plan",
+      "section_num": "4.3.1.",
+      "text": "However, during an emergency situation as a pandemic, the lack of any targeting strategy is at the same time a flaw from a regulatory point view and the main strength of the measure for practical purposes. In fact, in the early days of confinement, there was neither the time nor the resources to apply any kind of socio-economic targeting. Furthermore, as already mentioned, the temporary suspension of in-person customer services by the public administration would have impeded consumers to obtain the necessary documentation.",
+      "word_count": 83,
+      "char_count": 528
+    },
+    {
+      "chunk_index": 45,
+      "section": "Disconnection ban and payment extension plan",
+      "section_num": "4.3.1.",
+      "text": "Therefore, the initial lack of targeting cannot be subject to criticism. However, the Government could have considered some sort of mechanism to incentivise consumers to pay their bills in the due dates. For instance, customers could have been informed that the disconnection ban was going to be associated with an ex-post validation to check the socio-economic conditions of the households that benefitted from the measure, with the possibility of imposing sanctions to those who improperly took advantage. A similar approach was followed with the enhancement of the assistance programmes, but no control was applied to the disconnection ban.",
+      "word_count": 98,
+      "char_count": 643
+    },
+    {
+      "chunk_index": 46,
+      "section": "Disconnection ban and payment extension plan",
+      "section_num": "4.3.1.",
+      "text": "A completely different strategy was followed, for instance, in Colombia, where the regulator granted low-income electricity consumers a 36-month payment extension plan, but setting at the same time a 10% discount on the tariff for those low-income consumers who paid their bills in the due dates  [15] . The regulator preferred introducing an incentive instead of a sanction, but the objective was still to provide an economic signal for those household that could afford it to keep on paying their bills regardless of the presence of a disconnection ban.",
+      "word_count": 89,
+      "char_count": 555
+    },
+    {
+      "chunk_index": 47,
+      "section": "Enlargement of the pool of beneficiaries",
+      "section_num": "4.3.2.",
+      "text": "As other policy makers around the world (see the case of Minnesota in Section 2.3), the Spanish Government decided to enhance its assistance programmes during the pandemic. From a regulatory point of view, this approach has an important advantage with respect to other initiatives: most energy assistance programmes rely on a socio-economic targeting strategy, which usually involves both income and demand thresholds. All academic literature on energy consumption subsidies (  [42, 43] ) underlines the huge influence of the targeting strategy on the overall efficiency of any subsidy scheme. In order to maximise the impact of the budget dedicated to these protection measures, it is essential that the economic aid reaches only those consumers who actually need it, avoiding so-called inclusion errors.",
+      "word_count": 122,
+      "char_count": 805
+    },
+    {
+      "chunk_index": 48,
+      "section": "Enlargement of the pool of beneficiaries",
+      "section_num": "4.3.2.",
+      "text": "The Spanish Government took advantage of the targeting strategy of the social tariff for electricity when it introduced two new categories of beneficiaries, self-employed with an income reduction higher than 75% (since March 2020) and people who lost their job or suffered a contract suspension or reduction due to the pandemic (since September 2020). This approach has been certainly more efficient than granting untargeted subsidies, as the bill reductions or cancellations introduced in some jurisdictions (subsection 2.4). However, it must be remarked that the impact of this enlargement of the pool of beneficiaries was very small, as discussed in the previous section and shown in Fig.  4 . This raises several questions, once again, on the overall design of the social tariff, especially regarding the complexity of the enrolment process and the lack of information campaigns during the pandemic 8 .",
+      "word_count": 141,
+      "char_count": 906
+    },
+    {
+      "chunk_index": 49,
+      "section": "Lack of appropriate financing",
+      "section_num": "4.3.3.",
+      "text": "Differently from other governments (as the United States, Italy, or Brazil), Spain did not create specific budget lines to finance its protection measures. The only intervention that relied on some sort of financial support was the possibility granted to self-employed and SMEs to postpone the payment of energy bills (bank guarantees, as presented in Section 4.2.4). Nonetheless, through the initial disconnection ban, the Government granted this deferral possibility, de facto, to all residential customers, without considering any kind of financing for this measure. This situation could have created a serious financial stress to energy retailers, especially for smaller ones  [44] , right in a moment when the service they provide was essential for society. As mentioned in Section 2.5, several policy makers acknowledged this risk and allocated specific funding to their protection measures.",
+      "word_count": 133,
+      "char_count": 897
+    },
+    {
+      "chunk_index": 50,
+      "section": "Lack of appropriate financing",
+      "section_num": "4.3.3.",
+      "text": "In this context, it is also important to remember that the Spanish social tariff for electricity is an unfunded subsidy, whose budget must be covered by retailing companies (Section 3.2). As already mentioned, this regulatory design has no theoretical justification; the protection of vulnerable energy consumers is clearly a purpose of the state, which cannot be administratively grafted in the business model of a retailing company (unless the latter decides to include it in its strategy on corporate social responsibility).",
+      "word_count": 80,
+      "char_count": 527
+    },
+    {
+      "chunk_index": 51,
+      "section": "Lack of appropriate financing",
+      "section_num": "4.3.3.",
+      "text": "This flaw of the Spanish social tariff design could make the scheme unsustainable, if the total budget of the mechanism grows substantially due to the pandemic or the economic crisis that the Spanish society is still subject to. A possible solution to this problem may come from the implementation of the national strategy to tackle energy poverty. As mentioned in Section 3.1, the strategy foresees the introduction of an energy social bonus, which should incorporate the existing schemes and which is supposed to rely on a dedicated financing from the state budget. The Government should accelerate on this measure, in order to overcome one of the most relevant controversies in the design of the social bonuses.",
+      "word_count": 116,
+      "char_count": 714
+    },
+    {
+      "chunk_index": 52,
+      "section": "Conclusions",
+      "section_num": "5.",
+      "text": "The COVID-19 pandemic had and is still having a significant impact on energy poverty, exacerbating a problem that was already present in most energy sectors. Since the very beginning of the outbreak, governments around the world started introducing different kinds of protection measures, meant to guarantee energy supplies to all customers during lockdowns and to provide economic relief in the subsequent phases of the pandemic.",
+      "word_count": 65,
+      "char_count": 430
+    },
+    {
+      "chunk_index": 53,
+      "section": "Conclusions",
+      "section_num": "5.",
+      "text": "Spain, as one of the first countries to suffer the pandemic, was one of the pioneers in the introduction of these measures. Furthermore, the country had recently introduced a national strategy to tackle energy poverty and already relied on two energy assistance programmes. Starting from March 2020, the Spanish Government introduced several measures: an initial disconnection ban on main residences; an enhancement of the existing energy assistance programmes (automatic 8 For instance, the beneficiaries of the new category of self-employed with an income reduction higher than 75% had to submit their application to their retailing company and, in case of cessation of their economic activity, they had to submit the corresponding certificate to be issued by the taxation agency in charge, in a moment in which it was hard for users to have contacts with these agencies. Furthermore, there was no website summarising step by step, in a user-friendly way, the enrolment process; potential beneficiaries had to rely on the pieces of legislation introducing each emergency measure. renewal of enrolments and creating of new categories of beneficiaries); specific initiatives for the self-employed; and the creation of bank guarantees for retailers.",
+      "word_count": 190,
+      "char_count": 1248
+    },
+    {
+      "chunk_index": 54,
+      "section": "Conclusions",
+      "section_num": "5.",
+      "text": "These measures had mixed results and it is still not possible to quantify their impact on energy poverty. This article presented a qualitative assessment of these interventions. The disconnection ban was an essential measure to ensure energy supplies during confinement, but the ban and the possibility of postponing the payment of energy bills that it implied represent an economic aid that has not been properly targeted. The enhancement of the existing social assistance programmes was an efficient approach, since it allows to take advantage of the targeting strategy of these schemes, maximising the impact of the available budget; this being said, the enrolment in the new categories of beneficiaries introduced by the Government was minimal, potentially due to the complexity of the enrolment process and the lack of information campaigns during the pandemic. All these measures did not rely on a dedicated budget line and this added on the existing problems related with the financing of the Spanish social electricity tariff, which is currently paid by retailing companies. Hopefully, the new energy social bonus foreseen by the Spanish national strategy to tackle energy poverty will help overcome this flaw.",
+      "word_count": 189,
+      "char_count": 1218
+    },
+    {
+      "chunk_index": 55,
+      "section": "Conclusions",
+      "section_num": "5.",
+      "text": "The Spanish experience, with its effective approaches and its mistakes, is relevant to improve the design of emergency measure for the protection of energy consumers. This knowledge may be useful not only during future health crises, but also in case of extreme weather events, whose frequency and intensity is increasing due to climate change. Most of the measures analysed in this article may be relevant for an extreme weather event like, for instance, the one lived in Texas in winter 2021  9  . The majority of these events has durations shorter than an epidemic or a pandemic, but, contrary to what happened during COVID-19 lockdowns, they may coincide with stress events for the energy sector, which may produce sudden shortages and skyrocketing prices, further aggravating energy poverty. Due to the shorter duration of these events, a ban on disconnections for non-payments may not be needed, but it may still be useful to block those disconnection procedures initiated before the event but close to resolution, which may leave a household without energy in a very critical condition. On the other hand, the enhancement of existing energy assistance programmes (both enlarging the pool of beneficiaries or increasing the economic aid) may be very relevant and may provide economic relief to those families who have to face energy bills higher than usual. The same is true for payment extension plans, which would allow households in financial hardship to spread the extraordinary bills over time.",
+      "word_count": 241,
+      "char_count": 1505
+    },
+    {
+      "chunk_index": 56,
+      "section": "Conclusions",
+      "section_num": "5.",
+      "text": "The Spanish experience shows that emergency measures and the economic aid they provide must rely on a sound but flexible targeting strategy, capable of identifying consumers in need of support even when there is no time for burdensome administrative processes. It also highlights the importance of providing appropriate financing for those measures that may have a negative impact on the financial stability of retailing companies. Finally, initial data on the impact of some of the Spanish measures seem to underline the importance of accompanying these interventions with information campaigns that present them to the general public, with clear indications on how to access the economic aid.",
+      "word_count": 106,
+      "char_count": 694
+    }
+  ],
+  "body_text": "The COVID-19 pandemic, the confinement measures implemented to control it and the consequent economic crisis had a dramatic impact on the energy sector. Energy demand, energy market prices, new investments in the energy sector, CO 2 prices; all these parameters registered very large fluctuations during the different waves of the outbreak (  [1] [2] [3] [4] ). The pandemic also had a very direct impact on energy poverty. First, lockdowns forced people to stay home, increasing the energy consumption of the households and, consequently, energy bills, while several families were facing a reduction in their income, due to the unprecedented loss of jobs registered during the first phase of the outbreak (  [5, 6] ). Second, the global economic crisis produced by the pandemic (the world gross domestic product registered a contraction of 3.5% in 2020  [7] ) exacerbated poverty as such, thus increasing the risk of energy poverty for households. The governments of all the countries affected by COVID-19 acknowledged the aggravation of energy poverty and most of them promptly introduced emergency measures to protect energy consumers, particularly during the initial lockdowns, but also at later stages of the pandemic.  Mastropietro et al. (2020)    [8]  reviewed and classified these emergency measures at a global level.\n\nThe goal of this article is to focus on the impact of COVID-19 on energy poverty in Spain and to provide a critical assessment of the measures introduced by the Spanish Government to mitigate it. Spain was one of the first countries affected by the epidemic in Europe and, together with Italy, was one of the pioneers in the design of emergency measures for energy customers. Furthermore, Spain has a national strategy to tackle energy poverty and social tariffs for electricity and thermal needs; this allows to carry out a preliminary analysis of the evolution of the problem and the effectiveness of the measures. The article also compares the Spanish measures with those implemented worldwide during the pandemic and the best practices they provide. As discussed in the critical assessment, the Spanish approach presents both strengths, as the swift introduction of a disconnection ban and the enhancement of social tariffs and assistance programmes, and flaws, mainly related to the lack of appropriate financing for some of these measures. This analysis provides several insights, which may be relevant for regulators during future emergencies, not only related to pandemics, but also to extreme weather events, whose frequency and intensity is increasing due to climate change (  [9] ). As the 2021 energy crisis in Texas demonstrated  [10] , these extreme events may produce conditions similar to those experienced by many households worldwide during pandemic lockdowns 1 (need to spend more time home, increased vulnerability in case of disconnection, potentially larger energy bills), and also their occurrence may force governments to introduce protection measures.\n\nThe article is structured as follows. Section 2 presents a review of the emergency measures implemented internationally, which will allow to frame the Spanish interventions in a broader context. Section 3 centres the attention on Spain, introducing its national strategy to tackle energy poverty and the energy assistance programmes in place in the country. Section 4 analyses the impact of COVID-19 in Spain, presents the emergency measures introduced by the Government throughout the pandemic and provides a critical assessment. Section 5 concludes.\n\nThe emergency measures implemented worldwide to face the exacerbation of energy poverty during the pandemic can be classified in five broad categories: disconnection bans, payment extension plans, enhancement of energy assistance programmes, energy bill reduction or cancellation, and creation of specific funds foot_0  .\n\nA disconnection ban on energy contracts, even in case of nonpayment, was definitely the most widespread protection measure  [11]  and it was introduced in almost all the jurisdictions affected by the pandemic (with few exceptions, such as the Netherlands  [12] ). The clear goal of this measure was to guarantee a proper access to energy to all households during confinement. This intervention was commonly related to other measures, since governments implicitly had to define a protocol for unpaid bills.\n\nMany countries introduced the possibility for residential consumers in financial hardship to defer the payment of energy bills during confinement. In some cases, governments also defined the financial details of this deferral, e.g., impeding the application of any interest rate on unpaid bills  [12] . Very different durations for these extension plans can be found in international experiences, ranging from three months after the lifting of confinement in Germany, to six months in Italy  [13] , up to 24 months in Peru [14] or 36 months in Colombia  [15] .\n\nAnother difference in the design of this kind of measures was the targeting strategy. Although most of the jurisdictions that implemented extension plans specified that the latter were available only to those households who were facing financial hardship due to the pandemic, almost no government introduced specific requirements to be eligible for the deferral. Only few Latin American countries defined a proper targeting strategy. In Peru, the extension plan was available only for residential consumers with a demand lower than 100 kWh per month. In Colombia, where residential end-users are classified in several layers in the framework of a generalised cross-subsidy scheme for utility services, only consumers in layers 1 and 2 (low-income) could benefit from the 36-month deferral with no interest.\n\nSeveral jurisdictions around the world rely on energy assistance programmes, as social tariffs or energy cheques, to mitigate energy poverty. Some governments opted for strengthening these programmes during the pandemic. Some regulators decided to increase the economic aid that the households enrolled in the programme receive (e.g., New Zealand, where the winter energy payment was doubled  [16] ). Other regulators preferred to enlarge the pool of beneficiaries, including new categories or relaxing some of the requisites for enrolment in the existing ones (as the income eligibility criterion in the energy assistance programme of Minnesota, which temporarily focused on the previous one month  [17] ).\n\nSome governments decided to reduce or even to cancel the energy bills of residential customers for the duration of the lockdown, without any kind of targeting. For instance, electricity bills were administratively reduced in Cyprus  [12]  or Florida  [18] , while they were entirely covered through public funding in Bolivia  [11] .\n\nAll the protection measures presented so far could have an impact on the financial stability of retailing companies  [19] , whose accounts were already being challenged by the pandemic, due to the decrease in energy demand and prices. This prompted some governments to establish specific funds or dedicated budget lines to finance emergency measures. In the United States  [5] , the Government provided additional 900 M$ for the Low-Income Home Energy Assistance Program (LIHEAP). Italy created a 1500-M€ COVID account to guarantee the financial stability of retailing companies whose consumers were enrolling in the payment extension plan  [13] . Texas introduced a 0.33-USD/MWh surcharge in electricity tariffs to fund its COVID-19 Electricity Relief Program  [20] .\n\nEnergy poverty and vulnerability is a topic that is receiving increasing attention in Spain (  [21, 22] ). As mentioned in the introduction, Spain has recently launched a national strategy to tackle energy poverty and relies on two energy assistance programmes for energy consumers: a social tariff for electricity and an energy payment to cover part of the expenses related to the thermal needs of the household.\n\nIn 2019, before the pandemic, the Spanish Government officially approved the national strategy to tackle energy poverty 2019-2024  [23] . This document set a very high-level plan, but it was very relevant for its formal recognition of the problem and for the framework it introduced to analyse and monitor it. For the first time, energy poverty was officially defined as \"the situation of a household where the basic energy needs foot_1  cannot be satisfied as a consequence of an insufficient level of incomes and which, in some case, could be exacerbated due to the low energy efficiency of the dwelling\".\n\nThe national strategy also officially defines the indicators to be used to monitor energy poverty. Following the recommendations of the European Union Energy Poverty Observatory  [24] , the strategy identifies as indicators: i) the high share of energy expenditure in income, ii) the low absolute energy expenditure (also known as hidden energy poverty), iii) the inability to keep the dwelling adequately warm, and iv) the presence of arrears on utility bills 4 . These indicators were computed, based on the available statistical data, for recent years, as shown in Table  1 . Based on these indicators, the strategy also defines a minimum (25%) and a more ambitious (50%) reduction target for 2025.\n\nThe strategy considers different lines of actions to achieve these targets. Among them, the most relevant is probably the introduction of a so-called \"energy social bonus\", an energy assistance programme that should incorporate all the existing schemes (see the following subsection) and overcome some of the design flaws and controversial elements that characterise them. The main features of the new social bonus are summarised hereunder.\n\n• It will cover all household energy consumption, regardless of the energy vector and the final use.\n\n• The enrolment will be automatic and it will bring together all the institutions involved, especially in terms of data collection.\n\n• The design and operation of the subsidy will be coordinated with regional and municipal administrations, in order to align all interventions on energy poverty.\n\nThe national strategy also considers interventions on the energy efficiency of buildings (energy refurbishment), the introduction of a disconnection ban during extreme weather events, the definition of a baseline supply for vulnerable customers with unpaid bills, and the engagement of consumers through information campaigns.\n\nThe national strategy 2019-2024 is being subject to significant delays in its implementation due to the pandemic, which forced the Government to focus the legislative effort on the introduction of the emergency measures that will be presented in Section 4.2.\n\nThe main assistance programme used in Spain to tackle energy poverty has historically been the social electricity bonus. This social tariff, which was introduced in 2009 and underwent several reforms in the last decade (the last one in 2018), provides customers with discounts on prices and charges considered in the Spanish default electricity tariff 5 . The economic aid is targeted through socio-economic indicators (mainly based on the gross household income), through which three different categories are identified: vulnerable customers, severely vulnerable customers, and customers at risk of social marginalisation. These categories receive different discounts, ranging from 25% to 100%, subject to consumption limits that depend on the number of family members, as presented in Table  2 .\n\nThe most controversial feature of the Spanish social tariff for electricity is that it is not funded through the state budget or cross-subsidies, but its financing is left to retailing companies 6 , who appealed against this approach in both Spanish and European courts. The budget for the funding of the electricity bonus varies year by year; in 2019, it was equal to 139 M€  [29] . Another design element of the social tariff that has been frequently criticised is the lack of any income limit for large families (defined, in Spain, as families with three children or more). The definition of this category of beneficiaries without any income limit seems to represent a policy to promote higher birth rates, a target which transcends energy poverty 7 .\n\nThe social tariff for electricity was complemented, in 2018, by the socalled thermal bonus. The latter is a yearly payment made available to all beneficiaries of the social tariff for electricity (as enrolled at the end of the previous year), with the objective to help households cover their energy expenses related to thermal needs (mainly for space heating, regardless of the energy vector). The payment depends on the climatological zone that the dwelling belongs to, and it is further increased by a fixed percentage for severely vulnerable customers and customers at risk of social marginalisation (Fig.  1 ).\n\nThese payments are financed through public funding, with a yearly budget of 75 M€ in 2019, which is expected to grow in the following years. Some experts criticised the values of the payments, underlying their insufficiency to cope with energy expenses for thermal needs, especially in colder climates (  [31, 32] ).\n\nIn this section, the impact of the pandemic on the Spanish economy and residential energy demand will be studied first, to later focus on the emergency measures introduced by the Government to protect energy consumers. These interventions are then qualitatively assessed in the last subsection, also based on the review of international experiences presented in Section 2.\n\nSpain was one of the countries most affected by the COVID-19 pandemic, especially during the so-called first wave, in spring 2020, when it registered a daily death toll of more than 900 people  [33] . The lockdown imposed by the Government was one of the most severe in Europe and confined citizens in their dwellings, with different levels of restrictions, for more than two months.\n\nThe economy was dramatically affected by the lockdown. The interannual variation of the Spanish GDP registered a 21.6% plunge in Table  2  Main features of the Spanish social electricity bonus. 4 These are well known indicators in energy-poverty literature. EU EPO (2020)  [24]  defines them as follows: i) high share of energy expenditure in income: the proportion of households whose share of energy expenditure in income is more than twice the national median share; ii) low absolute energy expenditure: share of households whose absolute energy expenditure is below half the national median.; iii) inability to keep dwelling warm: share of population not able to keep their home adequately warm; iv) arrears on utility bills: share of population having arrears on utility bills. These indicators are calculated based on the results of different surveys. For details, see  [25] [26] [27] . 5 In order to be eligible for the social bonus, vulnerable customers must first enroll in the default tariff, the so-called PVPC (the voluntary price for small consumers, or Precio voluntario para el Pequeño Consumidor, in Spanish) 6 Retailers are not allowed to pass these costs through to consumers. It must be remarked that this approach does not have any theoretical justification and is rarely found in international experiences to finance energy assistance programmes. 7 Recently, the Government stated that this feature was under scrutiny and that it was planning to define income thresholds also for large families  [30] .\n\nthe second trimester of 2020  [34] . The employment rate fell by 6.05% in the same period (Fig.  2 ), while several enterprises (especially small and medium) applied for employment contract suspensions or reductions, which affected more than 2.5 million people  [35] . All these factors resulted in a significant reduction in the income and the purchasing power of many families. At the same time, the confinement and the suspension of several activities provoked a strong reduction in the national electricity demand  [2] , mainly driven by the industrial and commercial sectors. However, in the same period, residential demand grew significantly, due to the higher occupancy rates of households. Fig.  3  shows the daily load profiles of residential customers enrolled in the Spanish default tariff, a group that can be considered representative of the entire residential demand, in two days with the same temperature range in 2019 and during the pandemic in 2020. The chart shows a change in the demand pattern (as also observed in  [37] ) and a net increase in electricity demand close to 10%.\n\nThe combined effect of lower incomes and larger energy demand increased the risk of suffering energy poverty for several households  [39]  claims that this risk could have been much higher if the lockdown had happened in winter or summer months, when the energy demand for space heating or air conditioning is higher than in spring.\n\nThe Spanish Government took immediate action to protect energy consumers at the very beginning of the lockdown, in March 2020, and refined and continue applying these measures throughout the pandemic. All these interventions are presented in this subsection  [40] .\n\nThe first measure introduced by the Government, as in other countries, was a disconnection ban, which impeded energy retailers to cut supply even in case of prolonged non-payment. The ban applied on all main residences and encompassed also those disconnection processes for unpaid bills that had been initiated before the lockdown.\n\nThe measure was subject to several extensions, until September 2020, when the ban was eventually lifted. However, a new disconnection ban was introduced in December 2020, but this time it was applicable only to vulnerable customers. The ban could be enforced also for those vulnerable customers who did not have the supply contract in their name.\n\nThe design of the social tariff for electricity was temporarily   Load profiles for households enrolled in the PVPC and comparison between 2019 and 2020; data from esios  [38] .\n\nmodified to provide additional protection to customers. The first measure was to postpone the deadlines for the renewal of the enrolment in the social tariff. The latter must be renewed every two years, through a specific application and the delivery of documentation regarding the socio-economic status of the household. During the lockdown, it would have been complex, if not impossible, to collect this documentation and to deliver the application, due to the temporary suspension of in-person customer services by the public administration. Therefore, the Government opted for an automatic extension of all social tariff enrolment, which was lifted in September 2020. During the initial lockdown, the Government also introduced a new category of beneficiaries for the social tariff, in order to encompass also those self-employed who had to cease their activity due to the pandemic or had their invoicing reduced by more than 75% in comparison with the previous fiscal semester. The new category also considered a threshold on the income declared before the pandemic.\n\nFinally, in September 2020, the Government modified the eligibility criteria for vulnerable customers, focusing the assessment on the present economic conditions of each household. All unemployed people, employed people who suffered a suspension or reduction of their employment contract, and employed people who had to reduce their working hours in order to provide personal care to relatives could enrol in the social tariff. These relaxed eligibility criteria were in force until June 2021. In this case, the Government included sanctions for those users who applied and received the social tariff without fulfilling the requisites.\n\nBeyond the new category of the social electricity tariff, self-employed and small and medium enterprises (SMEs) were the target of other emergency measures regarding energy consumption. Although these interventions were not specifically designed to tackle energy poverty, they could still provide protection to those households where one of the members was self-employed.\n\nThe first measure was the relaxation of energy supply contracts, with the possibility of suspending the contracts or adapting them to the new consumption behaviour, without being subject to any fee from the retailing company. The second measure was the possibility of suspending the payment of energy bills for all connection points with a contract signed by a self-employed (including the main residence). In this case, the supply was not affected and new bills were generated, but the contract owner could ask to pay these bills after the lockdown was lifted. When a self-employed requested such energy bills deferral, retailing companies were allowed not to pay network charges and taxes on that consumption.\n\nThe Government considered that the measures specifically targeting self-employed and SMEs could have a negative impact on the liquidity of retailing companies and decided to create a line of bank guarantees for them, which was financed through the State budget. On the other hand, the Government did not consider any specific funding for the rest of emergency measures presented in this subsection.\n\nThe quantitative impact of the pandemic on energy poverty in Spain has not been studied yet by any institution. For the time being, the only useful information to understand the problem is the evolution of the number of beneficiaries of the social tariff for electricity, regularly published by the Spanish regulator. The categories showed in Fig.  4  are those presented in section 3.2, plus the new category introduced in March 2020 to protect self-employed workers as explained in Section 4.2.2 (COVID-19 in the chart).\n\nThe chart shows some discontinuities in the number of beneficiaries as a result of reforms in the design of the assistance programme, especially in terms of eligibility criteria and enrolment process. Before the COVID-19 outbreak, the number of beneficiaries was slowly increasing. This growing tendency was not related with an increase of the underlying problem, but rather it reflected the complexity of the enrolment process, with consumers being slowly registered after the last modifications.\n\nFocusing on the data for the pandemic months, the first element that can be identified, regrettably, is the drastic decrease in the number of beneficiaries of a specific category, the one of pensioners, which was greatly affected by the pandemic. The number of deaths among the elderly was so high that it can be observed also in the chart, with a plunge in the number of pensioners enrolled in the social tariff from 174,061 in October 2019 to 157,822 in April 2020. Beyond this effect, a modest increase in the rest of categories can be observed in the chart in the initial phase of the outbreak. However, this could be related with the previous tendency of the enrolment process and it may be not related with the pandemic.\n\nThe second datum of interest that can be extracted from the chart is the plunge in the number of beneficiaries registered in October 2020 (with more than 200,000 households losing the social tariff), when the Government lifted the automatic extension of the enrolment. This behaviour, although fully related with the pandemic and the emergency measures, reveals some of the main flaws in the current design of the social tariff, i.e., the complexity and the bureaucratic effort required for the enrolment or the renewal and the lack of information or customer service for vulnerable consumers.\n\nFinally, the last information that can be highlighted from Fig.  4  is the very low impact of the new categories of beneficiaries, mainly targeting self-employed people (dark blue in the chart). According to  [41] , only 4960 self-employed were enrolled in the social electricity tariff in July 2020, with their number rapidly decreasing since then. This figure is not very significant and it probably does not reflect the number of selfemployed who were actually affected by the economic crisis that the pandemic triggered.\n\nAfter this initial analysis on the evolution of beneficiaries, the rest of this subsection presents a qualitative critical assessment of the measures introduced by the Spanish Government, based on regulatory theory and the review of international experiences.\n\nThe disconnection ban was an essential measure to guarantee energy supplies for households during the worst phase of the lockdown. This intervention, originally introduced by Italy and Spain at the very beginning of the pandemic, was later implemented in the vast majority of jurisdictions affected by COVID-19.  The main disadvantage of this measure is that it does not rely on any targeting strategy. Furthermore, it is associated with another measure: if non-payment is not sanctioned through disconnection, all consumers covered by the ban are implicitly entitled to a bill deferral. If this payment extension plan is not subject to any interest rate, it represents an economic aid, which is provided without the application of any socioeconomic targeting or any consumption limit and that could reach also customers who do not actually need it.\n\nHowever, during an emergency situation as a pandemic, the lack of any targeting strategy is at the same time a flaw from a regulatory point view and the main strength of the measure for practical purposes. In fact, in the early days of confinement, there was neither the time nor the resources to apply any kind of socio-economic targeting. Furthermore, as already mentioned, the temporary suspension of in-person customer services by the public administration would have impeded consumers to obtain the necessary documentation.\n\nTherefore, the initial lack of targeting cannot be subject to criticism. However, the Government could have considered some sort of mechanism to incentivise consumers to pay their bills in the due dates. For instance, customers could have been informed that the disconnection ban was going to be associated with an ex-post validation to check the socio-economic conditions of the households that benefitted from the measure, with the possibility of imposing sanctions to those who improperly took advantage. A similar approach was followed with the enhancement of the assistance programmes, but no control was applied to the disconnection ban.\n\nA completely different strategy was followed, for instance, in Colombia, where the regulator granted low-income electricity consumers a 36-month payment extension plan, but setting at the same time a 10% discount on the tariff for those low-income consumers who paid their bills in the due dates  [15] . The regulator preferred introducing an incentive instead of a sanction, but the objective was still to provide an economic signal for those household that could afford it to keep on paying their bills regardless of the presence of a disconnection ban.\n\nAs other policy makers around the world (see the case of Minnesota in Section 2.3), the Spanish Government decided to enhance its assistance programmes during the pandemic. From a regulatory point of view, this approach has an important advantage with respect to other initiatives: most energy assistance programmes rely on a socio-economic targeting strategy, which usually involves both income and demand thresholds. All academic literature on energy consumption subsidies (  [42, 43] ) underlines the huge influence of the targeting strategy on the overall efficiency of any subsidy scheme. In order to maximise the impact of the budget dedicated to these protection measures, it is essential that the economic aid reaches only those consumers who actually need it, avoiding so-called inclusion errors.\n\nThe Spanish Government took advantage of the targeting strategy of the social tariff for electricity when it introduced two new categories of beneficiaries, self-employed with an income reduction higher than 75% (since March 2020) and people who lost their job or suffered a contract suspension or reduction due to the pandemic (since September 2020). This approach has been certainly more efficient than granting untargeted subsidies, as the bill reductions or cancellations introduced in some jurisdictions (subsection 2.4). However, it must be remarked that the impact of this enlargement of the pool of beneficiaries was very small, as discussed in the previous section and shown in Fig.  4 . This raises several questions, once again, on the overall design of the social tariff, especially regarding the complexity of the enrolment process and the lack of information campaigns during the pandemic 8 .\n\nDifferently from other governments (as the United States, Italy, or Brazil), Spain did not create specific budget lines to finance its protection measures. The only intervention that relied on some sort of financial support was the possibility granted to self-employed and SMEs to postpone the payment of energy bills (bank guarantees, as presented in Section 4.2.4). Nonetheless, through the initial disconnection ban, the Government granted this deferral possibility, de facto, to all residential customers, without considering any kind of financing for this measure. This situation could have created a serious financial stress to energy retailers, especially for smaller ones  [44] , right in a moment when the service they provide was essential for society. As mentioned in Section 2.5, several policy makers acknowledged this risk and allocated specific funding to their protection measures.\n\nIn this context, it is also important to remember that the Spanish social tariff for electricity is an unfunded subsidy, whose budget must be covered by retailing companies (Section 3.2). As already mentioned, this regulatory design has no theoretical justification; the protection of vulnerable energy consumers is clearly a purpose of the state, which cannot be administratively grafted in the business model of a retailing company (unless the latter decides to include it in its strategy on corporate social responsibility).\n\nThis flaw of the Spanish social tariff design could make the scheme unsustainable, if the total budget of the mechanism grows substantially due to the pandemic or the economic crisis that the Spanish society is still subject to. A possible solution to this problem may come from the implementation of the national strategy to tackle energy poverty. As mentioned in Section 3.1, the strategy foresees the introduction of an energy social bonus, which should incorporate the existing schemes and which is supposed to rely on a dedicated financing from the state budget. The Government should accelerate on this measure, in order to overcome one of the most relevant controversies in the design of the social bonuses.\n\nThe COVID-19 pandemic had and is still having a significant impact on energy poverty, exacerbating a problem that was already present in most energy sectors. Since the very beginning of the outbreak, governments around the world started introducing different kinds of protection measures, meant to guarantee energy supplies to all customers during lockdowns and to provide economic relief in the subsequent phases of the pandemic.\n\nSpain, as one of the first countries to suffer the pandemic, was one of the pioneers in the introduction of these measures. Furthermore, the country had recently introduced a national strategy to tackle energy poverty and already relied on two energy assistance programmes. Starting from March 2020, the Spanish Government introduced several measures: an initial disconnection ban on main residences; an enhancement of the existing energy assistance programmes (automatic 8 For instance, the beneficiaries of the new category of self-employed with an income reduction higher than 75% had to submit their application to their retailing company and, in case of cessation of their economic activity, they had to submit the corresponding certificate to be issued by the taxation agency in charge, in a moment in which it was hard for users to have contacts with these agencies. Furthermore, there was no website summarising step by step, in a user-friendly way, the enrolment process; potential beneficiaries had to rely on the pieces of legislation introducing each emergency measure. renewal of enrolments and creating of new categories of beneficiaries); specific initiatives for the self-employed; and the creation of bank guarantees for retailers.\n\nThese measures had mixed results and it is still not possible to quantify their impact on energy poverty. This article presented a qualitative assessment of these interventions. The disconnection ban was an essential measure to ensure energy supplies during confinement, but the ban and the possibility of postponing the payment of energy bills that it implied represent an economic aid that has not been properly targeted. The enhancement of the existing social assistance programmes was an efficient approach, since it allows to take advantage of the targeting strategy of these schemes, maximising the impact of the available budget; this being said, the enrolment in the new categories of beneficiaries introduced by the Government was minimal, potentially due to the complexity of the enrolment process and the lack of information campaigns during the pandemic. All these measures did not rely on a dedicated budget line and this added on the existing problems related with the financing of the Spanish social electricity tariff, which is currently paid by retailing companies. Hopefully, the new energy social bonus foreseen by the Spanish national strategy to tackle energy poverty will help overcome this flaw.\n\nThe Spanish experience, with its effective approaches and its mistakes, is relevant to improve the design of emergency measure for the protection of energy consumers. This knowledge may be useful not only during future health crises, but also in case of extreme weather events, whose frequency and intensity is increasing due to climate change. Most of the measures analysed in this article may be relevant for an extreme weather event like, for instance, the one lived in Texas in winter 2021  9  . The majority of these events has durations shorter than an epidemic or a pandemic, but, contrary to what happened during COVID-19 lockdowns, they may coincide with stress events for the energy sector, which may produce sudden shortages and skyrocketing prices, further aggravating energy poverty. Due to the shorter duration of these events, a ban on disconnections for non-payments may not be needed, but it may still be useful to block those disconnection procedures initiated before the event but close to resolution, which may leave a household without energy in a very critical condition. On the other hand, the enhancement of existing energy assistance programmes (both enlarging the pool of beneficiaries or increasing the economic aid) may be very relevant and may provide economic relief to those families who have to face energy bills higher than usual. The same is true for payment extension plans, which would allow households in financial hardship to spread the extraordinary bills over time.\n\nThe Spanish experience shows that emergency measures and the economic aid they provide must rely on a sound but flexible targeting strategy, capable of identifying consumers in need of support even when there is no time for burdensome administrative processes. It also highlights the importance of providing appropriate financing for those measures that may have a negative impact on the financial stability of retailing companies. Finally, initial data on the impact of some of the Spanish measures seem to underline the importance of accompanying these interventions with information campaigns that present them to the general public, with clear indications on how to access the economic aid.",
+  "page_dims": [
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 793.7009887695312
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 793.7009887695312
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 793.7009887695312
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 793.7009887695312
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 793.7009887695312
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 793.7009887695312
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 793.7009887695312
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 793.7009887695312
+    }
+  ],
+  "filename": "2U452PHP.pdf",
+  "file_size_kb": 2571.23,
+  "throughput": {
+    "processing_time_s": 3.615,
+    "file_size_kb": 2571.23,
+    "total_pages": 8,
+    "total_words": 5586,
+    "total_chars": 35936,
+    "pages_per_second": 2.213,
+    "words_per_second": 1545.2,
+    "chars_per_second": 9940.8,
+    "kb_per_second": 711.27,
+    "seconds_per_page": 0.452,
+    "seconds_per_1k_words": 0.647,
+    "seconds_per_1k_chars": 0.101
+  },
+  "total_pages": 8,
+  "total_words": 5586,
+  "total_chars": 35936,
+  "reference_count_approx": 41
+}

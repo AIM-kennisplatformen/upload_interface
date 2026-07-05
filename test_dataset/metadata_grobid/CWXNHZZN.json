@@ -1,0 +1,999 @@
+{
+  "title": "BIM Dimensions and Application Areas for Enhancing Sustainability and Affordability of Affordable Housing: As a Key for Effective Housing Policies",
+  "abstract": "Affordable housing plays a key role in well-being and sustainable development. The energy efficiency and sustainability performance of these houses support environmental sustainability and reduce their operational cost and energy consumption. Furthermore, enhanced energy efficiency is a significant factor in affordable houses in the fight against fuel poverty. This paper underlines the importance of sustainable affordable houses for reduced life cycle costs and enhanced welfare and well-being of its residents.",
+  "authors": [
+    "Begum Sertyesilisik",
+    "Egemen Sertyesilisik",
+    "Hakan Taha Çetin",
+    "Emre Ocakoglu"
+  ],
+  "doi": "10.3311/ppar.17081",
+  "issn": "0324-590X",
+  "isbn": null,
+  "keywords": [
+    "BIM for sustainable and affordable housing",
+    "affordable housing",
+    "technologies",
+    "policies",
+    "energy management",
+    "facility management",
+    "BIM",
+    "political economy"
+  ],
+  "affiliations": [
+    "Department of Architecture, Faculty of Architecture, Izmir Democracy University, Üçkuyular Mahallesi Gürsel Aksel Bulvarı No: 14, 35140, Izmir, Turkey",
+    "Gozuyilmaz Engineering and Marine Industries Ltd, Sasalı Merkez Mah. 43 Sk. No: 25, 35621, Izmir, Turkey",
+    "Ocakoğlu Mimarlık A.Ş, Istanbul Dünya Ticaret Merkezi EGS Business Park, Atatürk Cad. No: 12 B1 Blok Kat: 4 No: 201 Yeşilköy, 34149, Bakırköy Istanbul, Turkey"
+  ],
+  "acknowledgements": null,
+  "funding_statements": [],
+  "document_type_hints": [],
+  "literature_type": null,
+  "emails": [
+    "begum.sertyesilisik@idu.edu.tr"
+  ],
+  "urls": [],
+  "publisher": "Periodica Polytechnica Budapest University of Technology and Economics",
+  "journal": "Periodica Polytechnica Architecture",
+  "volume": "52",
+  "issue": "1",
+  "pages": "85-93",
+  "year": "2021",
+  "references": [
+    {
+      "title": "Economic sustainability assessment of residential buildings: A dedicated assessment framework and implications for BIM",
+      "authors": [
+        "T Ahmad",
+        "M J Thaheem"
+      ],
+      "doi": "10.1016/j.scs.2018.01.035",
+      "venue": "Sustainable Cities and Society",
+      "year": "2018",
+      "volume": "38",
+      "url": "https://doi.org/10.1016/j.scs.2018.01.035"
+    },
+    {
+      "title": "Use of BIM for Social Housing Management",
+      "authors": [
+        "L Alileche",
+        "I Shahrour"
+      ],
+      "venue": "17 th International Conference on Computing in Civil and Building Engineering",
+      "year": "2018"
+    },
+    {
+      "authors": [
+        "P Barnes",
+        "N Davies"
+      ],
+      "title": "BIM in Principle and in Practice",
+      "year": "2014",
+      "publisher": "ICE Publishing",
+      "url": "https://doi.org/10.1680/bimpp.58637.019"
+    },
+    {
+      "title": "Enhancing energy efficiency in residential buildings through the use of BIM: The case for embedding parameters during design",
+      "authors": [
+        "S Beazley",
+        "E Heffernan",
+        "T J Mccarthy"
+      ],
+      "doi": "10.1016/j.egypro.2017.07.479",
+      "venue": "Energy Procedia",
+      "year": "2017",
+      "volume": "121",
+      "url": "https://doi.org/10.1016/j.egypro.2017.07.479"
+    },
+    {
+      "authors": [
+        "Bionova Ltd"
+      ],
+      "title": "Using Building Information Models (BIM) in social housing sustainability development",
+      "year": "2017",
+      "url": "https://www.oneclicklca.com/wp-content/uploads/2017/12/ARA-use-of-BIM-for-life-cycle-efficiency-of-social-housing-11-Dec-2017.pdf"
+    },
+    {
+      "title": "A methodology for contractor clash detection using Building Information Modelling on commercial construction projects",
+      "authors": [
+        "D Bockstael",
+        "M H Issa"
+      ],
+      "venue": "Journal of Information Technology in Construction",
+      "year": "2016",
+      "volume": "21",
+      "url": "http://www.itcon.org/2016/16"
+    },
+    {
+      "title": "Design Drivers for Affordable and Sustainable Housing in Developing Countries",
+      "authors": [
+        "J Bruen",
+        "K Hadjri",
+        "J Von Meding"
+      ],
+      "doi": "10.17265/1934-7359/2013.10.005",
+      "venue": "Journal of Civil Engineering and Architecture",
+      "year": "2013",
+      "volume": "7",
+      "issue": "10",
+      "url": "https://doi.org/10.17265/1934-7359/2013.10.005"
+    },
+    {
+      "title": "Optimising building sustainability assessment using BIM",
+      "authors": [
+        "J P Carvalho",
+        "L Bragança",
+        "R Mateus"
+      ],
+      "doi": "10.1016/j.autcon.2019.02.021",
+      "venue": "Automation in Construction",
+      "year": "2019",
+      "volume": "102",
+      "url": "https://doi.org/10.1016/j.autcon.2019.02.021"
+    },
+    {
+      "title": "In search of behavioural and social levers for effective social housing retrofit programs",
+      "authors": [
+        "N Dellavalle",
+        "A Bisello",
+        "J Balest"
+      ],
+      "doi": "10.1016/j.enbuild.2018.05.002",
+      "venue": "Energy and Buildings",
+      "year": "2018",
+      "volume": "172",
+      "url": "https://doi.org/10.1016/j.enbuild.2018.05.002"
+    },
+    {
+      "title": "The Right to Buy public housing in Britain: A welfare analysis",
+      "authors": [
+        "R Disney",
+        "G Luo"
+      ],
+      "doi": "10.1016/j.jhe.2017.01.005",
+      "venue": "Journal of Housing Economics",
+      "year": "2017",
+      "volume": "35",
+      "url": "https://doi.org/10.1016/j.jhe.2017.01.005"
+    },
+    {
+      "authors": [
+        "J F Dowhower"
+      ],
+      "title": "Adapting building information modeling (BIM) for affordable & sustainable housing",
+      "year": "2010"
+    },
+    {
+      "title": "Evaluating the benefits of BIM for sustainable design -A review",
+      "authors": [
+        "R M Dowsett",
+        "C F Harty"
+      ],
+      "venue": "29 th Annual Association of Researchers in Construction Management Conference (ARCOM)",
+      "year": "2013",
+      "url": "https://www.arcom.ac.uk/-docs/proceedings/ar2013-0013-0023_Dowsett_Harty.pdf"
+    },
+    {
+      "title": "Sustainability-led design: Feasibility of incorporating whole-life cycle energy assessment into BIM for refurbishment projects",
+      "authors": [
+        "R E Edwards",
+        "E Lou",
+        "A Bataw",
+        "S N Kamaruzzaman",
+        "C Johnson"
+      ],
+      "doi": "10.1016/j.jobe.2019.01.027",
+      "venue": "Journal of Building Engineering",
+      "year": "2019",
+      "volume": "24",
+      "page": "100697",
+      "url": "https://doi.org/10.1016/j.jobe.2019.01.027"
+    },
+    {
+      "title": "An Empirical Study on the Acceptance of 4D BIM in EPC Projects in China",
+      "authors": [
+        "P Gong",
+        "N Zeng",
+        "K Ye",
+        "M König"
+      ],
+      "doi": "10.3390/su11051316",
+      "venue": "Sustainability",
+      "year": "2019",
+      "volume": "11",
+      "issue": "5",
+      "url": "https://doi.org/10.3390/su11051316"
+    },
+    {
+      "title": "Implementing post-occupancy evaluation in social housing complemented with BIM: A case study in Chile",
+      "authors": [
+        "A Gonzalez-Caceres",
+        "A Bobadilla",
+        "J Karlshøj"
+      ],
+      "doi": "10.1016/j.buildenv.2019.05.019",
+      "venue": "Building and Environment",
+      "year": "2019",
+      "volume": "158",
+      "url": "https://doi.org/10.1016/j.buildenv.2019.05.019"
+    },
+    {
+      "title": "Affordable housing: Policy and practice in India",
+      "authors": [
+        "K Gopalan",
+        "M Venkataraman"
+      ],
+      "doi": "10.1016/j.iimb.2015.03.003",
+      "venue": "IIMB Management Review",
+      "year": "2015",
+      "volume": "27",
+      "issue": "2",
+      "url": "https://doi.org/10.1016/j.iimb.2015.03.003"
+    },
+    {
+      "title": "A facility manager's approach to sustainability",
+      "authors": [
+        "C P Hodges"
+      ],
+      "doi": "10.1108/14725960510630498",
+      "venue": "BIM for Facility Managers",
+      "year": "2005",
+      "volume": "3",
+      "publisher": "Wiley",
+      "url": "https://doi.org/10.1108/14725960510630498InternationalFacilityManagementAssociation"
+    },
+    {
+      "title": "Sustainabilitybased Lifecycle Management for Bridge Infrastructure Using 6D BIM",
+      "authors": [
+        "S Kaewunruen",
+        "J Sresakoolchai",
+        "Z Zhou"
+      ],
+      "doi": "10.3390/su12062436",
+      "venue": "Sustainability",
+      "year": "2020",
+      "volume": "12",
+      "issue": "6",
+      "url": "https://doi.org/10.3390/su12062436"
+    },
+    {
+      "title": "Enabling affordable housing for all -issues and challenges",
+      "authors": [
+        "H R Khan"
+      ],
+      "venue": "Growth with stability in affordable housing markets",
+      "year": "2012",
+      "url": "https://www.bis.org/review/r120417f.pdf"
+    },
+    {
+      "title": "BIM-Based 4D Simulation to Improve Module Manufacturing Productivity for Sustainable Building Projects",
+      "authors": [
+        "J Lee",
+        "J Kim"
+      ],
+      "doi": "10.3390/su9030426",
+      "venue": "Sustainability",
+      "year": "2017",
+      "volume": "9",
+      "issue": "3",
+      "url": "https://doi.org/10.3390/su9030426"
+    },
+    {
+      "title": "Towards sustainable construction: BIM-enabled design and planning of roof sheathing installation for prefabricated buildings",
+      "authors": [
+        "H Liu",
+        "C Sydora",
+        "M S Altaf",
+        "S H Han",
+        "M Al-Huseein"
+      ],
+      "doi": "10.1016/j.jclepro.2019.07.055",
+      "venue": "Journal of Cleaner Production",
+      "year": "2019",
+      "volume": "235",
+      "url": "https://doi.org/10.1016/j.jclepro.2019.07.055"
+    },
+    {
+      "title": "The Business Value of BIM: Getting Building Information Modeling to the Bottom Line",
+      "authors": [],
+      "venue": "SmartMarket Report",
+      "year": "2009",
+      "publisher": "McGraw-Hill Construction",
+      "url": "http://images.autodesk.com/adsk/files/final_2009_bim_smartmarket_report.pdf"
+    },
+    {
+      "title": "Affordable Housing as a Method for Informal Settlements Sustainable Upgrading",
+      "authors": [
+        "A E Menshawy",
+        "S Shafik",
+        "F Khedr"
+      ],
+      "doi": "10.1016/j.sbspro.2016.05.330",
+      "venue": "Procedia -Social and Behavioral Sciences",
+      "year": "2016",
+      "volume": "223",
+      "url": "https://doi.org/10.1016/j.sbspro.2016.05.330"
+    },
+    {
+      "authors": [
+        "J Mitchell",
+        "H Schevers"
+      ],
+      "title": "Building Information Modelling for FM at Sydney Opera House",
+      "year": "2005",
+      "url": "https://eprints.qut.edu.au/26815/1/26815.pdf"
+    },
+    {
+      "title": "Towards A Sustainable Supply of Affordable Housing with Prefabrication Technology: An Overview",
+      "authors": [
+        "Mohamed Aris",
+        "N A Fathi",
+        "M S Harun",
+        "A N Mohamed",
+        "Z"
+      ],
+      "venue": "Journal of Advanced Research in Business and Management Studies",
+      "year": "2019",
+      "volume": "15",
+      "issue": "1",
+      "url": "http://www.akademiabaru.com/doc/ARBMSV15_N1_P1_13.pdf"
+    },
+    {
+      "title": "Addressing the challenges of public housing retrofits",
+      "authors": [
+        "C S Monteiro",
+        "F Causone",
+        "S Cunha",
+        "A Pina",
+        "S Erba"
+      ],
+      "doi": "10.1016/j.egypro.2017.09.600",
+      "venue": "Energy Procedia",
+      "year": "2017",
+      "volume": "134",
+      "url": "https://doi.org/10.1016/j.egypro.2017.09.600"
+    },
+    {
+      "title": "Sustainability and Energy Efficiency: BIM 6D. Study of the BIM Methodology Applied to Hospital Buildings. Value of Interior Lighting and Daylight in Energy Simulation",
+      "authors": [
+        "F J Montiel-Santiago",
+        "M J Hermoso-Orzáez",
+        "J Terrados-Cepeda"
+      ],
+      "doi": "10.3390/su12145731",
+      "venue": "Sustainability",
+      "year": "2020",
+      "volume": "12",
+      "issue": "14",
+      "url": "https://doi.org/10.3390/su12145731"
+    },
+    {
+      "title": "Application of a BIM-based Data Model for the Evaluation of Real-time Building Energy Performance in the Operational Stage",
+      "authors": [
+        "H J Moon",
+        "M S Choi"
+      ],
+      "venue": "ASim2014: The 2 nd Asia conference of International Building Performance Simulation Association",
+      "year": "2014",
+      "url": "http://ibpsa.org/proceedings/asim2014/071_AsimB2-28-376.pdf"
+    },
+    {
+      "title": "Benefits and challenges of energy efficient social housing",
+      "authors": [
+        "T Moore",
+        "L Nicholls",
+        "Y Strengers",
+        "C Maller",
+        "R Horne"
+      ],
+      "doi": "10.1016/j.egypro.2017.08.031",
+      "venue": "Energy Procedia",
+      "year": "2017",
+      "volume": "121",
+      "url": "https://doi.org/10.1016/j.egypro.2017.08.031"
+    },
+    {
+      "title": "Housing Affordability and Income-threshold in Social Housing Policy",
+      "authors": [
+        "G Napoli",
+        "M R Trovato",
+        "S Giuffrida"
+      ],
+      "doi": "10.1016/j.sbspro.2016.05.345",
+      "venue": "Procedia -Social and Behavioral Sciences",
+      "year": "2016",
+      "volume": "223",
+      "url": "https://doi.org/10.1016/j.sbspro.2016.05.345"
+    },
+    {
+      "title": "Enhancing Facility Management through BIM 6D",
+      "authors": [
+        "A K Nical",
+        "W Wodynski"
+      ],
+      "doi": "10.1016/j.proeng.2016.11.623",
+      "venue": "Procedia Engineering",
+      "year": "2016",
+      "volume": "164",
+      "url": "https://doi.org/10.1016/j.proeng.2016.11.623"
+    },
+    {
+      "title": "The application and barriers of BIM in sustainable building design",
+      "authors": [
+        "O Oduyemi",
+        "M I Okoroh",
+        "O S Fajana"
+      ],
+      "doi": "10.1108/JFM-03-2016-0008",
+      "venue": "Journal of Facilities Management",
+      "year": "2017",
+      "volume": "15",
+      "issue": "1",
+      "url": "https://doi.org/10.1108/JFM-03-2016-0008"
+    },
+    {
+      "title": "Building the case for housing policy: Understanding public beliefs about housing affordability as a key social determinant of health",
+      "authors": [
+        "S E Ortiz",
+        "B L Johannes"
+      ],
+      "doi": "10.1016/j.ssmph.2018.08.008",
+      "venue": "SSM -Population Health",
+      "year": "2018",
+      "volume": "6",
+      "url": "https://doi.org/10.1016/j.ssmph.2018.08.008"
+    },
+    {
+      "title": "Prefabrication 4.0: BIM-aided design of sustainable DIY-oriented houses",
+      "authors": [
+        "K Ostrowska-Wawryniuk"
+      ],
+      "doi": "10.1177/1478077120966496",
+      "venue": "International Journal of Architectural Computing",
+      "year": "2020",
+      "url": "https://doi.org/10.1177/1478077120966496"
+    },
+    {
+      "title": "Critical Success Factors (CSFs) for achieving sustainable social housing (SSH)",
+      "authors": [
+        "A O Oyebanji",
+        "C Liyanage",
+        "A Akintoye"
+      ],
+      "doi": "10.1016/j.ijsbe.2017.03.006",
+      "venue": "International Journal of Sustainable Built Environment",
+      "year": "2017",
+      "volume": "6",
+      "issue": "1",
+      "url": "https://doi.org/10.1016/j.ijsbe.2017.03.006"
+    },
+    {
+      "title": "Optimizing Energy Efficiency in Operating Built Environment Assets through Building Information Modeling: A Case Study",
+      "authors": [
+        "I Petri",
+        "S Kubicki",
+        "Y Rezgui",
+        "A Guerriero",
+        "H Li"
+      ],
+      "doi": "10.3390/en10081167",
+      "venue": "Energies",
+      "year": "2017",
+      "volume": "10",
+      "issue": "8",
+      "page": "1167",
+      "url": "https://doi.org/10.3390/en10081167"
+    },
+    {
+      "title": "The Role of BIM in retrofitting works within the UK social housing sector",
+      "authors": [
+        "S Phillips",
+        "T Forman"
+      ],
+      "venue": "Journal of Building Survey, Appraisal and Valuation",
+      "year": "2018",
+      "volume": "7",
+      "issue": "3",
+      "url": "https://openresearch.lsbu.ac.uk/item/86979"
+    },
+    {
+      "title": "Preliminary study of the condition of social housing in the city of Durango, México",
+      "authors": [
+        "C K Romero-Pérez",
+        "N A Rodríguez-Muñoz",
+        "M G Alpuche-Cruz",
+        "I R Martín-Domínguez"
+      ],
+      "doi": "10.1016/j.egypro.2017.09.594",
+      "venue": "Energy Procedia",
+      "year": "2017",
+      "volume": "134",
+      "url": "https://doi.org/10.1016/j.egypro.2017.09.594"
+    },
+    {
+      "title": "BIM for sustainable whole-of-life transport infrastructure asset management",
+      "authors": [
+        "A Sanchez",
+        "J Kraatz",
+        "K Hampson",
+        "S Loganathan"
+      ],
+      "venue": "Sustainability in Public Works Conference",
+      "year": "2014",
+      "url": "https://eprints.qut.edu.au/74457/"
+    },
+    {
+      "title": "Effective affordable housing strategies",
+      "authors": [
+        "B Sertyesilisik"
+      ],
+      "venue": "Recent Advances in Energy Conservation Techniques for Buildings: From Micro Scale to Urban Level",
+      "year": "2019",
+      "publisher": "Coventry University Press"
+    },
+    {
+      "title": "Building monitoring system in a large social housing intervention in Northern Italy",
+      "authors": [
+        "E Sirombo",
+        "M Filippi",
+        "A Catalano",
+        "A Sica"
+      ],
+      "doi": "10.1016/j.egypro.2017.11.151",
+      "venue": "Energy Procedia",
+      "year": "2017",
+      "volume": "140",
+      "url": "https://doi.org/10.1016/j.egypro.2017.11.151"
+    },
+    {
+      "authors": [
+        "A Slattery"
+      ],
+      "title": "Is there a role for BIM in the maintenance of social housing?",
+      "year": "2019",
+      "url": "https://doi.org/10.13140/RG.2.2.16553.34405"
+    },
+    {
+      "title": "Life cycle cost of different Walling material used for affordable housing in tropics",
+      "authors": [
+        "C Udawattha",
+        "R Halwatura"
+      ],
+      "doi": "10.1016/j.cscm.2017.04.005",
+      "venue": "Case Studies in Construction Materials",
+      "year": "2017",
+      "volume": "7",
+      "url": "https://doi.org/10.1016/j.cscm.2017.04.005"
+    },
+    {
+      "title": "Indicator based sustainability assessment tool for affordable housing construction technologies",
+      "authors": [
+        "H Wallbaum",
+        "Y Ostermeyer",
+        "C Salzer",
+        "E Zea Escamilla"
+      ],
+      "doi": "10.1016/j.ecolind.2011.12.005",
+      "venue": "Ecological Indicators",
+      "year": "2012",
+      "volume": "18",
+      "url": "https://doi.org/10.1016/j.ecolind.2011.12.005"
+    },
+    {
+      "title": "As-Built Residential Building Information Collection and Modeling Methods for Energy Analysis",
+      "authors": [
+        "C Wang",
+        "Y Peng",
+        "Y Cho",
+        "H Li"
+      ],
+      "venue": "28 th International Symposium on Automation and Robotics in Construction (ISARC 2011)",
+      "year": "2011",
+      "url": "https://www.irbnet.de/daten/iconda/CIB_DC23633.pdf"
+    },
+    {
+      "title": "Shelter from the Storm: Roles, responsibilities, and challenges in United States housing policy governance",
+      "authors": [
+        "C Willison"
+      ],
+      "doi": "10.1016/j.healthpol.2017.08.002",
+      "venue": "Health Policy",
+      "year": "2017",
+      "volume": "121",
+      "issue": "11",
+      "url": "https://doi.org/10.1016/j.healthpol.2017.08.002"
+    },
+    {
+      "title": "BIM adoption towards the sustainability of construction industry in Indonesia",
+      "authors": [
+        "R J Zhabrinna",
+        "M Davies",
+        "M M A Pratama",
+        "M Yusuf"
+      ],
+      "doi": "10.1051/matecconf/201819506003",
+      "venue": "MATEC Web of Conferences",
+      "year": "2018",
+      "volume": "195",
+      "issue": "5",
+      "url": "https://doi.org/10.1051/matecconf/201819506003"
+    }
+  ],
+  "figures": [
+    {
+      "type": "figure",
+      "label": "1",
+      "head": "Fig. 1",
+      "description": "Fig. 1 Expected advantages of enhancing sustainability performance of affordable houses",
+      "bbox": {
+        "page": 5,
+        "x": 314.42,
+        "y": 594.84,
+        "w": 234.46,
+        "h": 191.22
+      },
+      "rows": null
+    },
+    {
+      "type": "figure",
+      "label": "2",
+      "head": "Fig. 2",
+      "description": "Fig. 2 Relationship among sustainability, affordability and BIM",
+      "bbox": {
+        "page": 6,
+        "x": 58.9,
+        "y": 97.8,
+        "w": 209.6,
+        "h": 118.67
+      },
+      "rows": null
+    },
+    {
+      "type": "table",
+      "label": "1",
+      "head": "Table 1",
+      "description": "BIM dimensions and their relationship with affordability and sustainability",
+      "bbox": {
+        "page": 3,
+        "x": 60.69,
+        "y": 389.92,
+        "w": 484.89,
+        "h": 390.81
+      },
+      "rows": [
+        [
+          "BIM dimensions",
+          "Application areas (Barnes and Davies, 2014)",
+          "Affordability aspect",
+          "References",
+          "Pillars of sustainability",
+          "References"
+        ],
+        [
+          "",
+          "Clash detection",
+          "Reduced rework, minimised waste, cost-saving, decreased initial cost",
+          "(Bockstael and Issa, 2016)",
+          "Economic, Environmental",
+          "(Zhabrinna et al., 2018)"
+        ],
+        [
+          "3D BIM",
+          "Prefabrication",
+          "Minimised waste, decreased initial cost, better quality, improved schedule",
+          "(Mohamed Aris et al., 2019)",
+          "Economic, Environmental",
+          "(Mohamed Aris et al., 2019; Liu et al., 2019; Ostrowska-Wawryniuk, 2020)"
+        ],
+        [
+          "4D BIM",
+          "Construction planning and management",
+          "Early involvement of stakeholders, cost-saving, reduced schedule, manufacturing sustainable materials",
+          "(Lee and Kim, 2017; Gong et al., 2019)",
+          "Economic, Environmental",
+          "(Lee and Kim, 2017; Gong et al., 2019)"
+        ],
+        [
+          "5D BIM",
+          "Whole-life cost and lifecycle cost (LCC)",
+          "Early-stage analyses, decreased LCC",
+          "(Ahmad and Thaheem, 2018)",
+          "Economic, Environmental",
+          "(Ahmad and Thaheem, 2018)"
+        ],
+        [
+          "",
+          "Energy",
+          "Early-stage analyses, decreased LCC, design alternatives",
+          "(Barnes and Davies, 2014)",
+          "Economic, Environmental",
+          "(Barnes and Davies, 2014)"
+        ],
+        [
+          "6D BIM",
+          "Lifecycle analysis",
+          "Material and building element analyses, reduced waste, reduced embodied water",
+          "(Barnes and Davies, 2014)",
+          "Economic, Environmental",
+          "(Barnes and Davies, 2014)"
+        ],
+        [
+          "",
+          "Improved space management",
+          "Reduced errors, decreased LCC",
+          "(Nical and Wodynski, 2016; Kaewunruen et al., 2020)",
+          "Economic, Environmental",
+          "(Nical and Wodynski, 2016; Kaewunruen et al., 2020)"
+        ],
+        [
+          "",
+          "Streamlined",
+          "Condition monitoring,",
+          "(Nical and Wodynski,",
+          "Economic,",
+          "(Nical and Wodynski,"
+        ],
+        [
+          "",
+          "maintenance",
+          "accessibility, decreased LCC",
+          "2016)",
+          "Environmental",
+          "2016)"
+        ],
+        [
+          "7D BIM",
+          "Efficient use of energy",
+          "Early involvement, material selection, decreased LCC, energy analyses and control, reduced carbon footprint",
+          "(Nical and Wodynski, 2016; Kaewunruen et al., 2020; Montiel-Santiago et al., 2020)",
+          "Economic, Environmental, Social",
+          "(Nical and Wodynski, 2016; Kaewunruen et al., 2020; Montiel-Santiago et al., 2020)"
+        ],
+        [
+          "",
+          "Economical renovations",
+          "Decreased LCC",
+          "(Barnes and Davies, 2014)",
+          "Economic",
+          "(Barnes and Davies, 2014)"
+        ],
+        [
+          "",
+          "Lifecycle management",
+          "Early involvement, decreased LCC, optimised embodied energy and operating energy",
+          "(Edwards et al., 2019; Montiel-Santiago et al., 2020)",
+          "Economic, Environmental, Social",
+          "(Edwards et al., 2019; Montiel-Santiago et al., 2020)"
+        ]
+      ]
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_index": 0,
+      "section": "Introduction",
+      "section_num": "1",
+      "text": "Housing is an individuals' primary right  (Bruen et al., 2013)  and primary need as it is related with the first step of the Maslow's hierarchy of needs  (Sertyesilisik, 2019) . The supply of affordable housing (AH) is important  (Bruen et al., 2013)  as AH is vital for meeting housing needs  (Oyebanji et al., 2017) . Furthermore, AH plays a crucial role in enhancing social equity and cohesion  (Napoli et al., 2016) . For this reason, it is not only related to the economic and environmental pillars of sustainability but also with its social pillar. In other words, housing quality is essential for residents' welfare and well-being  (Gopalan and Venkataraman, 2015) .",
+      "word_count": 111,
+      "char_count": 673
+    },
+    {
+      "chunk_index": 1,
+      "section": "Introduction",
+      "section_num": "1",
+      "text": "Affordability in the housing sector shows the ability of an average income family to purchase a house  (Udawattha and Halwatura, 2017) . For this reason, affordability is mainly related to the relationship between the cost of housing and individual's purchasing power.  Menshawy et al. (2016)  emphasise that any house with any price is affordable for some people, whereas no housing is affordable for some other people unless it is free. AH is directly related to household income  (Napoli et al., 2016) .",
+      "word_count": 82,
+      "char_count": 506
+    },
+    {
+      "chunk_index": 2,
+      "section": "Introduction",
+      "section_num": "1",
+      "text": "AH is affected by the demand and supply constraints related to various factors, including people's welfare, general cyclic state of the economy, land availability, affordable price, infrastructure, legal and regulatory framework.  (Khan, 2012) . Intensified rapid urbanisation and lack of proper regulations are among the barriers encountered in the AH sector (e.g. scarcity of land)  (Khan, 2012; Gopalan and Venkataraman, 2015) .",
+      "word_count": 62,
+      "char_count": 431
+    },
+    {
+      "chunk_index": 3,
+      "section": "Introduction",
+      "section_num": "1",
+      "text": "All these issues are related to the pre-construction and construction phases, whereas cost-effectiveness needs to be achieved throughout the building's lifecycle. Even if low-quality/less durable products' usage can reduce the initial investment cost, this approach can reduce a building's lifetime and increase its maintenance costs  (Wallbaum et al., 2012) . This situation conflicts with the sustainability principle due to the wasted material. Furthermore, it especially conflicts with low-income individuals' needs and priorities as their budget is relatively more sensitive to the lifecycle cost of their houses. For this reason, as the AH sector's main target segment is the low-income group, the AH problem needs to be solve considering the fuel poverty problem and building's lifecycle cost. Initial investment cost as well as operation, maintenance and repair costs need to be considered in affordable house construction. This situation emphasises the importance of the sustainability performance of affordable houses throughout their lifecycle and enhances the effectiveness of their FM (facility management). Enhanced sustainability performance of affordable houses can contribute to the reduction in their lifecycle cost. Sustainable houses can provide cost savings during the operation and maintenance phases  (Menshawy et al., 2016) . Furthermore, living in sustainable houses can motivate the residents to behave more sustainably, as supported by  Moore et al.'s (2017)  study on low-energy social housing dwellings in Horsham, which revealed residents' low electricity consumption.  Hodges (2005)  states that the need to reduce energy and water consumption as well as fossil fuel dependence fosters sustainability in the built environment.",
+      "word_count": 249,
+      "char_count": 1757
+    },
+    {
+      "chunk_index": 4,
+      "section": "Introduction",
+      "section_num": "1",
+      "text": "BIM (Building Information Modelling) is a complex tool with dimensions from 3D to 7D and needs to be used by all stakeholders from the beginning of the project to the operation and maintenance phase to get full efficiency from BIM  (Bionova Ltd., 2017) .  Phillips and Forman (2018)  listed the deficient understanding of the BIM concept among the main barriers.",
+      "word_count": 60,
+      "char_count": 362
+    },
+    {
+      "chunk_index": 5,
+      "section": "Introduction",
+      "section_num": "1",
+      "text": "This study investigates the usage areas and effects of all dimensions of BIM in AH projects to create synergy and to obtain high efficiency from the usage of BIM in AH projects in terms of sustainability and affordability as well as to deal with the barriers emerged due to incomplete understanding of BIM. Considering the entire life-cycle of affordable houses, this paper aims to investigate usage of BIM application areas in connection with their dimensions for enhancing sustainability and affordability of AH as a key for effective housing policies. With this aim, the objectives were to: investigate the relationship between all dimensions and application areas of BIM and affordable houses' affordability and sustainability; investigate the roles of BIM in enhancing sustainability and energy performance of AH throughout its lifecycle; provide recommendations for AH policies. Particular focus is on BIM's contribution to reducing energy consumption throughout the buildings' lifecycle. This paper also emphasises the role of FM in enhancing sustainability performance and cost-effectiveness in the operation phase of AH. Furthermore, this paper puts emphasis on the role of the effective, systematic, and interdisciplinary policies to solve the housing problem.",
+      "word_count": 188,
+      "char_count": 1270
+    },
+    {
+      "chunk_index": 6,
+      "section": "Dimensions and application areas of BIM and their relation to affordability and sustainability of AH",
+      "section_num": "2",
+      "text": "The feature that distinguishes BIM from other modelling techniques is that the 3D model is a platform that allows a variety of applications to be used at different phases of the project  (Barnes and Davies, 2014) . Various studies in the literature focus on the advantages of certain BIM dimensions at certain phase of construction project management. For example,  Slattery (2019)  illustrates that features like installation certification, maintenance records and location of safety equipment provided by 7D BIM are extremely useful in maintaining social housing. 6D BIM provides opportunities such as implementing Post Occupancy Evaluation (POE) to existing social housing projects even if they are not built with BIM  (Gonzalez-Caceres et al., 2019) . BIM makes identification of POE process and data sharing among stakeholders more effective and efficient with the help of Business Process Modelling Notation (BPMN) and Industry Foundation Classes (IFC) by reducing the number of errors and the time spent analysing existing social housing projects  (Gonzalez-Caceres et al., 2019) . Furthermore,  Alileche and Shahrour (2018)  emphasise that BIM usage in current AH projects could help facility managers deal with building depreciation and excessive expenses. Case studies regarding BIM Performance Assessments revealed BIM's potential to reduce the change orders by 32 %, increase total profitability by 41 %, and improve scheduling by 57 %  (McGraw-Hill Construction, 2009) . BIM offers a variety of application areas for its use in all dimensions.  Barnes and Davies (2014)  categorised 16 application areas into BIM dimensions. These application areas are examined in terms of their relationship to affordability and all three pillars of sustainability (Table  1 ). Among these 16 application areas, 11 of them were directly supported by the literature review with respect to their relationship to affordability and sustainability (Table  1 ). As Table  1  reveals, all dimensions of BIM have a relationship with affordability and sustainability. BIM is important for supporting the sustainability and cost-effective performance of the buildings throughout their lifecycles. The studies referred to in Table  1  mainly focus on specific dimensions and application areas of BIM. It is necessary to focus on the BIM dimensions usage covering all their application areas to achieve the full potential of BIM in contributing to the affordability and sustainability, which is essential for enhancing the affordability and sustainability of AH throughout its lifecycle.",
+      "word_count": 383,
+      "char_count": 2573
+    },
+    {
+      "chunk_index": 7,
+      "section": "Dimensions and application areas of BIM and their relation to affordability and sustainability of AH",
+      "section_num": "2",
+      "text": "3 Roles of BIM in enhancing sustainability and energy performance of affordable houses BIM has potential to enhance the sustainability and energy performance (EP) of AH projects in the design phase through its integrated usage with the simulation tools and its ability to provide inputs to the design optimisation. Furthermore, its usage in design and construction phases has potential to enhance cost effectiveness as well as reduce waste from the lean and sustainability point of views. Its use in the operation phase and for FM has the potential to further support and supplement its contribution to the sustainability and EP of the buildings. BIM-based energy simulation (ES) in the design and operation phases as well as BIM-based FM topics are examined in the following sections.",
+      "word_count": 125,
+      "char_count": 785
+    },
+    {
+      "chunk_index": 8,
+      "section": "BIM-based energy simulation",
+      "section_num": "3.1",
+      "text": "BIM-based ES is carried out in the design and operation phases of buildings. BIM-based ES in both phases complement each other in ensuring the EP of the buildings throughout their life cycle.",
+      "word_count": 32,
+      "char_count": 191
+    },
+    {
+      "chunk_index": 9,
+      "section": "BIM-based ES in the design phase",
+      "section_num": "3.1.1",
+      "text": "The buildings' decision-makers need to know the buildings' environmental impact/footprint and have energy analyses for sustainable building management  (Wang et al., 2011) . BIM has potential to contribute to the energy efficiency performance of affordable houses starting from the initial design phase.  Petri et al.'s (2017)  European research project entitled \"Sporte2\" supported BIM's role in enhancing buildings' energy efficiency and energy optimisation. BIM has the potential for contributing to the optimisation of building sustainability assessment methods  (Carvalho et al., 2019) . There are various BIM tools for making the design more transparent from the energy  (Beazley et al., 2017)  and sustainability perspectives. For example, BIM-based SBToolTM is capable of assessing 24 criteria  (Carvalho et al., 2019) . Furthermore, BIM can enhance sustainable building design process through its integrated usage with compatible tools (e.g., Green Building Studio and Ecotect), as supported by  Oduyemi et al.'s (2017)  research on a building at Derby North riverside. BIM can contribute to overcoming the EP gap problem in affordable houses. Social housing in Mexico has high energy demand due to poor design and thermally inefficient construction materials  (Romero-Pérez et al., 2017:p.29) . BIM tools contribute to buildings' EP by enabling performance assessment of iterative designs, timely consistent feedback throughout the design process  (Beazley et al., 2017) .",
+      "word_count": 212,
+      "char_count": 1482
+    },
+    {
+      "chunk_index": 10,
+      "section": "BIM-based ES in the operation phase and BIM-based as-built ES",
+      "section_num": "3.1.2",
+      "text": "The EP of the building needs to be checked throughout its operational phase. As-built ES helps users manage their energy consumption for existing buildings  (Wang et al., 2011) . While architects and engineers have used BIM in the design phase for several analyses (e.g., drawing, modelling, cost estimations, and scheduling), Building Energy Management Systems (BEMS) are being used to collect proper data of the operational stage of buildings because of the need for further analysis regarding the buildings' energy consumption  (Moon and Choi, 2014) . Problems encountered in the as-built ES differ from the problems encountered in the design phase  (Beazley et al., 2017) . As-built ES needs preparations such as documentation of the existing building features (e.g., floor plans, materials used to build, window and door specification and sizes)  (Wang et al., 2011) . Documentation and drawings of existing buildings are complicated according to the nature and form of the building as well as maintenance  (Mitchell and Schevers, 2005) . For example, Sydney Opera House's hand drawings have been transformed into CAD in the 80s and later to an as-built BIM project, which enabled its energy consumption, security system, and building services to be managed so that energy and administration expenses of the building could be reduced  (Mitchell and Schevers, 2005) .",
+      "word_count": 213,
+      "char_count": 1371
+    },
+    {
+      "chunk_index": 11,
+      "section": "BIM-based FM",
+      "section_num": "3.2",
+      "text": "There is a need for effective FM in affordable houses so that these houses can be operated effectively with relatively low operation and maintenance costs.  Sirombo et al.'s (2017)  case study-based research supported the impact of the feedback of the building monitoring system to deal with the facility and energy management problems of multi-family social housing. Similarly, research shows that the operation phase of large-scale commercial structures is 19 times higher in terms of energy consumption than other stages  (Dowsett and Harty, 2013) . Even if aligning FM practices with sustainability is crucial, conventional storage of documents and inadequate interoperability of FM programs (International Facility Management Association (IFMA), 2013:pp.2-3) can hinder effectiveness and success in the FM phase. BIM-based FM helps deal with this problem. BIM-based FM also enhances the advantages of FM practices. These advantages include: increased productivity through improved interoperability and documentation, increased operational cost savings through detailed cost-benefit analyses, improved planning performance through coordinated and integrated planning considering energy and environment  (Sanchez et al., 2014) ; improvement in the processes in terms of speed and effectiveness  (Mitchell and Schevers, 2005) ; and complete control on both cost and performance of the building  (Mitchell and Schevers, 2005) .",
+      "word_count": 200,
+      "char_count": 1428
+    },
+    {
+      "chunk_index": 12,
+      "section": "Integrating BIM into the affordable housing policies",
+      "section_num": "4",
+      "text": "The effectiveness and success of AH policies reveal the respect level of the countries to their people. Effective AH policies are needed to deal with the housing problem  (Sertyesilisik, 2019) . Government plays a crucial role in meeting housing needs  (Oyebanji et al., 2017) . AH policies are directly related to people's primary needs (e.g., shelter) in Maslow's hierarchy of needs. These policies can affect countries' sustainable development. For example, housing policies can have impact on health, both downstream (e.g., affecting housing quality, affordability, and insecurity) and upstream (e.g., affecting housing policy design, implementation, and management)  (Willison, 2017 (Willison, :p.1113)) . There is a multiplier effect in the political economy of the effective sustainable AH policies on the sustainable development. Furthermore, government policies can influence house ownership percentage. For example, the UK's right to buy public housing is an example of increasing house ownership  (Disney and Luo, 2017) . Government policies can support the supply of and demand for affordable houses.",
+      "word_count": 161,
+      "char_count": 1112
+    },
+    {
+      "chunk_index": 13,
+      "section": "Integrating BIM into the affordable housing policies",
+      "section_num": "4",
+      "text": "The effectiveness of AH policies is enhanced considering critical success factors for sustainable AH.  Oyebanji et al.'s (2017)  research reviewed revealed these factors. Furthermore, AH policies need to be coherent with the sustainable development strategies.  Oyebanji et al. (2017)  emphasized the importance of effective, sustainable development strategies as well as the financial, legal and institutional frameworks for sustainable social housing delivery. On the other hand,  Ortiz and Johannes (2018:p.63 ) recommended policies to contribute to the reduction in the housing cost burdens as well as to enhance public awareness of the housing conditions' effects on health so that solution to the housing problem in the US is supported. Policies need to be accountable and transparent, enhancing governmental integrity and protecting people  (Willison, 2017 (Willison, :p.1113)) . Furthermore, effective AH strategies need to cover technical, financial, and political pillars  (Sertyesilisik, 2019) . Sustainable AH policies need to cover the entire life-cycle of the buildings and encourage their retrofitting for enhancing their sustainability performance. Retrofitting can enhance residents' well-being and building's energy efficiency  (DellaValle et al., 2018) . European directives encourage the EU countries to perform energy retrofits of their buildings  (Monteiro et al., 2017) . For example, Milan's and Lisbon's municipalities have performed pilot renovations of public housing estates with the help of the EU funded Sharing Cities project  (Monteiro et al., 2017) .",
+      "word_count": 223,
+      "char_count": 1583
+    },
+    {
+      "chunk_index": 14,
+      "section": "Integrating BIM into the affordable housing policies",
+      "section_num": "4",
+      "text": "Sustainable AH policies need to request BIM-based construction project management and FM. Even if AH policies tend to primarily focus on meeting the housing needs of the low-income group both in developed and developing countries, they need to focus on how to enhance the sustainability performance of affordable houses and encourage sustainable AH. Bionova Ltd.'s (2017) ARA (The Housing Finance and Development Centre of Finland) funded report states that combining AH, sustainability and BIM is an opportunity to meet various governmental goals like providing AH, digitalising the construction industry and reducing the carbon footprint of construction.  Dowhower (2010)  demonstrates the superiority of BIM-based workflow in terms of affordability and sustainability over CAD-based workflow with the help of AH case study.  Sertyesilisik (2019)  emphasised the importance of the sustainability performance of AH. Sustainability performance is generally neglected in the AH projects partly because of the belief that sustainable products or features of the buildings can increase their initial investment cost.",
+      "word_count": 159,
+      "char_count": 1113
+    },
+    {
+      "chunk_index": 15,
+      "section": "Integrating BIM into the affordable housing policies",
+      "section_num": "4",
+      "text": "In contrast to this belief, effective sustainability policy and enhanced sustainability performance of the buildings can reduce life cycle costs. Furthermore, a reduction in the overall expenditure is an outcome of the enhanced sustainability performance and a solution to many other problems affecting the welfare and well-being of residents. BIM is one of the main pillars for sustainable AH projects. Usage of BIM can enhance sustainability and reduce the life cycle cost of AH projects. It is beneficial in the design, refurbishment, operation and maintenance phases of affordable houses by enhancing the efficiency of the processes especially through the real-time data obtained from the BIM model and ES.",
+      "word_count": 108,
+      "char_count": 710
+    },
+    {
+      "chunk_index": 16,
+      "section": "Integrating BIM into the affordable housing policies",
+      "section_num": "4",
+      "text": "5 Discussion Political economy of effective policies for sustainable AH can contribute the countries to better deal with the fuel poverty and health care expenses. In other words, AH policies can influence social peace, crime rate, and health costs. Enhancing the sustainability performance of affordable houses can reduce buildings' lifecycle cost and contribute to the fuel poverty problem solution and the welfare and well-being of its residents (Fig.  1 ). Additionally, enhanced sustainability performance of houses can contribute to their affordability (Fig.  2 ). All these contributions show the political economy aspect of affordable houses and importance of effective AH policies. The marginal utility of each effective and successful policy for the affordable house is related to its contribution to the economy, people's welfare and well-being. The marginal utility of each policy is enhanced through a holistic approach covering its economic, innovative, technological, social, and environmental pillars. Sustainable AH policies need to request and encourage the usage of BIM in all construction project management and FM phases as well as the integration of contemporary trends (e.g., biomimicry and urban farming, on top roof planting) and sustainable technologies into the AH design to support sustainability performance of the buildings and all pillars of sustainability. Sustainable technologies can act as multiplier factors of the sustainability performance of the affordable houses (e.g., water and energy-efficient appliances, smart supply chain, smart production process, smart FM). Furthermore, sustaining sustainability and comfort of the affordable house through regular maintenance and upgrading of the building supported by the BIM-based FM must be a factor to be covered in and encouraged by the AH policies. Additionally, BIM has capacity to contribute to achieve effective coordination and eliminate waste both from the lean and sustainability perspectives. It contributes to the countries' economies through effective usage of their resources and enhanced cost-effectiveness of their investments. This situation reveals BIM's indirect influence on sustainable development. AH policies need to enable getting benefit from the advantages of BIM dimensions and application areas covering AH's lifecycle aspect.",
+      "word_count": 334,
+      "char_count": 2339
+    },
+    {
+      "chunk_index": 17,
+      "section": "Conclusion and recommendations",
+      "section_num": "6",
+      "text": "This paper emphasised BIM's diversified roles in sustainability and affordability of AH and sustainable AH policies. Sustainable and energy-efficient affordable houses are achieved through the BIM usage for the building's entire lifecycle covering construction project management and FM phases. Sustainability contributes to the affordability of housing. Usage of BIM increases both the sustainability and affordability of AH projects.",
+      "word_count": 58,
+      "char_count": 435
+    },
+    {
+      "chunk_index": 18,
+      "section": "Conclusion and recommendations",
+      "section_num": "6",
+      "text": "Taking advantages of all opportunities provided by BIM requires all-in-all integrated and holistic approach for its implementation. This study illustrates the various outputs of different dimensions of BIM in terms of sustainability and affordability (Table  1 ). For example, as clash detection  (Bockstael and Issa, 2016)  is among the main application areas of 3D BIM in terms of affordability and sustainability, they can support AH. Clash detection is important for reducing the number of reworks minimising waste, and providing a cost saving, which eventually leads to a decrease in initial costs. 4D BIM is important for the improvement of the schedule  (Lee and Kim, 2017; Gong et al., 2019)  and all stakeholders are involved with the process earlier with the help of the interactive BIM model, which allows them to discuss sustainability performance issues, affordability and the supply of sustainable materials. As 5D BIM allows participants to make early cost analyses concerning whole-life cost and lifecycle cost  (Ahmad and Thaheem, 2018) , 5D BIM is important to optimise values regarding affordability and sustainability of AH. Furthermore, since 6D and 7D BIM are related to sustainability and FM, all application areas in these dimensions have constructive effects on the sustainability of AH.",
+      "word_count": 201,
+      "char_count": 1312
+    },
+    {
+      "chunk_index": 19,
+      "section": "Conclusion and recommendations",
+      "section_num": "6",
+      "text": "While BIM's general usage is a process improvement tool for design and construction, it should also be widely implemented in the operation phase. BIM usage in the design, construction, and operation phases has potential to show its effect, especially on end-users. Effective BIM usage is vital for enhancing end-users' satisfaction, well-being and welfare. Besides increasing the sustainability performance, end-users will also benefit from BIM together with the contractor and owner. Considering the target group of AH projects, the decrease in maintenance and energy costs is crucial for end-users. As each BIM dimension and its application areas have potential to contribute to the affordability and sustainability of AH, they need to be covered in AH policies. This also reveals the importance of housing policies benefiting from the technological improvements and innovations in the built environment.",
+      "word_count": 134,
+      "char_count": 906
+    },
+    {
+      "chunk_index": 20,
+      "section": "Conclusion and recommendations",
+      "section_num": "6",
+      "text": "In countries where BIM use is mandatory for public projects, the impact of BIM on AH projects is observable. In other countries, BIM usage should be increased in the construction sector to observe its effect on sustainability and affordability. With this widespread usage, as more end-users and stakeholders experience the positive effects of BIM, demand for BIM usage in all phases of construction projects, including AH projects, will increase. Effective, sustainable AH policies are essential for effective solutions to the housing problem. Political economy aspects of AH policies further support their importance. These policies are recommended to be holistic with a systematic and interdisciplinary approach to the housing problem. They should encourage usage of all dimensions of BIM and its related applications in the AH projects covering their entire lifecycle aspects. This paper contributes to the literature with respect to its emphasis on the usage and role of BIM dimensions and their application areas, focusing on AH's lifecycle. Furthermore, this paper contributes to the literature as it emphasises that AH policies need to cover and encourage usage of BIM dimensions and their application areas covering AH's lifecycle. This paper is useful for researchers and academics as well as for stakeholders of the construction industry.",
+      "word_count": 204,
+      "char_count": 1348
+    }
+  ],
+  "body_text": "Housing is an individuals' primary right  (Bruen et al., 2013)  and primary need as it is related with the first step of the Maslow's hierarchy of needs  (Sertyesilisik, 2019) . The supply of affordable housing (AH) is important  (Bruen et al., 2013)  as AH is vital for meeting housing needs  (Oyebanji et al., 2017) . Furthermore, AH plays a crucial role in enhancing social equity and cohesion  (Napoli et al., 2016) . For this reason, it is not only related to the economic and environmental pillars of sustainability but also with its social pillar. In other words, housing quality is essential for residents' welfare and well-being  (Gopalan and Venkataraman, 2015) .\n\nAffordability in the housing sector shows the ability of an average income family to purchase a house  (Udawattha and Halwatura, 2017) . For this reason, affordability is mainly related to the relationship between the cost of housing and individual's purchasing power.  Menshawy et al. (2016)  emphasise that any house with any price is affordable for some people, whereas no housing is affordable for some other people unless it is free. AH is directly related to household income  (Napoli et al., 2016) .\n\nAH is affected by the demand and supply constraints related to various factors, including people's welfare, general cyclic state of the economy, land availability, affordable price, infrastructure, legal and regulatory framework.  (Khan, 2012) . Intensified rapid urbanisation and lack of proper regulations are among the barriers encountered in the AH sector (e.g. scarcity of land)  (Khan, 2012; Gopalan and Venkataraman, 2015) .\n\nAll these issues are related to the pre-construction and construction phases, whereas cost-effectiveness needs to be achieved throughout the building's lifecycle. Even if low-quality/less durable products' usage can reduce the initial investment cost, this approach can reduce a building's lifetime and increase its maintenance costs  (Wallbaum et al., 2012) . This situation conflicts with the sustainability principle due to the wasted material. Furthermore, it especially conflicts with low-income individuals' needs and priorities as their budget is relatively more sensitive to the lifecycle cost of their houses. For this reason, as the AH sector's main target segment is the low-income group, the AH problem needs to be solve considering the fuel poverty problem and building's lifecycle cost. Initial investment cost as well as operation, maintenance and repair costs need to be considered in affordable house construction. This situation emphasises the importance of the sustainability performance of affordable houses throughout their lifecycle and enhances the effectiveness of their FM (facility management). Enhanced sustainability performance of affordable houses can contribute to the reduction in their lifecycle cost. Sustainable houses can provide cost savings during the operation and maintenance phases  (Menshawy et al., 2016) . Furthermore, living in sustainable houses can motivate the residents to behave more sustainably, as supported by  Moore et al.'s (2017)  study on low-energy social housing dwellings in Horsham, which revealed residents' low electricity consumption.  Hodges (2005)  states that the need to reduce energy and water consumption as well as fossil fuel dependence fosters sustainability in the built environment.\n\nBIM (Building Information Modelling) is a complex tool with dimensions from 3D to 7D and needs to be used by all stakeholders from the beginning of the project to the operation and maintenance phase to get full efficiency from BIM  (Bionova Ltd., 2017) .  Phillips and Forman (2018)  listed the deficient understanding of the BIM concept among the main barriers.\n\nThis study investigates the usage areas and effects of all dimensions of BIM in AH projects to create synergy and to obtain high efficiency from the usage of BIM in AH projects in terms of sustainability and affordability as well as to deal with the barriers emerged due to incomplete understanding of BIM. Considering the entire life-cycle of affordable houses, this paper aims to investigate usage of BIM application areas in connection with their dimensions for enhancing sustainability and affordability of AH as a key for effective housing policies. With this aim, the objectives were to: investigate the relationship between all dimensions and application areas of BIM and affordable houses' affordability and sustainability; investigate the roles of BIM in enhancing sustainability and energy performance of AH throughout its lifecycle; provide recommendations for AH policies. Particular focus is on BIM's contribution to reducing energy consumption throughout the buildings' lifecycle. This paper also emphasises the role of FM in enhancing sustainability performance and cost-effectiveness in the operation phase of AH. Furthermore, this paper puts emphasis on the role of the effective, systematic, and interdisciplinary policies to solve the housing problem.\n\nThe feature that distinguishes BIM from other modelling techniques is that the 3D model is a platform that allows a variety of applications to be used at different phases of the project  (Barnes and Davies, 2014) . Various studies in the literature focus on the advantages of certain BIM dimensions at certain phase of construction project management. For example,  Slattery (2019)  illustrates that features like installation certification, maintenance records and location of safety equipment provided by 7D BIM are extremely useful in maintaining social housing. 6D BIM provides opportunities such as implementing Post Occupancy Evaluation (POE) to existing social housing projects even if they are not built with BIM  (Gonzalez-Caceres et al., 2019) . BIM makes identification of POE process and data sharing among stakeholders more effective and efficient with the help of Business Process Modelling Notation (BPMN) and Industry Foundation Classes (IFC) by reducing the number of errors and the time spent analysing existing social housing projects  (Gonzalez-Caceres et al., 2019) . Furthermore,  Alileche and Shahrour (2018)  emphasise that BIM usage in current AH projects could help facility managers deal with building depreciation and excessive expenses. Case studies regarding BIM Performance Assessments revealed BIM's potential to reduce the change orders by 32 %, increase total profitability by 41 %, and improve scheduling by 57 %  (McGraw-Hill Construction, 2009) . BIM offers a variety of application areas for its use in all dimensions.  Barnes and Davies (2014)  categorised 16 application areas into BIM dimensions. These application areas are examined in terms of their relationship to affordability and all three pillars of sustainability (Table  1 ). Among these 16 application areas, 11 of them were directly supported by the literature review with respect to their relationship to affordability and sustainability (Table  1 ). As Table  1  reveals, all dimensions of BIM have a relationship with affordability and sustainability. BIM is important for supporting the sustainability and cost-effective performance of the buildings throughout their lifecycles. The studies referred to in Table  1  mainly focus on specific dimensions and application areas of BIM. It is necessary to focus on the BIM dimensions usage covering all their application areas to achieve the full potential of BIM in contributing to the affordability and sustainability, which is essential for enhancing the affordability and sustainability of AH throughout its lifecycle.\n\n3 Roles of BIM in enhancing sustainability and energy performance of affordable houses BIM has potential to enhance the sustainability and energy performance (EP) of AH projects in the design phase through its integrated usage with the simulation tools and its ability to provide inputs to the design optimisation. Furthermore, its usage in design and construction phases has potential to enhance cost effectiveness as well as reduce waste from the lean and sustainability point of views. Its use in the operation phase and for FM has the potential to further support and supplement its contribution to the sustainability and EP of the buildings. BIM-based energy simulation (ES) in the design and operation phases as well as BIM-based FM topics are examined in the following sections.\n\nBIM-based ES is carried out in the design and operation phases of buildings. BIM-based ES in both phases complement each other in ensuring the EP of the buildings throughout their life cycle.\n\nThe buildings' decision-makers need to know the buildings' environmental impact/footprint and have energy analyses for sustainable building management  (Wang et al., 2011) . BIM has potential to contribute to the energy efficiency performance of affordable houses starting from the initial design phase.  Petri et al.'s (2017)  European research project entitled \"Sporte2\" supported BIM's role in enhancing buildings' energy efficiency and energy optimisation. BIM has the potential for contributing to the optimisation of building sustainability assessment methods  (Carvalho et al., 2019) . There are various BIM tools for making the design more transparent from the energy  (Beazley et al., 2017)  and sustainability perspectives. For example, BIM-based SBToolTM is capable of assessing 24 criteria  (Carvalho et al., 2019) . Furthermore, BIM can enhance sustainable building design process through its integrated usage with compatible tools (e.g., Green Building Studio and Ecotect), as supported by  Oduyemi et al.'s (2017)  research on a building at Derby North riverside. BIM can contribute to overcoming the EP gap problem in affordable houses. Social housing in Mexico has high energy demand due to poor design and thermally inefficient construction materials  (Romero-Pérez et al., 2017:p.29) . BIM tools contribute to buildings' EP by enabling performance assessment of iterative designs, timely consistent feedback throughout the design process  (Beazley et al., 2017) .\n\nThe EP of the building needs to be checked throughout its operational phase. As-built ES helps users manage their energy consumption for existing buildings  (Wang et al., 2011) . While architects and engineers have used BIM in the design phase for several analyses (e.g., drawing, modelling, cost estimations, and scheduling), Building Energy Management Systems (BEMS) are being used to collect proper data of the operational stage of buildings because of the need for further analysis regarding the buildings' energy consumption  (Moon and Choi, 2014) . Problems encountered in the as-built ES differ from the problems encountered in the design phase  (Beazley et al., 2017) . As-built ES needs preparations such as documentation of the existing building features (e.g., floor plans, materials used to build, window and door specification and sizes)  (Wang et al., 2011) . Documentation and drawings of existing buildings are complicated according to the nature and form of the building as well as maintenance  (Mitchell and Schevers, 2005) . For example, Sydney Opera House's hand drawings have been transformed into CAD in the 80s and later to an as-built BIM project, which enabled its energy consumption, security system, and building services to be managed so that energy and administration expenses of the building could be reduced  (Mitchell and Schevers, 2005) .\n\nThere is a need for effective FM in affordable houses so that these houses can be operated effectively with relatively low operation and maintenance costs.  Sirombo et al.'s (2017)  case study-based research supported the impact of the feedback of the building monitoring system to deal with the facility and energy management problems of multi-family social housing. Similarly, research shows that the operation phase of large-scale commercial structures is 19 times higher in terms of energy consumption than other stages  (Dowsett and Harty, 2013) . Even if aligning FM practices with sustainability is crucial, conventional storage of documents and inadequate interoperability of FM programs (International Facility Management Association (IFMA), 2013:pp.2-3) can hinder effectiveness and success in the FM phase. BIM-based FM helps deal with this problem. BIM-based FM also enhances the advantages of FM practices. These advantages include: increased productivity through improved interoperability and documentation, increased operational cost savings through detailed cost-benefit analyses, improved planning performance through coordinated and integrated planning considering energy and environment  (Sanchez et al., 2014) ; improvement in the processes in terms of speed and effectiveness  (Mitchell and Schevers, 2005) ; and complete control on both cost and performance of the building  (Mitchell and Schevers, 2005) .\n\nThe effectiveness and success of AH policies reveal the respect level of the countries to their people. Effective AH policies are needed to deal with the housing problem  (Sertyesilisik, 2019) . Government plays a crucial role in meeting housing needs  (Oyebanji et al., 2017) . AH policies are directly related to people's primary needs (e.g., shelter) in Maslow's hierarchy of needs. These policies can affect countries' sustainable development. For example, housing policies can have impact on health, both downstream (e.g., affecting housing quality, affordability, and insecurity) and upstream (e.g., affecting housing policy design, implementation, and management)  (Willison, 2017 (Willison, :p.1113)) . There is a multiplier effect in the political economy of the effective sustainable AH policies on the sustainable development. Furthermore, government policies can influence house ownership percentage. For example, the UK's right to buy public housing is an example of increasing house ownership  (Disney and Luo, 2017) . Government policies can support the supply of and demand for affordable houses.\n\nThe effectiveness of AH policies is enhanced considering critical success factors for sustainable AH.  Oyebanji et al.'s (2017)  research reviewed revealed these factors. Furthermore, AH policies need to be coherent with the sustainable development strategies.  Oyebanji et al. (2017)  emphasized the importance of effective, sustainable development strategies as well as the financial, legal and institutional frameworks for sustainable social housing delivery. On the other hand,  Ortiz and Johannes (2018:p.63 ) recommended policies to contribute to the reduction in the housing cost burdens as well as to enhance public awareness of the housing conditions' effects on health so that solution to the housing problem in the US is supported. Policies need to be accountable and transparent, enhancing governmental integrity and protecting people  (Willison, 2017 (Willison, :p.1113)) . Furthermore, effective AH strategies need to cover technical, financial, and political pillars  (Sertyesilisik, 2019) . Sustainable AH policies need to cover the entire life-cycle of the buildings and encourage their retrofitting for enhancing their sustainability performance. Retrofitting can enhance residents' well-being and building's energy efficiency  (DellaValle et al., 2018) . European directives encourage the EU countries to perform energy retrofits of their buildings  (Monteiro et al., 2017) . For example, Milan's and Lisbon's municipalities have performed pilot renovations of public housing estates with the help of the EU funded Sharing Cities project  (Monteiro et al., 2017) .\n\nSustainable AH policies need to request BIM-based construction project management and FM. Even if AH policies tend to primarily focus on meeting the housing needs of the low-income group both in developed and developing countries, they need to focus on how to enhance the sustainability performance of affordable houses and encourage sustainable AH. Bionova Ltd.'s (2017) ARA (The Housing Finance and Development Centre of Finland) funded report states that combining AH, sustainability and BIM is an opportunity to meet various governmental goals like providing AH, digitalising the construction industry and reducing the carbon footprint of construction.  Dowhower (2010)  demonstrates the superiority of BIM-based workflow in terms of affordability and sustainability over CAD-based workflow with the help of AH case study.  Sertyesilisik (2019)  emphasised the importance of the sustainability performance of AH. Sustainability performance is generally neglected in the AH projects partly because of the belief that sustainable products or features of the buildings can increase their initial investment cost.\n\nIn contrast to this belief, effective sustainability policy and enhanced sustainability performance of the buildings can reduce life cycle costs. Furthermore, a reduction in the overall expenditure is an outcome of the enhanced sustainability performance and a solution to many other problems affecting the welfare and well-being of residents. BIM is one of the main pillars for sustainable AH projects. Usage of BIM can enhance sustainability and reduce the life cycle cost of AH projects. It is beneficial in the design, refurbishment, operation and maintenance phases of affordable houses by enhancing the efficiency of the processes especially through the real-time data obtained from the BIM model and ES.\n\n5 Discussion Political economy of effective policies for sustainable AH can contribute the countries to better deal with the fuel poverty and health care expenses. In other words, AH policies can influence social peace, crime rate, and health costs. Enhancing the sustainability performance of affordable houses can reduce buildings' lifecycle cost and contribute to the fuel poverty problem solution and the welfare and well-being of its residents (Fig.  1 ). Additionally, enhanced sustainability performance of houses can contribute to their affordability (Fig.  2 ). All these contributions show the political economy aspect of affordable houses and importance of effective AH policies. The marginal utility of each effective and successful policy for the affordable house is related to its contribution to the economy, people's welfare and well-being. The marginal utility of each policy is enhanced through a holistic approach covering its economic, innovative, technological, social, and environmental pillars. Sustainable AH policies need to request and encourage the usage of BIM in all construction project management and FM phases as well as the integration of contemporary trends (e.g., biomimicry and urban farming, on top roof planting) and sustainable technologies into the AH design to support sustainability performance of the buildings and all pillars of sustainability. Sustainable technologies can act as multiplier factors of the sustainability performance of the affordable houses (e.g., water and energy-efficient appliances, smart supply chain, smart production process, smart FM). Furthermore, sustaining sustainability and comfort of the affordable house through regular maintenance and upgrading of the building supported by the BIM-based FM must be a factor to be covered in and encouraged by the AH policies. Additionally, BIM has capacity to contribute to achieve effective coordination and eliminate waste both from the lean and sustainability perspectives. It contributes to the countries' economies through effective usage of their resources and enhanced cost-effectiveness of their investments. This situation reveals BIM's indirect influence on sustainable development. AH policies need to enable getting benefit from the advantages of BIM dimensions and application areas covering AH's lifecycle aspect.\n\nThis paper emphasised BIM's diversified roles in sustainability and affordability of AH and sustainable AH policies. Sustainable and energy-efficient affordable houses are achieved through the BIM usage for the building's entire lifecycle covering construction project management and FM phases. Sustainability contributes to the affordability of housing. Usage of BIM increases both the sustainability and affordability of AH projects.\n\nTaking advantages of all opportunities provided by BIM requires all-in-all integrated and holistic approach for its implementation. This study illustrates the various outputs of different dimensions of BIM in terms of sustainability and affordability (Table  1 ). For example, as clash detection  (Bockstael and Issa, 2016)  is among the main application areas of 3D BIM in terms of affordability and sustainability, they can support AH. Clash detection is important for reducing the number of reworks minimising waste, and providing a cost saving, which eventually leads to a decrease in initial costs. 4D BIM is important for the improvement of the schedule  (Lee and Kim, 2017; Gong et al., 2019)  and all stakeholders are involved with the process earlier with the help of the interactive BIM model, which allows them to discuss sustainability performance issues, affordability and the supply of sustainable materials. As 5D BIM allows participants to make early cost analyses concerning whole-life cost and lifecycle cost  (Ahmad and Thaheem, 2018) , 5D BIM is important to optimise values regarding affordability and sustainability of AH. Furthermore, since 6D and 7D BIM are related to sustainability and FM, all application areas in these dimensions have constructive effects on the sustainability of AH.\n\nWhile BIM's general usage is a process improvement tool for design and construction, it should also be widely implemented in the operation phase. BIM usage in the design, construction, and operation phases has potential to show its effect, especially on end-users. Effective BIM usage is vital for enhancing end-users' satisfaction, well-being and welfare. Besides increasing the sustainability performance, end-users will also benefit from BIM together with the contractor and owner. Considering the target group of AH projects, the decrease in maintenance and energy costs is crucial for end-users. As each BIM dimension and its application areas have potential to contribute to the affordability and sustainability of AH, they need to be covered in AH policies. This also reveals the importance of housing policies benefiting from the technological improvements and innovations in the built environment.\n\nIn countries where BIM use is mandatory for public projects, the impact of BIM on AH projects is observable. In other countries, BIM usage should be increased in the construction sector to observe its effect on sustainability and affordability. With this widespread usage, as more end-users and stakeholders experience the positive effects of BIM, demand for BIM usage in all phases of construction projects, including AH projects, will increase. Effective, sustainable AH policies are essential for effective solutions to the housing problem. Political economy aspects of AH policies further support their importance. These policies are recommended to be holistic with a systematic and interdisciplinary approach to the housing problem. They should encourage usage of all dimensions of BIM and its related applications in the AH projects covering their entire lifecycle aspects. This paper contributes to the literature with respect to its emphasis on the usage and role of BIM dimensions and their application areas, focusing on AH's lifecycle. Furthermore, this paper contributes to the literature as it emphasises that AH policies need to cover and encourage usage of BIM dimensions and their application areas covering AH's lifecycle. This paper is useful for researchers and academics as well as for stakeholders of the construction industry.",
+  "page_dims": [
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    },
+    {
+      "pdf_width": 595.2760009765625,
+      "pdf_height": 841.8900146484375
+    }
+  ],
+  "filename": "CWXNHZZN.pdf",
+  "file_size_kb": 376.17,
+  "throughput": {
+    "processing_time_s": 3.948,
+    "file_size_kb": 376.17,
+    "total_pages": 9,
+    "total_words": 3499,
+    "total_chars": 23727,
+    "pages_per_second": 2.28,
+    "words_per_second": 886.3,
+    "chars_per_second": 6009.9,
+    "kb_per_second": 95.28,
+    "seconds_per_page": 0.439,
+    "seconds_per_1k_words": 1.128,
+    "seconds_per_1k_chars": 0.166
+  },
+  "total_pages": 9,
+  "total_words": 3499,
+  "total_chars": 23727,
+  "reference_count_approx": 47
+}
