@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { FieldData } from './types';
 import { normalizePdfName } from './types';
-import { extractMetadata, getMetadata, saveMetadata, sha256Hex, uploadPdf } from './api';
+import { extractMetadata, getMetadata, pdfExists, saveMetadata, sha256Hex, uploadPdf } from './api';
 import PdfViewer, { type PdfViewerHandle } from './components/PdfViewer';
 import MetaPanel from './components/MetaPanel';
 
@@ -9,9 +9,9 @@ export default function App() {
   const [pdfName, setPdfName] = useState<string | null>(null);
   const [sha256, setSha256] = useState<string | null>(null);
   // Held only for a not-yet-saved document: the PDF stays in browser memory
-  // (never sent to Studio's PDF store) until the save button actually
-  // uploads it, mirroring the same "nothing persists until save" rule
-  // already applied to field metadata.
+  // (never sent to /document) until the save button actually uploads it,
+  // mirroring the same "nothing persists until save" rule already applied
+  // to field metadata.
   const [pendingFile, setPendingFile] = useState<File | null>(null);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
   const [page, setPage] = useState(1);
@@ -38,22 +38,30 @@ export default function App() {
     setSaveStatus('Analyzing…');
 
     try {
-      // Content-addressed: re-picking identical bytes under a different
-      // filename reuses whatever was already extracted/saved for that hash
-      // -- and if it was already saved, its PDF is already stored too.
-      let existing = await getMetadata(hash);
-      if (existing) {
+      // Field metadata is content-addressed (by hash) on scepa-rs, so
+      // re-picking identical bytes under a different filename reuses
+      // whatever was already extracted/saved. PDF storage is name-addressed
+      // locally, though, so that's a separate check -- the two aren't
+      // guaranteed to agree (e.g. the same content saved once under a
+      // different name).
+      const [existingFields, alreadyStored] = await Promise.all([
+        getMetadata(hash),
+        pdfExists(name),
+      ]);
+
+      const fieldsResult = existingFields ?? (await extractMetadata(file, hash));
+
+      if (alreadyStored) {
         setPendingFile(null);
-        setPdfUrl(`/api/pdf/${hash}`);
+        setPdfUrl(`/document/${name}`);
       } else {
-        existing = await extractMetadata(file, hash);
         setPendingFile(file);
         setPdfUrl(URL.createObjectURL(file));
       }
 
       setPdfName(name);
       setSha256(hash);
-      setFields(existing);
+      setFields(fieldsResult);
       setSaveStatus('');
     } catch (err: unknown) {
       setSaveStatus(`Error: ${err instanceof Error ? err.message : 'unknown'}`);
@@ -71,7 +79,12 @@ export default function App() {
     setSaveStatus('Saving…');
     try {
       if (pendingFile) {
-        await uploadPdf(sha256, pendingFile);
+        try {
+          await uploadPdf(pdfName, pendingFile);
+        } catch (err: unknown) {
+          const msg = err instanceof Error ? err.message : String(err);
+          if (!msg.includes('already exists')) throw err;
+        }
       }
       await saveMetadata(sha256, fields);
       setSaveStatus('Document saved successfully!');

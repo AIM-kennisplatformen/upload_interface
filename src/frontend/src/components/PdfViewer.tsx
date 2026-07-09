@@ -34,7 +34,9 @@ const PdfViewer = forwardRef<PdfViewerHandle, Props>(({ url, page, onPageChange,
     if (!url) { setPdfDoc(null); return; }
     let cancelled = false;
     (async () => {
-      const doc = await pdfjsLib.getDocument({ url }).promise;
+      // withCredentials is required for the /document/{name} case (session
+      // cookie); it's simply ignored for blob: URLs (not-yet-saved PDFs).
+      const doc = await pdfjsLib.getDocument({ url, withCredentials: true }).promise;
       if (cancelled) return;
       setPdfDoc(doc);
       onPageChange(1);
