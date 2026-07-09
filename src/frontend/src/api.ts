@@ -1,6 +1,6 @@
 import type { FieldData } from './types';
 
-/** Content hash used to key field metadata (and, once saved, the PDF's own name lookup). */
+/** Content hash used to key field metadata on scepa-rs (independent of /document's name-based keying). */
 export async function sha256Hex(file: File): Promise<string> {
   const digest = await crypto.subtle.digest('SHA-256', await file.arrayBuffer());
   return Array.from(new Uint8Array(digest))

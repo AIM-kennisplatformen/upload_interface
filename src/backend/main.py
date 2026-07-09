@@ -9,14 +9,14 @@ from .routers import field, pdf
 
 app = FastAPI(
     title="Upload Interface API",
-    description="PDF upload/download and metadata field management, backed by scepa-rs.",
+    description="PDF upload/download, metadata field management (backed by scepa-rs), and the frontend itself.",
     version="0.1.0",
 )
 
 app.add_middleware(
     SessionMiddleware,
     secret_key=config["session_secret"],
-    same_site="lax",  # REQUIRED for cross-site requests (SPA on another origin)
+    same_site="lax",  # REQUIRED while developing the frontend with HMR (a separate origin)
     https_only=False,  # Only True if you deploy with HTTPS
 )
 

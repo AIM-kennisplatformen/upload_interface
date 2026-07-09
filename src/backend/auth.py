@@ -43,7 +43,7 @@ def require_user_page(request: Request) -> dict:
     Load the authenticated user from the session, for the served frontend
     itself (assets.py) -- a real page load, so a redirect straight to
     Authentik (mirroring studio's own get_current_user) is the right
-    response, not a JSON 401 no browser navigation would act on.
+    response, not a JSON 401 that a browser navigation couldn't act on.
     """
     user = request.session.get("user")
     if not user:
