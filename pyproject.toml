@@ -17,5 +17,5 @@ python-multipart = ">=0.0.6"
 uvicorn = { version = ">=0.23.0", extras = ["standard"] }
 
 [tool.pixi.tasks]
-backend = { cmd = "uvicorn backend.main:app --port 8000 --reload", cwd = "src" }
+backend = { cmd = "uvicorn backend.main:app --port 8001 --reload", cwd = "src" }
 frontend = { cmd = "npm run dev", cwd = "src/frontend" }

@@ -26,8 +26,10 @@ def require_env(name: str, default: str | None = None) -> str:
 config: dict = {
     # This backend's own base URL, used to build the OAuth redirect_uri
     # (must match what's registered in Authentik) -- mirrors studio's
-    # BACKEND_BASE_URL.
-    "base_url": require_env("BACKEND_BASE_URL", "http://localhost:8000"),
+    # BACKEND_BASE_URL. Not 8000: a docker-compose service in this project
+    # family (kp-typedb) permanently publishes TypeDB's own HTTP API on
+    # that port too.
+    "base_url": require_env("BACKEND_BASE_URL", "http://localhost:8001"),
     "discovery_url": require_env("OAUTH_DISCOVERY_URL", ""),
     "logout_url": require_env("OAUTH_LOGOUT_URL", ""),
     "client_id": require_env("OAUTH_CLIENT_ID", ""),

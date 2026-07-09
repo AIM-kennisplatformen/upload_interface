@@ -1,8 +1,8 @@
 # API Reference
 
-Base URL: `http://localhost:8000`
+Base URL: `http://localhost:8001`
 
-Interactive docs available at `http://localhost:8000/docs`.
+Interactive docs available at `http://localhost:8001/docs`.
 
 This backend authenticates the browser itself via an Authentik OAuth2/OIDC
 login (session cookie, mirroring [studio](../studio)'s own `auth.py`), is
@@ -147,5 +147,5 @@ pixi run frontend
 ```
 
 The frontend dev server runs on `http://localhost:5173` and proxies
-`/document`, `/field`, `/auth`, and `/me` to this backend (`http://localhost:8000`
+`/document`, `/field`, `/auth`, and `/me` to this backend (`http://localhost:8001`
 by default) -- see `vite.config.ts` to change the target.
