@@ -1,0 +1,55 @@
+# Reference reverse-proxy config. UNTESTED against a real Authentik
+# outpost -- I can't stand one up or verify this end-to-end myself; treat
+# this as a starting point, not a verified deployment.
+#
+# Real user authentication happens here, once, for the whole site.
+# scepa-rs and Studio don't do their own OIDC login for this integration;
+# they just trust the bearer key this Caddyfile injects, so give it real,
+# secret values -- these are not the same keys as any human's credentials.
+#
+# Required env vars (set real values, e.g. via docker-compose or the host
+# environment -- never commit real values):
+#   SITE_ADDRESS         e.g. :80, or your real domain
+#   AUTHENTIK_OUTPOST    host:port of the Authentik proxy outpost
+#   SCEPA_METADATA_HOST  host:port of scepa-rs's metadata server
+#   STUDIO_HOST          host:port of Studio
+#   METADATA_API_KEY     bearer key scepa-rs's METADATA_API_KEYS accepts
+#   STUDIO_API_KEY       bearer key Studio's PDF_API_KEYS accepts
+
+{$SITE_ADDRESS:localhost:80} {
+	# Gate the entire site behind Authentik. See:
+	# https://docs.goauthentik.io/docs/add-secure-apps/providers/proxy/forward_auth
+	forward_auth {$AUTHENTIK_OUTPOST} {
+		uri /outpost.goauthentik.io/auth/caddy
+		copy_headers X-Authentik-Username X-Authentik-Groups X-Authentik-Email X-Authentik-Name X-Authentik-Uid
+		trusted_proxies private_ranges
+	}
+
+	# The outpost needs these paths reachable directly to complete its own
+	# OAuth2 flow (login redirect, callback, sign-out).
+	handle /outpost.goauthentik.io/* {
+		reverse_proxy {$AUTHENTIK_OUTPOST}
+	}
+
+	# scepa-rs's own routes are /metadata/{sha256}, no /api prefix -- strip
+	# just the /api segment, keep /metadata/{sha256} intact.
+	handle /api/metadata/* {
+		uri strip_prefix /api
+		reverse_proxy {$SCEPA_METADATA_HOST} {
+			header_up Authorization "Bearer {$METADATA_API_KEY}"
+		}
+	}
+
+	# Studio's PDF store already lives at /api/pdf/{sha256} -- no rewrite.
+	handle /api/pdf/* {
+		reverse_proxy {$STUDIO_HOST} {
+			header_up Authorization "Bearer {$STUDIO_API_KEY}"
+		}
+	}
+
+	# Everything else: the built static frontend (SPA fallback to
+	# index.html for client-side routing).
+	root * /srv
+	try_files {path} /index.html
+	file_server
+}
