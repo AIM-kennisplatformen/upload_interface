@@ -41,9 +41,16 @@ Delete a PDF.
 
 ---
 
-## Field endpoints — `/field/{name}`
+## Field metadata — served directly by scepa-rs, not this backend
 
-Metadata fields are stored as JSON at `uploads/fields/{name}.json`.
+This backend no longer stores or serves field metadata at all: this
+frontend calls [scepa-rs](../scepa-rs)'s metadata server
+(`VITE_SCEPA_METADATA_URL`, default `http://localhost:8081`) directly,
+credentialed cookie included, for extraction, retrieval, and saving.
+Content-addressed by the uploaded PDF's own sha256 (computed client-side via
+`crypto.subtle.digest`), not by document name, so re-uploading identical
+bytes under a different filename reuses whatever was already
+extracted/saved.
 
 ### Field schema
 
@@ -68,60 +75,31 @@ Metadata fields are stored as JSON at `uploads/fields/{name}.json`.
 }
 ```
 
-All fields are optional. Array fields default to `[]`, text fields default to `null`.
+### `PUT {VITE_SCEPA_METADATA_URL}/metadata/{sha256}`
+Runs Grobid extraction on the uploaded PDF and caches the result under its
+own content hash.
 
-### `POST /field/{name}`
-Create a new field record.
+- **Body:** `multipart/form-data` with field `file` containing the PDF
+- **Returns `200`:** JSON object (field schema)
 
-- **Body:** JSON object (field schema above, any subset)
-- **Returns `201`:** the saved JSON object
-- **Returns `409`:** field record already exists
-
-### `GET /field/{name}`
-Retrieve the field record.
+### `GET {VITE_SCEPA_METADATA_URL}/metadata/{sha256}`
+Retrieves a previously-extracted/saved result without rerunning Grobid.
 
 - **Returns `200`:** JSON object
-- **Returns `404`:** not found
+- **Returns `404`:** nothing extracted yet under that hash
 
-### `PUT /field/{name}`
-Replace the entire field record.
+### `PATCH {VITE_SCEPA_METADATA_URL}/metadata/{sha256}`
+Persists the user's edited fields (the save button).
 
-- **Body:** JSON object (full replacement)
+- **Body:** JSON object (full field-schema object)
 - **Returns `200`:** the saved JSON object
-- **Returns `404`:** not found
+- **Returns `404`:** nothing extracted yet under that hash
 
-### `PATCH /field/{name}`
-Partially update the field record. Only keys present in the body are updated; others are preserved.
-
-- **Body:** JSON object (partial update)
-- **Returns `200`:** the full updated JSON object
-- **Returns `404`:** not found
-
-### `DELETE /field/{name}`
-Delete the field record.
-
-- **Returns `204`:** no content
-- **Returns `404`:** not found
-
----
-
-## Grobid autocomplete endpoint — `/field/grobid/{name}`
-
-### `GET /field/grobid/{name}`
-Extracts Grobid metadata live for a previously-uploaded PDF: reads the PDF
-from `uploads/pdfs/{name}.pdf`, hashes it, and calls `PUT
-{SCEPA_METADATA_URL}/metadata/{sha256}` on the
-[scepa-rs](../scepa-rs) metadata server (`Authorization: Bearer
-SCEPA_METADATA_API_KEY`), which runs Grobid + the domain transform and
-returns Field-schema JSON. Returns the subset of fields matching the field
-schema above.
-
-- **Returns `200`:** JSON object (field schema)
-- **Returns `404`:** the named PDF has not been uploaded
-- **Returns `502`:** the scepa-rs metadata server is unreachable or returned an error
-
-Configure via `SCEPA_METADATA_URL` (default `http://localhost:8081`) and
-`SCEPA_METADATA_API_KEY`.
+All three require either an authenticated browser session (an Authentik
+login via that server's own `/auth/login`, see its README) or, for machine
+clients, `Authorization: Bearer <key>`. A `401` from any of these redirects
+the whole page to `{VITE_SCEPA_METADATA_URL}/auth/login`; the in-progress
+upload is lost and must be retried after logging in.
 
 ---
 
@@ -137,4 +115,7 @@ cd src/frontend
 npm run dev
 ```
 
-The frontend dev server runs on `http://localhost:5173` and proxies `/document` and `/field` requests to the backend.
+The frontend dev server runs on `http://localhost:5173` and proxies
+`/document` to this backend; field metadata requests go straight to
+scepa-rs's metadata server (`VITE_SCEPA_METADATA_URL`) instead, a true
+cross-origin request relying on that server's CORS + session cookie.
