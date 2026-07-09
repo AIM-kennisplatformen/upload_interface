@@ -6,7 +6,6 @@ export default defineConfig({
   server: {
     proxy: {
       '/document': 'http://localhost:8000',
-      '/field': 'http://localhost:8000',
     },
   },
 })

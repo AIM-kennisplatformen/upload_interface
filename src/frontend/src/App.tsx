@@ -1,12 +1,13 @@
 import { useCallback, useRef, useState } from 'react';
 import type { FieldData } from './types';
 import { normalizePdfName } from './types';
-import { createFields, getFields, getGrobidFields, patchFields, uploadPdf } from './api';
+import { extractMetadata, getMetadata, saveMetadata, sha256Hex, uploadPdf } from './api';
 import PdfViewer, { type PdfViewerHandle } from './components/PdfViewer';
 import MetaPanel from './components/MetaPanel';
 
 export default function App() {
   const [pdfName, setPdfName] = useState<string | null>(null);
+  const [sha256, setSha256] = useState<string | null>(null);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
   const [page, setPage] = useState(1);
   const [fields, setFields] = useState<FieldData>({});
@@ -20,6 +21,7 @@ export default function App() {
     if (!file) return;
     e.target.value = '';
     const name = normalizePdfName(file.name);
+    const hash = await sha256Hex(file);
     setUploading(true);
     setSaveStatus('Uploading…');
     try {
@@ -33,13 +35,15 @@ export default function App() {
       }
     }
 
-    let existing = await getFields(name);
+    // Content-addressed: re-uploading identical bytes under a different
+    // filename reuses whatever was already extracted/saved for that hash.
+    let existing = await getMetadata(hash);
     if (!existing) {
-      const grobid = await getGrobidFields(name);
-      existing = await createFields(name, grobid ?? {});
+      existing = await extractMetadata(file, hash);
     }
 
     setPdfName(name);
+    setSha256(hash);
     setPdfUrl(`/document/${name}`);
     setFields(existing);
     setSaveStatus('');
@@ -51,13 +55,14 @@ export default function App() {
   }, []);
 
   const handleSave = useCallback(async () => {
-    if (!pdfName) return;
+    if (!sha256) return;
     setSaveStatus('Saving…');
     try {
-      await patchFields(pdfName, fields);
+      await saveMetadata(sha256, fields);
       setSaveStatus('Document saved successfully!');
       setTimeout(() => {
         setPdfName(null);
+        setSha256(null);
         setPdfUrl(null);
         setFields({});
         setPage(1);
@@ -66,7 +71,7 @@ export default function App() {
     } catch (err: unknown) {
       setSaveStatus(`Error: ${err instanceof Error ? err.message : 'unknown'}`);
     }
-  }, [pdfName, fields]);
+  }, [sha256, fields]);
 
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
     if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
