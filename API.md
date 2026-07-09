@@ -105,13 +105,23 @@ Delete the field record.
 
 ---
 
-## Grobid seed endpoint — `/field/grobid/{name}`
+## Grobid autocomplete endpoint — `/field/grobid/{name}`
 
 ### `GET /field/grobid/{name}`
-Return pre-extracted Grobid metadata for a document. Performs a case-insensitive filename match against `test_dataset/metadata_grobid/*.json` and returns the subset of fields matching the field schema above.
+Extracts Grobid metadata live for a previously-uploaded PDF: reads the PDF
+from `uploads/pdfs/{name}.pdf`, hashes it, and calls `PUT
+{SCEPA_METADATA_URL}/metadata/{sha256}` on the
+[scepa-rs](../scepa-rs) metadata server (`Authorization: Bearer
+SCEPA_METADATA_API_KEY`), which runs Grobid + the domain transform and
+returns Field-schema JSON. Returns the subset of fields matching the field
+schema above.
 
 - **Returns `200`:** JSON object (field schema)
-- **Returns `404`:** no matching Grobid file found
+- **Returns `404`:** the named PDF has not been uploaded
+- **Returns `502`:** the scepa-rs metadata server is unreachable or returned an error
+
+Configure via `SCEPA_METADATA_URL` (default `http://localhost:8081`) and
+`SCEPA_METADATA_API_KEY`.
 
 ---
 

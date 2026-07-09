@@ -1,10 +1,12 @@
+import hashlib
 import json
 from pathlib import Path
 from typing import Any
 
+import httpx
 from fastapi import APIRouter, HTTPException, status
 
-from ..config import FIELDS_DIR, METADATA_DIR
+from ..config import FIELDS_DIR, PDFS_DIR, SCEPA_METADATA_API_KEY, SCEPA_METADATA_URL
 
 router = APIRouter(prefix="/field", tags=["field"])
 
@@ -32,16 +34,36 @@ FIELD_KEYS = [
 
 # Registered before /{pdf_name} to avoid route shadowing.
 @router.get("/grobid/{pdf_name}")
-def get_grobid(pdf_name: str) -> dict[str, Any]:
-    """Return pre-extracted grobid metadata for a PDF (case-insensitive name match)."""
-    for json_file in METADATA_DIR.glob("*.json"):
-        if json_file.stem.lower() == pdf_name.lower():
-            try:
-                doc = json.loads(json_file.read_text())
-            except (json.JSONDecodeError, OSError):
-                break
-            return {k: doc.get(k) for k in FIELD_KEYS}
-    raise HTTPException(status.HTTP_404_NOT_FOUND, detail=f"No grobid data for '{pdf_name}'")
+async def get_grobid(pdf_name: str) -> dict[str, Any]:
+    """Extract Grobid metadata live from the uploaded PDF via the scepa-rs metadata server."""
+    pdf_path = PDFS_DIR / f"{pdf_name}.pdf"
+    if not pdf_path.exists():
+        raise HTTPException(status.HTTP_404_NOT_FOUND, detail=f"'{pdf_name}' not found")
+
+    pdf_bytes = pdf_path.read_bytes()
+    sha256 = hashlib.sha256(pdf_bytes).hexdigest()
+
+    async with httpx.AsyncClient(timeout=120.0) as client:
+        try:
+            response = await client.put(
+                f"{SCEPA_METADATA_URL}/metadata/{sha256}",
+                headers={"Authorization": f"Bearer {SCEPA_METADATA_API_KEY}"},
+                files={"file": (f"{pdf_name}.pdf", pdf_bytes, "application/pdf")},
+            )
+        except httpx.RequestError as error:
+            raise HTTPException(
+                status.HTTP_502_BAD_GATEWAY,
+                detail=f"scepa-rs metadata server unreachable: {error}",
+            ) from error
+
+    if response.status_code != status.HTTP_200_OK:
+        raise HTTPException(
+            status.HTTP_502_BAD_GATEWAY,
+            detail=f"scepa-rs metadata server error: {response.text}",
+        )
+
+    doc = response.json()
+    return {k: doc.get(k) for k in FIELD_KEYS}
 
 
 # ----- CRUD -----
