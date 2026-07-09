@@ -1,48 +1,91 @@
 # API Reference
 
-This repo is the frontend only (`src/frontend`) -- there is no backend here.
-In production it's served behind a reverse proxy (Caddy, see the reference
-`Caddyfile`/`docker-compose.yml` at the repo root) that handles real user
-authentication (an Authentik forward-auth outpost gates the whole site)
-and path-routes to two separate services:
+Base URL: `http://localhost:8000`
 
-- **PDF storage** — [studio](../studio)'s existing content-addressed
-  `/api/pdf/{sha256}` store.
-- **Field metadata** — [scepa-rs](../scepa-rs)'s metadata server, at
-  `/metadata/{sha256}` (proxied here under `/api/metadata/{sha256}`).
+Interactive docs available at `http://localhost:8000/docs`.
 
-Neither service does its own user-facing login: the reverse proxy is the
-only thing that talks to Authentik, and it authorizes itself to the
-backends with a static bearer key. From the browser's point of view
-everything is same-origin -- no CORS, and cookies (Authentik's session,
-set by the outpost) flow automatically.
-
-For local development without Caddy, `vite.config.ts` proxies `/api/metadata`
-to a local scepa-rs instance and `/api/pdf` to a local Studio instance
-directly (see `npm run dev` below) -- there's no auth gate in that path, so
-local dev talks to those services unauthenticated (matching however you've
-configured `METADATA_API_KEYS`/Studio's own dev setup).
+This backend authenticates the browser itself via an Authentik OAuth2/OIDC
+login (session cookie, mirroring [studio](../studio)'s own `auth.py`), and
+is the only thing that talks to [scepa-rs](../scepa-rs)'s metadata server --
+it authenticates to scepa-rs with a static bearer key
+(`SCEPA_METADATA_API_KEY`) that the browser never sees or needs. Every
+route below except `/auth/*` requires a valid session; a `401` means the
+frontend should navigate the whole page to `/auth/login`.
 
 ---
 
-## PDF storage — `/api/pdf/{sha256}` (Studio)
+## Auth endpoints — `/auth/*`
 
-The picked PDF stays in browser memory (viewed via a local `blob:` URL)
-while the user reviews/edits the extracted fields, and is only actually
-uploaded when the save button is clicked -- alongside the metadata
-`PATCH` -- so nothing is written anywhere until the document is explicitly
-saved.
+### `GET /auth/login`
+Redirects to Authentik for authentication.
 
-- `PUT /api/pdf/{sha256}` (multipart, field `file`): stores the PDF under
-  its own content hash. Idempotent -- re-uploading identical bytes is a
-  safe no-op.
-- `GET /api/pdf/{sha256}`: returns the raw PDF bytes.
+### `GET /auth/callback`
+OAuth callback: exchanges the code, stores the user in the session, and
+redirects to `FRONTEND_URL`.
 
-See studio's own docs for the exact contract; this repo just calls it.
+### `GET /auth/logout`
+Clears the session and redirects to `OAUTH_LOGOUT_URL`.
+
+### `GET /me`
+Returns the current session's user.
+
+- **Returns `200`:** `{ "authenticated": true, "user": {...} }`
+- **Returns `401`:** not logged in
 
 ---
 
-## Field metadata — `/api/metadata/{sha256}` (scepa-rs)
+## Document endpoints — `/document/{name}`
+
+`{name}` is the normalized document identifier: lowercase, non-alphanumeric characters replaced with `-`, leading/trailing `-` stripped.  
+Example: `My Paper (2024).pdf` → `my-paper-2024`
+
+The frontend does not call `POST /document/{name}` at file-pick time. The
+picked PDF stays in browser memory (viewed via a local `blob:` URL) while
+the user reviews/edits the extracted fields, and is only actually uploaded
+here when the save button is clicked -- alongside the field `PATCH` below
+-- so nothing is written anywhere until the document is explicitly saved.
+
+### `POST /document/{name}`
+Upload a new PDF.
+
+- **Body:** `multipart/form-data` with field `file` containing a PDF binary
+- **Content-Type:** `application/pdf` or `application/octet-stream`
+- **Returns `201`:** `{ "pdf_name": "...", "filename": "..." }`
+- **Returns `409`:** document already exists
+- **Returns `415`:** file is not a PDF
+
+### `GET /document/{name}`
+Download a PDF.
+
+- **Returns `200`:** PDF binary (`application/pdf`)
+- **Returns `404`:** not found
+
+### `PUT /document/{name}`
+Replace an existing PDF.
+
+- **Body:** `multipart/form-data` with field `file` (same as POST)
+- **Returns `200`:** `{ "pdf_name": "...", "filename": "..." }`
+- **Returns `404`:** not found
+
+### `DELETE /document/{name}`
+Delete a PDF.
+
+- **Returns `204`:** no content
+- **Returns `404`:** not found
+
+---
+
+## Field endpoints — `/field/{sha256}`
+
+Field metadata is content-addressed by the PDF's own sha256 (computed
+client-side via `crypto.subtle.digest`), independently of `/document`'s
+name-based storage -- so re-picking identical bytes under a different
+filename reuses whatever was already extracted/saved for that hash, even
+if the PDF itself hasn't been uploaded under this filename yet.
+
+This backend never stores field data itself: every route below is a thin,
+session-authenticated relay to scepa-rs's metadata server, which does the
+actual Grobid extraction and persistence.
 
 ### Field schema
 
@@ -67,24 +110,23 @@ See studio's own docs for the exact contract; this repo just calls it.
 }
 ```
 
-### `PUT /api/metadata/{sha256}`
-Runs Grobid extraction on the uploaded PDF and returns the result.
-Transient -- nothing is persisted here.
+### `PUT /field/grobid/{sha256}`
+Runs Grobid extraction on the uploaded PDF (relayed to scepa-rs) and
+returns the result. Transient -- nothing is persisted, here or on
+scepa-rs, until the fields are explicitly saved.
 
 - **Body:** `multipart/form-data` with field `file` containing the PDF
 - **Returns `200`:** JSON object (field schema)
 
-### `GET /api/metadata/{sha256}`
-Retrieves a previously-*saved* result (i.e. the save button has been
-clicked for this document at least once before).
+### `GET /field/{sha256}`
+Retrieves a previously-*saved* result.
 
 - **Returns `200`:** JSON object
 - **Returns `404`:** nothing saved yet under that hash
 
-### `PATCH /api/metadata/{sha256}`
-Persists the user's edited fields -- the only endpoint that writes to
-disk. Creates the record on its first call for a given hash, overwrites it
-on every call after.
+### `PATCH /field/{sha256}`
+Persists the user's edited fields -- the only endpoint in this chain that
+writes to disk (on scepa-rs).
 
 - **Body:** JSON object (full field-schema object)
 - **Returns `200`:** the saved JSON object
@@ -94,15 +136,13 @@ on every call after.
 ## Running
 
 ```bash
-cd src/frontend
-npm install
-npm run dev
+# Backend (from repo root)
+pixi run backend
+
+# Frontend (from repo root)
+pixi run frontend
 ```
 
-The dev server runs on `http://localhost:5173` and proxies `/api/metadata`
-to a local scepa-rs instance (`http://localhost:8081` by default) and
-`/api/pdf` to a local Studio instance (`http://localhost:10090` by
-default) -- see `vite.config.ts` to change either target.
-
-`npm run build` produces the static `dist/` that the reference
-`Dockerfile`/Caddy setup serves in a real deployment.
+The frontend dev server runs on `http://localhost:5173` and proxies
+`/document`, `/field`, `/auth`, and `/me` to this backend (`http://localhost:8000`
+by default) -- see `vite.config.ts` to change the target.
