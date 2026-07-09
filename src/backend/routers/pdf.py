@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 
-from fastapi import APIRouter, Depends, HTTPException, UploadFile, status
+from fastapi import APIRouter, Depends, HTTPException, Response, UploadFile, status
 from fastapi.responses import FileResponse
 
 from ..auth import get_current_user
@@ -32,6 +32,16 @@ def get_pdf(pdf_name: str):
     if not path.exists():
         raise HTTPException(status.HTTP_404_NOT_FOUND, detail=f"'{pdf_name}' not found")
     return FileResponse(path, media_type="application/pdf", filename=f"{pdf_name}.pdf")
+
+
+# Unlike plain Starlette's Route, FastAPI's APIRoute does not auto-add HEAD
+# support to a GET route -- the frontend's existence check needs an
+# explicit handler, not a fallback onto get_pdf.
+@router.head("/{pdf_name}")
+def head_pdf(pdf_name: str):
+    if not _pdf_path(pdf_name).exists():
+        raise HTTPException(status.HTTP_404_NOT_FOUND)
+    return Response()
 
 
 @router.put("/{pdf_name}")
