@@ -37,24 +37,29 @@ export default function App() {
     setUploading(true);
     setSaveStatus('Analyzing…');
 
-    // Content-addressed: re-picking identical bytes under a different
-    // filename reuses whatever was already extracted/saved for that hash --
-    // and if it was already saved, its PDF is already stored too.
-    let existing = await getMetadata(hash);
-    if (existing) {
-      setPendingFile(null);
-      setPdfUrl(`/document/${name}`);
-    } else {
-      existing = await extractMetadata(file, hash);
-      setPendingFile(file);
-      setPdfUrl(URL.createObjectURL(file));
-    }
+    try {
+      // Content-addressed: re-picking identical bytes under a different
+      // filename reuses whatever was already extracted/saved for that hash
+      // -- and if it was already saved, its PDF is already stored too.
+      let existing = await getMetadata(hash);
+      if (existing) {
+        setPendingFile(null);
+        setPdfUrl(`/document/${name}`);
+      } else {
+        existing = await extractMetadata(file, hash);
+        setPendingFile(file);
+        setPdfUrl(URL.createObjectURL(file));
+      }
 
-    setPdfName(name);
-    setSha256(hash);
-    setFields(existing);
-    setSaveStatus('');
-    setUploading(false);
+      setPdfName(name);
+      setSha256(hash);
+      setFields(existing);
+      setSaveStatus('');
+    } catch (err: unknown) {
+      setSaveStatus(`Error: ${err instanceof Error ? err.message : 'unknown'}`);
+    } finally {
+      setUploading(false);
+    }
   }, []);
 
   const handleValueChange = useCallback((key: string, value: string | string[]) => {
