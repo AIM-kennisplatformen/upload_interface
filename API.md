@@ -11,6 +11,12 @@ Interactive docs available at `http://localhost:8000/docs`.
 `{name}` is the normalized document identifier: lowercase, non-alphanumeric characters replaced with `-`, leading/trailing `-` stripped.  
 Example: `My Paper (2024).pdf` → `my-paper-2024`
 
+The frontend does not call `POST /document/{name}` at file-pick time. The
+picked PDF stays in browser memory (viewed via a local `blob:` URL) while
+the user reviews/edits the extracted fields, and is only actually uploaded
+here when the save button is clicked -- alongside the `PATCH` to scepa-rs
+-- so nothing is written anywhere until the document is explicitly saved.
+
 ### `POST /document/{name}`
 Upload a new PDF.
 

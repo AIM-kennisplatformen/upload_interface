@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { FieldData } from './types';
 import { normalizePdfName } from './types';
 import { extractMetadata, getMetadata, saveMetadata, sha256Hex, uploadPdf } from './api';
@@ -8,6 +8,11 @@ import MetaPanel from './components/MetaPanel';
 export default function App() {
   const [pdfName, setPdfName] = useState<string | null>(null);
   const [sha256, setSha256] = useState<string | null>(null);
+  // Held only for a not-yet-saved document: the PDF stays in browser memory
+  // (never sent to /document) until the save button actually uploads it,
+  // mirroring the same "nothing persists until save" rule already applied
+  // to field metadata.
+  const [pendingFile, setPendingFile] = useState<File | null>(null);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
   const [page, setPage] = useState(1);
   const [fields, setFields] = useState<FieldData>({});
@@ -16,6 +21,13 @@ export default function App() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const viewerRef = useRef<PdfViewerHandle>(null);
 
+  // Revoke the previous blob: URL whenever it's replaced or the app unmounts.
+  useEffect(() => {
+    return () => {
+      if (pdfUrl?.startsWith('blob:')) URL.revokeObjectURL(pdfUrl);
+    };
+  }, [pdfUrl]);
+
   const handleFileChange = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -23,28 +35,23 @@ export default function App() {
     const name = normalizePdfName(file.name);
     const hash = await sha256Hex(file);
     setUploading(true);
-    setSaveStatus('Uploading…');
-    try {
-      await uploadPdf(name, file);
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : String(err);
-      if (!msg.includes('already exists')) {
-        setSaveStatus(`Error: ${msg}`);
-        setUploading(false);
-        return;
-      }
-    }
+    setSaveStatus('Analyzing…');
 
-    // Content-addressed: re-uploading identical bytes under a different
-    // filename reuses whatever was already extracted/saved for that hash.
+    // Content-addressed: re-picking identical bytes under a different
+    // filename reuses whatever was already extracted/saved for that hash --
+    // and if it was already saved, its PDF is already stored too.
     let existing = await getMetadata(hash);
-    if (!existing) {
+    if (existing) {
+      setPendingFile(null);
+      setPdfUrl(`/document/${name}`);
+    } else {
       existing = await extractMetadata(file, hash);
+      setPendingFile(file);
+      setPdfUrl(URL.createObjectURL(file));
     }
 
     setPdfName(name);
     setSha256(hash);
-    setPdfUrl(`/document/${name}`);
     setFields(existing);
     setSaveStatus('');
     setUploading(false);
@@ -55,14 +62,23 @@ export default function App() {
   }, []);
 
   const handleSave = useCallback(async () => {
-    if (!sha256) return;
+    if (!sha256 || !pdfName) return;
     setSaveStatus('Saving…');
     try {
+      if (pendingFile) {
+        try {
+          await uploadPdf(pdfName, pendingFile);
+        } catch (err: unknown) {
+          const msg = err instanceof Error ? err.message : String(err);
+          if (!msg.includes('already exists')) throw err;
+        }
+      }
       await saveMetadata(sha256, fields);
       setSaveStatus('Document saved successfully!');
       setTimeout(() => {
         setPdfName(null);
         setSha256(null);
+        setPendingFile(null);
         setPdfUrl(null);
         setFields({});
         setPage(1);
@@ -71,7 +87,7 @@ export default function App() {
     } catch (err: unknown) {
       setSaveStatus(`Error: ${err instanceof Error ? err.message : 'unknown'}`);
     }
-  }, [sha256, fields]);
+  }, [sha256, pdfName, pendingFile, fields]);
 
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
     if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
