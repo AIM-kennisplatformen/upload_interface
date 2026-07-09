@@ -5,12 +5,15 @@ Base URL: `http://localhost:8000`
 Interactive docs available at `http://localhost:8000/docs`.
 
 This backend authenticates the browser itself via an Authentik OAuth2/OIDC
-login (session cookie, mirroring [studio](../studio)'s own `auth.py`), and
-is the only thing that talks to [scepa-rs](../scepa-rs)'s metadata server --
-it authenticates to scepa-rs with a static bearer key
-(`SCEPA_METADATA_API_KEY`) that the browser never sees or needs. Every
-route below except `/auth/*` requires a valid session; a `401` means the
-frontend should navigate the whole page to `/auth/login`.
+login (session cookie, mirroring [studio](../studio)'s own `auth.py`), is
+the only thing that talks to [scepa-rs](../scepa-rs)'s metadata server --
+authenticating to it with a static bearer key (`SCEPA_METADATA_API_KEY`)
+the browser never sees or needs -- and serves the frontend's own
+production build itself at `/` (`npm run build`'s `src/frontend/dist`).
+Every route below except `/auth/*` requires a valid session: the JSON API
+routes (`/document`, `/field`, `/me`) return a `401` (the frontend then
+navigates the whole page to `/auth/login`), while `/` and any other page
+route redirect straight there (`303`) before the page even loads.
 
 ---
 
@@ -21,7 +24,7 @@ Redirects to Authentik for authentication.
 
 ### `GET /auth/callback`
 OAuth callback: exchanges the code, stores the user in the session, and
-redirects to `FRONTEND_URL`.
+redirects to `/` (this backend's own served frontend).
 
 ### `GET /auth/logout`
 Clears the session and redirects to `OAUTH_LOGOUT_URL`.

@@ -11,6 +11,10 @@ BASE_DIR = Path(__file__).parent.parent.parent
 PDFS_DIR = BASE_DIR / "uploads" / "pdfs"
 PDFS_DIR.mkdir(parents=True, exist_ok=True)
 
+# The frontend's production build (npm run build), served by this backend
+# itself at "/" (see assets.py) -- no separate frontend host needed.
+FRONTEND_DIST_DIR = BASE_DIR / "src" / "frontend" / "dist"
+
 
 def require_env(name: str, default: str | None = None) -> str:
     value = os.getenv(name, default)
@@ -31,10 +35,9 @@ config: dict = {
     # an empty value just means login is misconfigured, not silently insecure.
     "client_secret": require_env("OAUTH_CLIENT_SECRET", ""),
     "session_secret": require_env("SESSION_SECRET", secrets.token_urlsafe(32)),
-    # The frontend's own origin -- unlike studio (which serves its frontend
-    # from this same app), this SPA always lives on a separate origin, in
-    # dev and in production alike. Used for both the CORS allow-list and
-    # the post-login redirect target.
+    # The Vite dev server's origin, needed in CORS's allow-list only while
+    # developing the frontend with HMR (`pixi run frontend`) instead of
+    # visiting this backend's own served build directly.
     "frontend_url": require_env("FRONTEND_URL", "http://localhost:5173"),
     # scepa-rs metadata server (PUT/GET/PATCH /metadata/{sha256}): this
     # backend is the only thing that calls it, authenticating with a

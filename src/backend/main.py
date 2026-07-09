@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 
+from .assets import frontend_router
 from .auth import auth_router
 from .config import config
 from .routers import field, pdf
@@ -30,3 +31,6 @@ app.add_middleware(
 app.include_router(auth_router)
 app.include_router(pdf.router)
 app.include_router(field.router)
+# Registered last: its catch-all "/{path:path}" route must not shadow the
+# more specific routers above.
+app.include_router(frontend_router)

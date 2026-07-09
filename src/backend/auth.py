@@ -26,17 +26,28 @@ auth_router = APIRouter()
 
 def get_current_user(request: Request) -> dict:
     """
-    Load the authenticated user from the session.
-
-    Unlike studio's own get_current_user (which 307s, since its frontend
-    is served by this same app), this backend is called by a separately
-    hosted SPA via fetch() -- a redirect response isn't actionable there,
-    so this raises a plain 401 instead and lets the frontend decide how to
-    react (e.g. navigating the whole page to /auth/login itself).
+    Load the authenticated user from the session, for JSON API endpoints
+    (/document, /field). These are called via fetch() from the SPA's own
+    JS runtime, which can't usefully act on a redirect response, so this
+    raises a plain 401 and lets the frontend decide how to react (e.g.
+    navigating the whole page to /auth/login itself).
     """
     user = request.session.get("user")
     if not user:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, detail="Not authenticated")
+    return user
+
+
+def require_user_page(request: Request) -> dict:
+    """
+    Load the authenticated user from the session, for the served frontend
+    itself (assets.py) -- a real page load, so a redirect straight to
+    Authentik (mirroring studio's own get_current_user) is the right
+    response, not a JSON 401 no browser navigation would act on.
+    """
+    user = request.session.get("user")
+    if not user:
+        raise HTTPException(status.HTTP_303_SEE_OTHER, headers={"Location": "/auth/login"})
     return user
 
 
@@ -53,10 +64,15 @@ async def login(request: Request):
 
 @auth_router.get("/auth/callback")
 async def callback(request: Request):
-    """OAuth callback endpoint: retrieves tokens and stores userinfo in session."""
+    """
+    OAuth callback endpoint: retrieves tokens, stores userinfo in session,
+    and redirects to this app's own served root (relative, so it resolves
+    against wherever the callback itself is actually reachable -- always
+    BACKEND_BASE_URL, since that's the fixed OAuth redirect_uri).
+    """
     token = await oauth.authentik.authorize_access_token(request)
     request.session["user"] = dict(token["userinfo"])
-    return RedirectResponse(config["frontend_url"])
+    return RedirectResponse("/")
 
 
 @auth_router.get("/auth/logout")
