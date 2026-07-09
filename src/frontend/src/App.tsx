@@ -9,9 +9,9 @@ export default function App() {
   const [pdfName, setPdfName] = useState<string | null>(null);
   const [sha256, setSha256] = useState<string | null>(null);
   // Held only for a not-yet-saved document: the PDF stays in browser memory
-  // (never sent to /document) until the save button actually uploads it,
-  // mirroring the same "nothing persists until save" rule already applied
-  // to field metadata.
+  // (never sent to Studio's PDF store) until the save button actually
+  // uploads it, mirroring the same "nothing persists until save" rule
+  // already applied to field metadata.
   const [pendingFile, setPendingFile] = useState<File | null>(null);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
   const [page, setPage] = useState(1);
@@ -44,7 +44,7 @@ export default function App() {
       let existing = await getMetadata(hash);
       if (existing) {
         setPendingFile(null);
-        setPdfUrl(`/document/${name}`);
+        setPdfUrl(`/api/pdf/${hash}`);
       } else {
         existing = await extractMetadata(file, hash);
         setPendingFile(file);
@@ -71,12 +71,7 @@ export default function App() {
     setSaveStatus('Saving…');
     try {
       if (pendingFile) {
-        try {
-          await uploadPdf(pdfName, pendingFile);
-        } catch (err: unknown) {
-          const msg = err instanceof Error ? err.message : String(err);
-          if (!msg.includes('already exists')) throw err;
-        }
+        await uploadPdf(sha256, pendingFile);
       }
       await saveMetadata(sha256, fields);
       setSaveStatus('Document saved successfully!');
