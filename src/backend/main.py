@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .routers import field, pdf
+from .routers import pdf
 
 app = FastAPI(
     title="Upload Interface API",
-    description="PDF upload/download and metadata field management with autocomplete.",
+    description="PDF upload/download; field metadata is served directly by scepa-rs's metadata server.",
     version="0.1.0",
 )
 
@@ -17,4 +17,3 @@ app.add_middleware(
 )
 
 app.include_router(pdf.router)
-app.include_router(field.router)
