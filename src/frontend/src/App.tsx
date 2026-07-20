@@ -155,7 +155,19 @@ whitespace-nowrap"
         >
           Upload Interface
         </h1>
-        {pdfName && <span className="topbar-pdf-name">{pdfName}</span>}
+        {pdfName && (
+          <span
+            className="text-xs
+font-mono
+text-muted-foreground
+overflow-hidden
+text-ellipsis
+whitespace-nowrap
+max-w-70"
+          >
+            {pdfName}
+          </span>
+        )}
       </header>
       <input
         ref={fileInputRef}
