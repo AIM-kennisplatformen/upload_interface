@@ -26,7 +26,7 @@ export default function TagInput({ values, onChange }: Props) {
 
   return (
     <div
-      className="bg-background focus-within:border-accent flex cursor-text flex-wrap items-center gap-1 rounded-md border px-1.5 py-1.25 transition-colors duration-150"
+      className="bg-background text-primary flex cursor-text flex-wrap items-center gap-1 rounded-md border px-2 py-1.25 transition-colors duration-150"
       onClick={() => inputRef.current?.focus()}>
       {values.map((v, i) => (
         <span

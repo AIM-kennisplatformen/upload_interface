@@ -143,7 +143,7 @@ export default function App() {
           Upload Interface
         </h1>
         {pdfName && (
-          <span className="text-muted-foreground max-w-70 overflow-hidden font-mono text-xs text-ellipsis whitespace-nowrap">
+          <span className="text-muted max-w-70 overflow-hidden font-mono text-xs text-ellipsis whitespace-nowrap">
             {pdfName}
           </span>
         )}
@@ -164,7 +164,6 @@ export default function App() {
         onUploadClick={() => fileInputRef.current?.click()}
         uploading={uploading}
       />
-
       <MetaPanel
         pdfName={pdfName}
         fields={fields}

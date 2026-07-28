@@ -29,13 +29,7 @@ export default function MetaPanel({
 
       <div className="flex-1 overflow-y-auto p-2.5">
         {!pdfName ? (
-          <p
-            style={{
-              color: "var(--muted)",
-              fontSize: 12,
-              padding: "20px 0",
-              textAlign: "center",
-            }}>
+          <p className="text-primary ps-2 text-center text-sm">
             Upload a PDF to edit its metadata.
           </p>
         ) : (
