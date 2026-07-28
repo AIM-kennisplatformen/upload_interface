@@ -26,7 +26,7 @@ const PdfViewer = forwardRef<PdfViewerHandle, Props>(
   ({ url, page, onPageChange, onUploadClick, uploading }, ref) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [pdfDoc, setPdfDoc] = useState<pdfjsLib.PDFDocumentProxy | null>(
-      null,
+      null
     );
     const renderTaskRef = useRef<pdfjsLib.RenderTask | null>(null);
     const scale = 1.5;
@@ -92,36 +92,13 @@ const PdfViewer = forwardRef<PdfViewerHandle, Props>(
 
     if (!url) {
       return (
-        <div
-          className="bg-secondary
-flex
-flex-col
-min-h-0"
-        >
-          <div
-            className="m-auto
-text-muted-foreground
-text-[13px]
-text-center
-leading-8"
-          >
+        <div className="bg-secondary flex min-h-0 flex-col justify-center">
+          <div className="text-muted-foreground m-auto flex flex-col items-center text-center text-[13px]">
             <strong>No PDF loaded</strong>
             <button
-              className="px-7
-py-2.5
-bg-primary
-rounded-lg
-text-primary-foreground
-text-sm
-font-semibold
-transition-opacity
-duration-150
-hover:opacity-85
-disabled:opacity-40
-disabled:cursor-default"
+              className="bg-primary text-primary-foreground rounded-lg px-7 py-2.5 text-sm font-semibold transition-opacity duration-150 hover:opacity-85 disabled:cursor-default disabled:opacity-40"
               onClick={onUploadClick}
-              disabled={uploading}
-            >
+              disabled={uploading}>
               {uploading ? "Uploading…" : "Upload PDF"}
             </button>
           </div>
@@ -130,67 +107,34 @@ disabled:cursor-default"
     }
 
     return (
-      <div
-        className="bg-secondary
-flex
-flex-col
-min-h-0"
-      >
-        <div
-          className="flex-1
-overflow-auto
-flex
-flex-col
-items-center
-min-h-0"
-        >
-          <div
-            className="my-5
-mx-auto
-shadow-[0_4px_32px_rgba(0,0,0,0.53)]"
-          >
+      <div className="bg-secondary flex min-h-0 flex-col">
+        <div className="flex min-h-0 flex-1 flex-col items-center overflow-auto">
+          <div className="mx-auto my-5 shadow-[0_4px_32px_rgba(0,0,0,0.53)]">
             <canvas ref={canvasRef} />
           </div>
         </div>
         {pdfDoc && (
-          <div
-            className="flex
-items-center
-justify-center
-gap-3
-p-2
-bg-card
-border-t
-border-border
-shrink-0"
-          >
+          <div className="bg-card border-border flex shrink-0 items-center justify-center gap-3 border-t p-2">
             <button
               className="btn"
               onClick={() => changePage(-1)}
-              disabled={page <= 1}
-            >
+              disabled={page <= 1}>
               ◀
             </button>
-            <span
-              className="text-xs
-text-muted-foreground
-min-w-16
-text-center"
-            >
+            <span className="text-muted-foreground min-w-16 text-center text-xs">
               {page} / {pdfDoc.numPages}
             </span>
             <button
               className="btn"
               onClick={() => changePage(1)}
-              disabled={page >= pdfDoc.numPages}
-            >
+              disabled={page >= pdfDoc.numPages}>
               ▶
             </button>
           </div>
         )}
       </div>
     );
-  },
+  }
 );
 
 PdfViewer.displayName = "PdfViewer";

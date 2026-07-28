@@ -54,6 +54,11 @@ export default function App() {
         // different name).
         const [existingFields, alreadyStored] = await Promise.all([
           getMetadata(hash),
+          // new Promise((resolve) => {
+          //   setTimeout(() => {
+          //     resolve(null);
+          //   }, 100);
+          // }),
           pdfExists(name),
         ]);
 
@@ -74,20 +79,20 @@ export default function App() {
         setSaveStatus("");
       } catch (err: unknown) {
         setSaveStatus(
-          `Error: ${err instanceof Error ? err.message : "unknown"}`,
+          `Error: ${err instanceof Error ? err.message : "unknown"}`
         );
       } finally {
         setUploading(false);
       }
     },
-    [],
+    []
   );
 
   const handleValueChange = useCallback(
     (key: string, value: string | string[]) => {
       setFields((prev) => ({ ...prev, [key]: value }));
     },
-    [],
+    []
   );
 
   const handleSave = useCallback(async () => {
@@ -130,41 +135,15 @@ export default function App() {
 
   return (
     <div
-      className="grid
-grid-cols-[1fr_380px]
-grid-rows-[50px_1fr]
-h-screen
-overflow-hidden"
+      className="grid h-screen grid-cols-[1fr_380px] grid-rows-[50px_1fr] overflow-hidden"
       tabIndex={-1}
-      onKeyDown={handleKeyDown}
-    >
-      <header
-        className="col-span-full
-bg-primary
-border-b
-border-border
-flex
-items-center
-gap-3
-px-4"
-      >
-        <h1
-          className="text-[15px]
-font-semibold
-whitespace-nowrap"
-        >
+      onKeyDown={handleKeyDown}>
+      <header className="bg-primary border-border col-span-full flex items-center gap-3 border-b px-4">
+        <h1 className="text-[15px] font-semibold whitespace-nowrap">
           Upload Interface
         </h1>
         {pdfName && (
-          <span
-            className="text-xs
-font-mono
-text-muted-foreground
-overflow-hidden
-text-ellipsis
-whitespace-nowrap
-max-w-70"
-          >
+          <span className="text-muted-foreground max-w-70 overflow-hidden font-mono text-xs text-ellipsis whitespace-nowrap">
             {pdfName}
           </span>
         )}

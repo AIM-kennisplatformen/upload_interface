@@ -20,18 +20,8 @@ export default function MetaField({ config, value, onValueChange }: Props) {
 
   return (
     <div className="mb-3">
-      <div
-        className="flex
-justify-between
-items-center
-mb-1"
-      >
-        <span
-          className="text-[11px]
-font-bold
-text-muted-foreground
-tracking-wider"
-        >
+      <div className="mb-1 flex items-center justify-between">
+        <span className="text-muted-foreground text-[11px] font-bold tracking-wider">
           {label}
         </span>
       </div>
@@ -47,20 +37,7 @@ tracking-wider"
         />
       ) : (
         <input
-          className="w-full
-bg-secondary
-border
-focus:border-primary
-text-foreground
-rounded-md
-px-2
-py-1.5
-text-xs
-leading-6
-resize-y
-transition-colors
-duration-150
-focus:outline-none"
+          className="bg-secondary focus:border-primary text-foreground w-full resize-y rounded-md border px-2 py-1.5 text-xs leading-6 transition-colors duration-150 focus:outline-none"
           value={strVal}
           onChange={(e) => onValueChange(key, e.target.value)}
         />

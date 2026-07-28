@@ -26,62 +26,26 @@ export default function TagInput({ values, onChange }: Props) {
 
   return (
     <div
-      className="bg-background
-border
-rounded-md
-px-1.5
-py-1.25
-flex
-flex-wrap
-gap-1
-items-center
-cursor-text
-transition-colors
-duration-150
-focus-within:border-accent"
-      onClick={() => inputRef.current?.focus()}
-    >
+      className="bg-background focus-within:border-accent flex cursor-text flex-wrap items-center gap-1 rounded-md border px-1.5 py-1.25 transition-colors duration-150"
+      onClick={() => inputRef.current?.focus()}>
       {values.map((v, i) => (
         <span
           key={i}
-          className="flex
-items-center
-gap-1
-bg-card
-border
-border-border
-rounded
-px-1.5
-py-0.5
-text-[11px]
-max-w-55"
-        >
+          className="bg-card border-border flex max-w-55 items-center gap-1 rounded border px-1.5 py-0.5 text-[11px]">
           <span title={v}>{v}</span>
           <span
-            className="text-muted-foreground
-cursor-pointer
-text-xs
-leading-none
-shrink-0
-hover:text-destructive"
+            className="text-muted-foreground hover:text-destructive shrink-0 cursor-pointer text-xs leading-none"
             onClick={(e) => {
               e.stopPropagation();
               onChange(values.filter((_, j) => j !== i));
-            }}
-          >
+            }}>
             ×
           </span>
         </span>
       ))}
       <input
         ref={inputRef}
-        className="border-0
-bg-transparent
-text-foreground
-text-xs
-outline-none
-min-w-20
-flex-1"
+        className="text-foreground min-w-20 flex-1 border-0 bg-transparent text-xs outline-none"
         value={input}
         placeholder={values.length ? "" : "Add item…"}
         onChange={(e) => setInput(e.target.value)}

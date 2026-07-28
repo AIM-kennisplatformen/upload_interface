@@ -1,21 +1,26 @@
-from authlib.integrations.starlette_client import OAuth
 from fastapi import APIRouter, HTTPException, Request, status
 from fastapi.responses import RedirectResponse
 
-from .config import config
+AUTH_DISABLED = True
+
+if not AUTH_DISABLED:
+    from authlib.integrations.starlette_client import OAuth
+
+    from .config import config
 
 # -------------------------------------------------------
 # OAuth Client Setup
 # -------------------------------------------------------
 
-oauth = OAuth()
-oauth.register(
-    name="authentik",
-    server_metadata_url=config["discovery_url"],
-    client_id=config["client_id"],
-    client_secret=config["client_secret"],
-    client_kwargs={"scope": "openid email profile"},
-)
+if not AUTH_DISABLED:
+    oauth = OAuth()
+    oauth.register(
+        name="authentik",
+        server_metadata_url=config["discovery_url"],
+        client_id=config["client_id"],
+        client_secret=config["client_secret"],
+        client_kwargs={"scope": "openid email profile"},
+    )
 
 auth_router = APIRouter()
 
@@ -32,6 +37,9 @@ def get_current_user(request: Request) -> dict:
     raises a plain 401 and lets the frontend decide how to react (e.g.
     navigating the whole page to /auth/login itself).
     """
+    if AUTH_DISABLED:
+        return {"disabled": True, "name": "local-dev"}
+
     user = request.session.get("user")
     if not user:
         raise HTTPException(status.HTTP_401_UNAUTHORIZED, detail="Not authenticated")
@@ -45,6 +53,9 @@ def require_user_page(request: Request) -> dict:
     Authentik (mirroring studio's own get_current_user) is the right
     response, not a JSON 401 that a browser navigation couldn't act on.
     """
+    if AUTH_DISABLED:
+        return {"disabled": True, "name": "local-dev"}
+
     user = request.session.get("user")
     if not user:
         raise HTTPException(status.HTTP_303_SEE_OTHER, headers={"Location": "/auth/login"})
@@ -58,6 +69,9 @@ def require_user_page(request: Request) -> dict:
 @auth_router.get("/auth/login")
 async def login(request: Request):
     """Redirect the user to Authentik for authentication."""
+    if AUTH_DISABLED:
+        return RedirectResponse("/")
+
     redirect_uri = config["base_url"] + "/auth/callback"
     return await oauth.authentik.authorize_redirect(request, redirect_uri)
 
@@ -70,6 +84,10 @@ async def callback(request: Request):
     against wherever the callback itself is actually reachable -- always
     BACKEND_BASE_URL, since that's the fixed OAuth redirect_uri).
     """
+    if AUTH_DISABLED:
+        request.session["user"] = {"disabled": True, "name": "local-dev"}
+        return RedirectResponse("/")
+
     token = await oauth.authentik.authorize_access_token(request)
     request.session["user"] = dict(token["userinfo"])
     return RedirectResponse("/")
@@ -78,6 +96,10 @@ async def callback(request: Request):
 @auth_router.get("/auth/logout")
 async def logout(request: Request):
     """Clear the user's session and log them out."""
+    if AUTH_DISABLED:
+        request.session.clear()
+        return RedirectResponse("/")
+
     request.session.clear()
     return RedirectResponse(config["logout_url"])
 

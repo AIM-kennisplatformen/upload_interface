@@ -18,39 +18,16 @@ export default function MetaPanel({
   onSave,
 }: Props) {
   return (
-    <div
-      className="bg-card
-border-l
-border-border
-flex
-flex-col
-overflow-hidden
-min-h-0"
-    >
+    <div className="bg-card border-border flex min-h-0 flex-col overflow-hidden border-l">
       {pdfName && (
-        <div
-          className="px-3
-py-1.75
-border-b
-border-border
-text-[10px]
-text-muted-foreground
-font-mono
-flex
-gap-3.5
-flex-wrap"
-        >
+        <div className="border-border text-muted-foreground flex flex-wrap gap-3.5 border-b px-3 py-1.75 font-mono text-[10px]">
           <span>
             pdf: <span className="text-text">{pdfName}</span>
           </span>
         </div>
       )}
 
-      <div
-        className="flex-1
-overflow-y-auto
-p-2.5"
-      >
+      <div className="flex-1 overflow-y-auto p-2.5">
         {!pdfName ? (
           <p
             style={{
@@ -58,8 +35,7 @@ p-2.5"
               fontSize: 12,
               padding: "20px 0",
               textAlign: "center",
-            }}
-          >
+            }}>
             Upload a PDF to edit its metadata.
           </p>
         ) : (
@@ -74,38 +50,15 @@ p-2.5"
         )}
       </div>
 
-      <div
-        className="p-2.5
-border-t
-border-border
-flex
-gap-2
-items-center"
-      >
+      <div className="border-border flex items-center gap-2 border-t p-2.5">
         <button
-          className="flex-1
-p-2.25
-bg-primary
-rounded-md
-text-primary-foreground
-text-[13px]
-font-semibold
-transition-opacity
-duration-150
-hover:opacity-85
-disabled:opacity-40
-disabled:cursor-default"
+          className="bg-primary text-primary-foreground flex-1 rounded-md p-2.25 text-[13px] font-semibold transition-opacity duration-150 hover:opacity-85 disabled:cursor-default disabled:opacity-40"
           disabled={!pdfName}
-          onClick={onSave}
-        >
+          onClick={onSave}>
           Save document
         </button>
         {saveStatus && (
-          <span
-            className="text-xs
-text-muted-foreground
-whitespace-nowrap"
-          >
+          <span className="text-muted-foreground text-xs whitespace-nowrap">
             {saveStatus}
           </span>
         )}
